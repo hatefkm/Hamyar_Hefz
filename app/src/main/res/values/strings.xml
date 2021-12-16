@@ -1,12 +1,8 @@
 <resources>
     <string name="app_name">Hamyar Hefz</string>
     <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">همیار حفظ</string>
-<<<<<<< HEAD
+    <string name="dummy_content" translatable="false">همیار حفظ</string>
+
 </resources>
-=======
-    <string name="Hamyar_hefz">همیار حفظ</string>
+
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-</resources>
->>>>>>> 71da1ea (please)

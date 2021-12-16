@@ -1,9 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-<<<<<<< HEAD
-    <style name="Theme.HamyarHefz" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
 =======
-    <style name="Theme.HamyarHefz" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.HamyarHefz" parent="Theme.MaterialComponents.DayNight.NoActionBar" tools:ignore="DuplicateDefinition">
 >>>>>>> 71da1ea (please)
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
