@@ -12,12 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
 
-        android:theme="@style/Theme.HamyarHefz" >
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" />
+        android:theme="@style/Theme.HamyarHefz" ><![CDATA[
 
         android:theme="@style/Theme.HamyarHefz">
+        ]]>
         <activity
             android:name=".ManabeActivity"
             android:exported="false" />
@@ -29,6 +27,18 @@
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JozActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AmalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ZekrActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RahnamaActivity"
             android:exported="false" />
         <activity
             android:name=".FullscreenActivity"

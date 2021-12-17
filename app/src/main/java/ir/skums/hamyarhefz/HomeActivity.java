@@ -11,6 +11,14 @@ import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.nightonke.boommenu.Animation.EaseEnum;
+import com.nightonke.boommenu.BoomButtons.ButtonPlaceEnum;
+import com.nightonke.boommenu.BoomButtons.HamButton;
+import com.nightonke.boommenu.BoomButtons.OnBMClickListener;
+import com.nightonke.boommenu.BoomMenuButton;
+import com.nightonke.boommenu.ButtonEnum;
+import com.nightonke.boommenu.Piece.PiecePlaceEnum;
+
 public class HomeActivity extends AppCompatActivity {
 
     Toolbar mToolbar ;
@@ -57,5 +65,88 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+
+        //BoomMenu
+
+        BoomMenuButton bmb = (BoomMenuButton) findViewById(R.id.bmb);
+
+        bmb.setButtonEnum(ButtonEnum.Ham);
+
+
+        bmb.setShowMoveEaseEnum(EaseEnum.EaseInOutBack);
+        bmb.setHideScaleEaseEnum(EaseEnum.EaseInBack);
+
+        bmb.setPiecePlaceEnum(PiecePlaceEnum.HAM_4);
+
+        bmb.setButtonPlaceEnum(ButtonPlaceEnum.HAM_4);
+
+
+
+        for (int i = 0; i < bmb.getPiecePlaceEnum().pieceNumber(); i++) {
+            HamButton.Builder builder = new HamButton.Builder().rotateImage(false);
+
+            switch (i) {
+                case 0:
+                    builder.normalImageRes(R.drawable.user_profile)
+                            .normalText("حفظ قرآن")
+                            .listener(new OnBMClickListener() {
+                                @Override
+                                public void onBoomButtonClick(int index) {
+                                    // When the boom-button corresponding this builder is clicked.
+                                    Intent intent = new Intent(HomeActivity.this, JozActivity.class);
+                                    startActivity(intent);
+                                }
+                            });
+                    break;
+
+                case 1:
+                    builder.normalImageRes(R.drawable.user_profile)
+                            .normalText("ذکر ایام هفته")
+                            .listener(new OnBMClickListener() {
+                                @Override
+                                public void onBoomButtonClick(int index) {
+                                    // When the boom-button corresponding this builder is clicked.
+                                    Intent intent = new Intent(HomeActivity.this, ZekrActivity.class);
+                                    startActivity(intent);
+                                }
+                            });
+                    break;
+
+                case 2:
+                    builder.normalImageRes(R.drawable.user_profile)
+                            .normalText("اعمال روزانه")
+                            .listener(new OnBMClickListener() {
+                                @Override
+                                public void onBoomButtonClick(int index) {
+                                    // When the boom-button corresponding this builder is clicked.
+                                    Intent intent = new Intent(HomeActivity.this, AmalActivity.class);
+                                    startActivity(intent);
+                                }
+                            });
+                    break;
+
+                case 3:
+                    builder.normalImageRes(R.drawable.user_profile)
+                            .normalText("راهنما")
+
+                            .listener(new OnBMClickListener() {
+                                @Override
+                                public void onBoomButtonClick(int index) {
+                                    // When the boom-button corresponding this builder is clicked.
+                                    Intent intent = new Intent(HomeActivity.this, RahnamaActivity.class);
+                                    startActivity(intent);
+                                }
+                            });
+                    break;
+
+
+
+            }
+
+
+            bmb.addBuilder(builder);
         }
+
+
+    }
 }
