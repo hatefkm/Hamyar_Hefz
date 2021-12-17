@@ -40,7 +40,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-
+    implementation 'com.airbnb.android:lottie:2.5.0-rc1'
     implementation 'com.nightonke:boommenu:2.1.1'
 
     testImplementation 'junit:junit:4.13.2'

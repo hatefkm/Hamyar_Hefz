@@ -29,8 +29,6 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        mToolbar = (Toolbar) findViewById(R.id.m_toolbar);
-        setSupportActionBar(mToolbar);
         mListView = findViewById(R.id.list_item);
         menu= new String[]{"تنظیمات","امتیاز دهید ","درباره ما و راه های ارتباطی","منابع","خروج"};
 

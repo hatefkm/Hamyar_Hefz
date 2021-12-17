@@ -13,14 +13,6 @@
     tools:openDrawer="start">
 
 
-
-
-
-    <include
-        layout="@layout/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
     <com.google.android.material.navigation.NavigationView
         android:layout_width="270dp"
         android:layout_height="match_parent"
@@ -49,6 +41,16 @@
             app:bmb_piecePlaceEnum="piecePlace_ham_4"
             app:bmb_buttonPlaceEnum="buttonPlace_ham_4"
             />
+        <com.airbnb.lottie.LottieAnimationView
+            app:lottie_fileName="right.json"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_margin="30dp"
+
+
+ />
 
     </RelativeLayout>
 
