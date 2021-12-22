@@ -3,13 +3,20 @@ package ir.skums.hamyarhefz;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.graphics.Color;
+import android.net.Uri;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.Toast;
+
+
+
+
 
 import com.nightonke.boommenu.Animation.EaseEnum;
 import com.nightonke.boommenu.BoomButtons.ButtonPlaceEnum;
@@ -22,7 +29,7 @@ import com.nightonke.boommenu.Piece.PiecePlaceEnum;
 public class HomeActivity extends AppCompatActivity {
 
     Toolbar mToolbar ;
-     ListView mListView;
+    ListView mListView;
     String[] menu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +52,17 @@ public class HomeActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
                 else if(i==1){
-                    Toast.makeText(HomeActivity.this, "Item Number " + i , Toast.LENGTH_SHORT).show();
+                   // Toast.makeText(HomeActivity.this, "Item Number " + i , Toast.LENGTH_SHORT).show();
+                  /*  try {
+                       startActivity(new Intent(Intent.ACTION_VIEW,
+                               Uri.parse("market://details?id=" + this.getPackageName())));
+                    } catch (ActivityNotFoundException e) {
+                       startActivity(new Intent(Intent.ACTION_VIEW,
+                                Uri.parse("http://play.google.com/store/apps/details?id=" + this.getPackageName())));
+
+                    }*/
+
+
                 }
                 else if(i==2){
                  Intent intent = new Intent(HomeActivity.this,UsActivity.class);
@@ -56,7 +73,10 @@ public class HomeActivity extends AppCompatActivity {
                    Intent intent = new Intent(HomeActivity.this,ManabeActivity.class);
                    startActivity(intent);
                 }
-                else {
+                else if (i==4){
+                    // TODO Auto-generated method stub
+                    finish();
+                    System.exit(0);
 
                 }
 
@@ -64,7 +84,7 @@ public class HomeActivity extends AppCompatActivity {
         });
 
 
-        //BoomMenu
+        //Start BoomMenu
 
         BoomMenuButton bmb = (BoomMenuButton) findViewById(R.id.bmb);
 
@@ -86,6 +106,7 @@ public class HomeActivity extends AppCompatActivity {
             switch (i) {
                 case 0:
                     builder.normalImageRes(R.drawable.user_profile)
+                            .normalColor(Color.BLUE)
                             .normalText("حفظ قرآن")
                             .listener(new OnBMClickListener() {
                                 @Override
@@ -99,6 +120,7 @@ public class HomeActivity extends AppCompatActivity {
 
                 case 1:
                     builder.normalImageRes(R.drawable.user_profile)
+                            .normalColor(Color.BLUE)
                             .normalText("ذکر ایام هفته")
                             .listener(new OnBMClickListener() {
                                 @Override
@@ -112,6 +134,7 @@ public class HomeActivity extends AppCompatActivity {
 
                 case 2:
                     builder.normalImageRes(R.drawable.user_profile)
+                            .normalColor(Color.BLUE)
                             .normalText("اعمال روزانه")
                             .listener(new OnBMClickListener() {
                                 @Override
@@ -125,6 +148,7 @@ public class HomeActivity extends AppCompatActivity {
 
                 case 3:
                     builder.normalImageRes(R.drawable.user_profile)
+                            .normalColor(Color.BLUE)
                             .normalText("راهنما")
 
                             .listener(new OnBMClickListener() {
@@ -144,7 +168,7 @@ public class HomeActivity extends AppCompatActivity {
 
             bmb.addBuilder(builder);
         }
-
+        //end BoomMenu
 
     }
 }

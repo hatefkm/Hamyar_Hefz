@@ -36,21 +36,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:bmb_buttonEnum="ham"
+            app:bmb_normalColor="@color/white"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="70sp"
             app:bmb_piecePlaceEnum="piecePlace_ham_4"
             app:bmb_buttonPlaceEnum="buttonPlace_ham_4"
             />
+
         <com.airbnb.lottie.LottieAnimationView
-            app:lottie_fileName="right.json"
-            android:layout_height="100dp"
             android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
             app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            android:layout_margin="30dp"
+            app:lottie_fileName="right.json"
+            app:lottie_loop="true" />
 
 
- />
 
     </RelativeLayout>
 

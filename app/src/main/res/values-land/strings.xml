@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Setting2</string>
+    <string name="test">تست متن اصلی</string>
+    <string name="setting">تنظیمات</string>
+    <string name="text_structure">ساختار متن:</string>
+    <string name="test_text">متن تست</string>
+    <string name="nazanin">نازنین</string>
+    <string name="koodak">کودک</string>
+    <string name="titr">تیتر</string>
+    <string name="apply_changes">اعمال تغییرات</string>
+    <string name="screen">صفحه نمایش:</string>
+    <string name="prevent_shutdown_screen">جلوگیری از خاموش شدن صفحه</string>
+</resources>
