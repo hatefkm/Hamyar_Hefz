@@ -4,6 +4,7 @@
 =======
     <style name="Theme.HamyarHefz" parent="Theme.MaterialComponents.DayNight.NoActionBar" tools:ignore="DuplicateDefinition">
 >>>>>>> 71da1ea (please)
+
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -16,6 +17,15 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <!-- Base application theme. -->
+    <style name="Theme.Fab_Bottom_app_bar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#0F9D58</item>
+        <item name="colorPrimaryVariant">#0F9D58</item>
+        <item name="colorOnPrimary">#000</item>
+    </style>
+
+
 
     <style name="Theme.HamyarHefz.Fullscreen" parent="Theme.HamyarHefz">
         <item name="android:actionBarStyle">@style/Widget.Theme.HamyarHefz.ActionBar.Fullscreen

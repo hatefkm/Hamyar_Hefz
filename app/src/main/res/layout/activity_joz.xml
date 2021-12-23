@@ -6,15 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".JozActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Joz"
-        android:textSize="100dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true">
 
-    </TextView>
+
+
+
+        <ListView
+            android:id="@+id/listView_JZ"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
 
 
 </RelativeLayout>

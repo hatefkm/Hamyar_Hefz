@@ -53,16 +53,15 @@ public class HomeActivity extends AppCompatActivity {
                 }
                 else if(i==1){
                    // Toast.makeText(HomeActivity.this, "Item Number " + i , Toast.LENGTH_SHORT).show();
-                  /*  try {
-                       startActivity(new Intent(Intent.ACTION_VIEW,
-                               Uri.parse("market://details?id=" + this.getPackageName())));
-                    } catch (ActivityNotFoundException e) {
-                       startActivity(new Intent(Intent.ACTION_VIEW,
-                                Uri.parse("http://play.google.com/store/apps/details?id=" + this.getPackageName())));
-
-                    }*/
-
-
+                  /*
+                        try {
+                            startActivity(new Intent(Intent.ACTION_VIEW,
+                                    Uri.parse("market://details?id=" + this.getPackageName())));
+                        } catch (android.content.ActivityNotFoundException e) {
+                            startActivity(new Intent(Intent.ACTION_VIEW,
+                                    Uri.parse("http://play.google.com/store/apps/details?id=" + this.getPackageName())));
+                        }
+                 */
                 }
                 else if(i==2){
                  Intent intent = new Intent(HomeActivity.this,UsActivity.class);
