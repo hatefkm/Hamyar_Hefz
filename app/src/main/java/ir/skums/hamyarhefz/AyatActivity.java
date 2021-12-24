@@ -2,13 +2,18 @@ package ir.skums.hamyarhefz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.view.MenuItem;
+import android.view.View;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
 
 import ir.skums.hamyarhefz.ayatnavigationbar.NoteFragment;
 import ir.skums.hamyarhefz.ayatnavigationbar.QuestionFragment;
@@ -44,5 +49,23 @@ public class AyatActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               // Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
+               //         .setAction("Action", null).show();
+
+
+
+            }
+        });
+    }
+
+    public void btnSoal(View view) {
+        Intent intent = new Intent(AyatActivity.this,Soal1Activity.class);
+        startActivity(intent);
     }
 }

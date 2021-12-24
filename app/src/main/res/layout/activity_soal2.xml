@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Soal2Activity">
+
+
+    <Button
+        android:id="@+id/buttonEbteda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ابتدای مشابه"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="152dp"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="btnEbteda"/>
+
+    <Button
+        android:id="@+id/buttonEnteha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="انتهای مشابه"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="477dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:layout_below="@+id/buttonEbteda"
+        android:onClick="btnEnteha"/>
+</RelativeLayout>

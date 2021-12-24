@@ -1,9 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
 
-=======
+    =======
+
     <style name="Theme.HamyarHefz" parent="Theme.MaterialComponents.DayNight.NoActionBar" tools:ignore="DuplicateDefinition">
->>>>>>> 71da1ea (please)
+        >>>>>>> 71da1ea (please)
 
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
@@ -24,7 +25,6 @@
         <item name="colorPrimaryVariant">#0F9D58</item>
         <item name="colorOnPrimary">#000</item>
     </style>
-
 
 
     <style name="Theme.HamyarHefz.Fullscreen" parent="Theme.HamyarHefz">
@@ -65,4 +65,13 @@
     </style>
 
     <color name="good">#E91E63</color>
+
+    <style name="Theme.Fab_Bottom_app_bar.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Fab_Bottom_app_bar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Fab_Bottom_app_bar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".JozActivity">
+    tools:context=".Soal1Activity">
 
-
-        <ListView
-            android:id="@+id/listView_JZ"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center" />
-
-
-
+    <Button
+        android:id="@+id/buttonSoal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_centerInParent="true"
+        android:onClick="btnSoal1"
+         />
 </RelativeLayout>
