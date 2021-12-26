@@ -135,7 +135,7 @@ public class HomeActivity extends AppCompatActivity {
             switch (i) {
                 case 0:
                     builder.normalImageRes(R.drawable.user_profile)
-                            .normalColor(Color.BLUE)
+                            .normalColor(Color.rgb(1,87,155))
                             .normalText("حفظ قرآن")
                             .listener(new OnBMClickListener() {
                                 @Override
@@ -149,7 +149,7 @@ public class HomeActivity extends AppCompatActivity {
 
                 case 1:
                     builder.normalImageRes(R.drawable.user_profile)
-                            .normalColor(Color.BLUE)
+                            .normalColor(Color.rgb(1,87,155))
                             .normalText("ذکر ایام هفته")
                             .listener(new OnBMClickListener() {
                                 @Override
@@ -163,7 +163,7 @@ public class HomeActivity extends AppCompatActivity {
 
                 case 2:
                     builder.normalImageRes(R.drawable.user_profile)
-                            .normalColor(Color.BLUE)
+                            .normalColor(Color.rgb(1,87,155))
                             .normalText("اعمال روزانه")
                             .listener(new OnBMClickListener() {
                                 @Override
@@ -177,7 +177,7 @@ public class HomeActivity extends AppCompatActivity {
 
                 case 3:
                     builder.normalImageRes(R.drawable.user_profile)
-                            .normalColor(Color.BLUE)
+                            .normalColor(Color.rgb(1,87,155))
                             .normalText("راهنما")
 
                             .listener(new OnBMClickListener() {
