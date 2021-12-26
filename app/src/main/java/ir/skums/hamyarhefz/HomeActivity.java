@@ -1,23 +1,42 @@
 package ir.skums.hamyarhefz;
 
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import android.content.ActivityNotFoundException;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+
+
+import android.util.Log;
+import android.view.View;
+
+import androidx.core.view.GravityCompat;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+
+import android.view.MenuItem;
+
+import com.google.android.material.navigation.NavigationView;
+
+import androidx.drawerlayout.widget.DrawerLayout;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
+import android.view.Menu;
+
+
+
 import android.content.Intent;
 import android.graphics.Color;
-import android.net.Uri;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
+
 import android.os.Bundle;
-import android.widget.ListView;
-import android.widget.Toast;
 
 
 
-
-
+import com.google.android.material.navigation.NavigationView;
 import com.nightonke.boommenu.Animation.EaseEnum;
 import com.nightonke.boommenu.BoomButtons.ButtonPlaceEnum;
 import com.nightonke.boommenu.BoomButtons.HamButton;
@@ -28,59 +47,70 @@ import com.nightonke.boommenu.Piece.PiecePlaceEnum;
 
 public class HomeActivity extends AppCompatActivity {
 
-    Toolbar mToolbar ;
-    ListView mListView;
-    String[] menu;
+    private String TAG = "HomeActivity";
+    private DrawerLayout navDrawer;
+    private NavigationView navigationView;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        mListView = findViewById(R.id.list_item);
-        menu= new String[]{"تنظیمات","امتیاز دهید ","درباره ما و راه های ارتباطی","منابع","خروج"};
 
-        ArrayAdapter<String> mAdapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, menu);
 
-        mListView.setAdapter(mAdapter);
-        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        DrawerLayout drawer = findViewById(R.id.navDrawer);
+        NavigationView navigationView = findViewById(R.id.navigationView);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int id = item.getItemId();
 
-                if (i==0){
+                if (id == R.id.Tn_nav) {
+                    // Handle the camera action
                     Intent intent = new Intent(HomeActivity.this,SettingActivity.class);
                     startActivity(intent);
-                }
-                else if(i==1){
-                   // Toast.makeText(HomeActivity.this, "Item Number " + i , Toast.LENGTH_SHORT).show();
-                  /*
-                        try {
-                            startActivity(new Intent(Intent.ACTION_VIEW,
-                                    Uri.parse("market://details?id=" + this.getPackageName())));
-                        } catch (android.content.ActivityNotFoundException e) {
-                            startActivity(new Intent(Intent.ACTION_VIEW,
-                                    Uri.parse("http://play.google.com/store/apps/details?id=" + this.getPackageName())));
-                        }
-                 */
-                }
-                else if(i==2){
-                 Intent intent = new Intent(HomeActivity.this,UsActivity.class);
-                 startActivity(intent);
+                } else if (id == R.id.Rt_nav) {
+                    //Intent intent = new Intent(HomeActivity.this,SettingActivity.class);
+                    // startActivity(intent);
 
-                }
-                else if(i==3){
-                   Intent intent = new Intent(HomeActivity.this,ManabeActivity.class);
-                   startActivity(intent);
-                }
-                else if (i==4){
-                    // TODO Auto-generated method stub
-                    finish();
-                    System.exit(0);
+                } else if (id == R.id.DrMa_nav) {
+                    Intent intent = new Intent(HomeActivity.this,UsActivity.class);
+                    startActivity(intent);
+
+                } else if (id == R.id.Mn_nav) {
+                    Intent intent = new Intent(HomeActivity.this,ManabeActivity.class);
+                    startActivity(intent);
+
 
                 }
 
+                DrawerLayout drawerLayout = findViewById(R.id.navDrawer);
+                drawerLayout.closeDrawer(GravityCompat.START);
+
+
+                return true;
             }
         });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         //Start BoomMenu
@@ -168,6 +198,16 @@ public class HomeActivity extends AppCompatActivity {
             bmb.addBuilder(builder);
         }
         //end BoomMenu
+
+    }
+
+
+    public void exitBtn(View view) {
+
+
+        // TODO Auto-generated method stub
+        finish();
+        System.exit(0);
 
     }
 }

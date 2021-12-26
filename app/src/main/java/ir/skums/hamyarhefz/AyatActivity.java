@@ -1,6 +1,9 @@
 package ir.skums.hamyarhefz;
 
+import static com.google.android.material.floatingactionbutton.FloatingActionButton.*;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,6 +22,10 @@ import ir.skums.hamyarhefz.ayatnavigationbar.NoteFragment;
 import ir.skums.hamyarhefz.ayatnavigationbar.QuestionFragment;
 import ir.skums.hamyarhefz.ayatnavigationbar.HomeFragment;
 import ir.skums.hamyarhefz.ayatnavigationbar.TranslateFragment;
+
+
+
+
 
 
 public class AyatActivity extends AppCompatActivity {
@@ -61,6 +68,7 @@ public class AyatActivity extends AppCompatActivity {
 
 
             }
+            
         });
     }
 
@@ -68,4 +76,11 @@ public class AyatActivity extends AppCompatActivity {
         Intent intent = new Intent(AyatActivity.this,Soal1Activity.class);
         startActivity(intent);
     }
+
+
+
+
+
+
+
 }

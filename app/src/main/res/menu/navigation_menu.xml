@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Tn_nav"
+        android:icon="@drawable/ic_settings_24"
+
+        android:title="تنظیمات" />
+    <item
+        android:id="@+id/Rt_nav"
+        android:icon="@drawable/ic_ratereview_24"
+
+        android:title="امتیاز دهید" />
+    <item
+        android:id="@+id/DrMa_nav"
+        android:icon="@drawable/ic_connectus_24"
+
+        android:title="درباره ما و راه های ارتباطی" />
+    <item
+        android:id="@+id/Mn_nav"
+        android:icon="@drawable/ic_source_24"
+
+        android:title="منابع" />
+
+</menu>
