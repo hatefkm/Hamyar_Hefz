@@ -10,22 +10,17 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 
 
-import android.util.Log;
+
 import android.view.View;
 
 import androidx.core.view.GravityCompat;
-import androidx.appcompat.app.ActionBarDrawerToggle;
+
 
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
 
-import androidx.drawerlayout.widget.DrawerLayout;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
-import android.view.Menu;
 
 
 
@@ -33,10 +28,13 @@ import android.content.Intent;
 import android.graphics.Color;
 
 import android.os.Bundle;
+import android.view.animation.AccelerateDecelerateInterpolator;
+import android.view.animation.Animation;
+import android.view.animation.TranslateAnimation;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 
-
-import com.google.android.material.navigation.NavigationView;
 import com.nightonke.boommenu.Animation.EaseEnum;
 import com.nightonke.boommenu.BoomButtons.ButtonPlaceEnum;
 import com.nightonke.boommenu.BoomButtons.HamButton;
@@ -45,11 +43,20 @@ import com.nightonke.boommenu.BoomMenuButton;
 import com.nightonke.boommenu.ButtonEnum;
 import com.nightonke.boommenu.Piece.PiecePlaceEnum;
 
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+
+
 public class HomeActivity extends AppCompatActivity {
 
     private String TAG = "HomeActivity";
     private DrawerLayout navDrawer;
     private NavigationView navigationView;
+
+
+
+
 
 
     @Override
@@ -210,4 +217,6 @@ public class HomeActivity extends AppCompatActivity {
         System.exit(0);
 
     }
+
+
 }

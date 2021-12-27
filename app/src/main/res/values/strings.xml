@@ -17,6 +17,7 @@
     <string name="open">Open</string>
     <string name="navigation_drawer_open">navigation drawer open</string>
     <string name="navigation_drawer_close">navigation drawer close</string>
+    <string name="shimmer">برای به نمایش درآمدن منوی برنامه٫ دکمه بالای صفحه را لمس کنید</string>
 
 </resources>
 
