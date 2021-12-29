@@ -6,6 +6,7 @@
     android:orientation="vertical"
     android:layout_centerInParent="true"
     android:id="@+id/linierLayoutPlay"
+    android:background="@drawable/bck_play"
 
     tools:context=".PlayPanleFragment">
 

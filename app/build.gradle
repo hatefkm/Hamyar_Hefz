@@ -60,6 +60,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
     implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.fragment:fragment:1.4.0@aar'
 
 
 

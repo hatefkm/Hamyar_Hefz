@@ -51,6 +51,8 @@ public class PlayPanleFragment extends Fragment {
 
     Thread updateSeekBar;
 
+    private static PlayPanleFragment instance=null;
+
 
 
     /**
@@ -96,6 +98,13 @@ public class PlayPanleFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        instance=this;
 
+
+    }
+
+
+    public static PlayPanleFragment getInstance(){
+        return instance;
     }
 }

@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_rahnama"
     tools:context=".ManabeActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="منابع"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="8dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true">
+
+    </TextView>
+
+</RelativeLayout>
