@@ -26,14 +26,14 @@
         android:id="@+id/btnAyamHfte"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ذکر ایام هفته"
-        android:textColor="@color/white"
-        android:textSize="30dp"
         android:layout_below="@+id/btnSlvt"
-        android:layout_marginBottom="50pt"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
-        android:onClick="btnAyamHfte" />
+        android:layout_marginBottom="50pt"
+        android:onClick="btnAyamHfte"
+        android:text="ذکر ایام هفته"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
 
 
 
@@ -41,7 +41,7 @@
         android:id="@+id/btnTsbihat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="صلوات شمار"
+        android:text="تسبیحات حضرت زهرا"
         android:textColor="@color/white"
         android:textSize="30dp"
         android:layout_below="@+id/btnAyamHfte"
