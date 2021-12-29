@@ -84,17 +84,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <Button
-                android:id="@+id/BtnExPl"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/ic_close_24"
-                android:paddingEnd="20dp"
-                android:onClick="BtnExPl"/>
-
 
             <Button
                 android:id="@+id/BtnPlay"

@@ -169,44 +169,9 @@ public class AyatActivity extends AppCompatActivity {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
 
-
-    public void BtnExPl(View view) {
-     //   FragmentManager fm=getSupportFragmentManager();
-      //  fm.beginTransaction().add(R.id.FrameLayoutPlay,new PlayPanleFragment()).commit();
-      //  fm.beginTransaction().remove(PlayPanleFragment.getInstance()).commit();
-        //getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayoutPlay,new PlayPanleFragment()).addToBackStack(null).commit();
-
-
-    }
-
-
-    @Override
-    public void onBackPressed() {
-      //  FragmentManager fm=getSupportFragmentManager();
-      //  fm.beginTransaction().add(R.id.FrameLayoutPlay,new PlayPanleFragment()).commit();
-      //  fm.beginTransaction().remove(PlayPanleFragment.getInstance()).commit();
-
-
-
-        super.onBackPressed();
-    }
 
     public void btnSoal(View view) {
         Intent intent = new Intent(AyatActivity.this,Soal1Activity.class);
