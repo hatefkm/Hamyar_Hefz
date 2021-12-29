@@ -11,12 +11,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fab_Bottom_app_bar">
         <activity
+            android:name=".TasbihatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AyamHafte1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Salavat1Activity"
+            android:exported="false" />
+        <activity
             android:name=".SoalJavabActivity"
             android:exported="false" />
         <activity
             android:name=".NoteDetailActivity"
             android:exported="false" />
-
         <activity
             android:name=".Soal2Activity"
             android:exported="false" />

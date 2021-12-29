@@ -4,17 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ZekrActivity">
+    android:background="@drawable/homebackground"
+    tools:context=".ZekrActivity"
+    android:gravity="center">
 
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btnSlvt"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Zekr"
-        android:textSize="100dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true">
+        android:text="صلوات شمار"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_marginBottom="50pt"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="btnSlvt"/>
 
-    </TextView>
+
+    <Button
+        android:id="@+id/btnAyamHfte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ذکر ایام هفته"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_below="@+id/btnSlvt"
+        android:layout_marginBottom="50pt"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="btnAyamHfte" />
+
+
+
+    <Button
+        android:id="@+id/btnTsbihat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="صلوات شمار"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_below="@+id/btnAyamHfte"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="btnTsbihat"/>
+
+
+
+
 
 </RelativeLayout>
