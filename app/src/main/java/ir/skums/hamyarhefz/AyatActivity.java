@@ -43,9 +43,15 @@ import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ListView;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -66,6 +72,10 @@ public class AyatActivity extends AppCompatActivity {
     PlayPanleFragment playPanleFragment;
 
 
+    private ListView noteListView;
+
+
+
     String songName;
     public static final String EXTRA_NAME = "song_name";
     static MediaPlayer mediaPlayer;
@@ -79,6 +89,9 @@ public class AyatActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ayat);
+
+        //note
+
 
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomnavigationbar);
         bottomNavigationView.setBackground(null);
@@ -98,11 +111,13 @@ public class AyatActivity extends AppCompatActivity {
                         break;
                     case R.id.Translate:  temp = new TranslateFragment();
                 }
-                getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer,temp).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer,temp).addToBackStack(null).commit();
                 return true;
             }
 
         });
+
+
 
 
 
@@ -134,10 +149,6 @@ public class AyatActivity extends AppCompatActivity {
 
 
 
-
-
-
-
         //Assigning the address of the andorid Materials
         btnPlay = (Button) findViewById(R.id.BtnPlay);
         btnPause = (Button) findViewById(R.id.BtnPause);
@@ -164,11 +175,6 @@ public class AyatActivity extends AppCompatActivity {
         //Getting the Required Details from the past Intent
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
-
-
-
-
-
     }
 
 
@@ -178,6 +184,26 @@ public class AyatActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+
+    //note
+
+
+    private void initWidgets()
+    {
+        noteListView = findViewById(R.id.noteListView_main);
+    }
+    private void setNoteAdapter()
+    {
+        NoteAdapter noteAdapter = new NoteAdapter(getApplicationContext() ,Note.noteArrayList);
+        noteListView.setAdapter(noteAdapter);
+    }
+
+
+    public void newNote(View view)
+    {
+        Intent newNoteIntent = new Intent(AyatActivity.this,NoteDetailActivity.class);
+        startActivity(newNoteIntent);
+    }
 
 
 

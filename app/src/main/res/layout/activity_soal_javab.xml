@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bck_qestion"
     tools:context=".SoalJavabActivity">
 
 
@@ -28,7 +29,8 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_below="@+id/txtSoal"
-        android:layout_above="@+id/btnShow"/>
+        android:layout_above="@+id/btnShow"
+        android:paddingBottom="5pt"/>
 
 
 
@@ -42,7 +44,7 @@
         android:text="قبلی"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="20dp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="15dp"/>
 
     <Button
         android:id="@+id/btnShow"
@@ -52,7 +54,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="20dp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="15dp"/>
 
 
     <Button
@@ -63,7 +65,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="15dp"/>
 
 
 </RelativeLayout>

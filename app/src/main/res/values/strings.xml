@@ -19,6 +19,14 @@
     <string name="navigation_drawer_close">navigation drawer close</string>
     <string name="shimmer">برای به نمایش درآمدن منوی برنامه٫ دکمه بالای صفحه را لمس کنید</string>
 
+    <string name="list_problem_aye">لیست آیه های مشکل</string>
+    <string name="add">+</string>
+    <string name="add_problem_aye">افزودن آیه های مشکل</string>
+    <string name="save">ذخیره</string>
+    <string name="name_sure">نام سوره</string>
+    <string name="number_aye">شماره آیه</string>
+    <string name="aye">آیه</string>
+
 </resources>
 
     <!-- TODO: Remove or change this placeholder text -->
