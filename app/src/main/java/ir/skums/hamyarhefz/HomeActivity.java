@@ -157,7 +157,7 @@ public class HomeActivity extends AppCompatActivity {
                 case 1:
                     builder.normalImageRes(R.drawable.user_profile)
                             .normalColor(Color.rgb(1,87,155))
-                            .normalText("ذکر ایام هفته")
+                            .normalText("ذکر و صلوات شمار")
                             .listener(new OnBMClickListener() {
                                 @Override
                                 public void onBoomButtonClick(int index) {

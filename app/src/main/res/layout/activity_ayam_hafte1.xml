@@ -4,85 +4,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AyamHafte1Activity">
+    tools:context=".AyamHafte1Activity"
+    android:background="@drawable/homebackground">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ذکر ایام هفته"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:id="@+id/txtZekrAyamHafte"/>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtZekrAyamHafte">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50pt"
-            android:orientation="vertical"
-            >
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
             <FrameLayout
                 android:id="@+id/frameShanbe"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginBottom="20dp"
+                android:layout_height="200dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:layout_weight="1"/>
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1" />
 
             <FrameLayout
                 android:id="@+id/frameYesh"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginBottom="20dp"
+                android:layout_height="200dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:layout_weight="1"/>
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1" />
 
             <FrameLayout
                 android:id="@+id/frameDosh"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginBottom="20dp"
+                android:layout_height="200dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:layout_weight="1"/>
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1" />
 
             <FrameLayout
                 android:id="@+id/frameSesh"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginBottom="20dp"
+                android:layout_height="200dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:layout_weight="1"/>
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1" />
 
             <FrameLayout
                 android:id="@+id/frameCharsh"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginBottom="20dp"
+                android:layout_height="200dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:layout_weight="1"/>
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1" />
 
             <FrameLayout
                 android:id="@+id/framePanjsh"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginBottom="20dp"
+                android:layout_height="200dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:layout_weight="1"/>
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1" />
 
             <FrameLayout
                 android:id="@+id/frameJome"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginBottom="20dp"
+                android:layout_height="200dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:layout_weight="1"/>
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1" />
 
 
         </LinearLayout>
-
-
 
 
     </ScrollView>

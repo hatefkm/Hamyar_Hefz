@@ -11,6 +11,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fab_Bottom_app_bar">
         <activity
+            android:name=".EbadatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AmalNikActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TozihatAmalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AmalBadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AkhlaghBAdActivity"
+            android:exported="false" />
+        <activity
             android:name=".TasbihatActivity"
             android:exported="false" />
         <activity

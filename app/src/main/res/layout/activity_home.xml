@@ -23,13 +23,12 @@
             android:id="@+id/bmb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:bmb_buttonEnum="ham"
-            app:bmb_normalColor="@color/white"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="70sp"
-            app:bmb_piecePlaceEnum="piecePlace_ham_4"
+            app:bmb_buttonEnum="ham"
             app:bmb_buttonPlaceEnum="buttonPlace_ham_4"
-            />
+            app:bmb_normalColor="@color/white"
+            app:bmb_piecePlaceEnum="piecePlace_ham_4" />
 
         <com.airbnb.lottie.LottieAnimationView
             android:layout_width="100dp"
@@ -60,14 +59,14 @@
             android:id="@+id/shimmer_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/shimmer"
-            android:textColor="#444"
-            android:textSize="25sp"
             android:layout_above="@+id/exitBtn"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
             android:paddingBottom="12dp"
-            android:textAlignment="center"/>
+            android:text="@string/shimmer"
+            android:textAlignment="center"
+            android:textColor="#444"
+            android:textSize="25sp" />
 
 
 

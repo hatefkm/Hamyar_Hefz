@@ -4,14 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/homebackground"
     android:orientation="vertical"
     tools:context=".TasbihatActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="تسبیحات حضرت زهرا"
+        android:textAlignment="center"
+        android:id="@+id/txtTasbihat"/>
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginTop="50pt">
+        android:layout_marginTop="40dp">
 
 
         <FrameLayout
@@ -21,7 +31,7 @@
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="10dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="200dp"
             android:layout_weight="1">
 
         </FrameLayout>
@@ -33,7 +43,7 @@
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="10dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="200dp"
             android:layout_weight="1">
 
         </FrameLayout>
@@ -45,7 +55,7 @@
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="30dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="200dp"
             android:layout_weight="1">
 
         </FrameLayout>
