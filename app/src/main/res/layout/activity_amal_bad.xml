@@ -67,16 +67,16 @@
                         android:orientation="horizontal"
                         android:layout_height="wrap_content">
                         <Button
-                            android:id="@+id/btn_addQuran"
+                            android:id="@+id/btn_addQeibatKardan"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_marginStart="15dp"
-                            android:onClick="btn_addQuran"/>
+                            android:onClick="btn_addQeibatKardan"/>
 
 
                         <TextView
-                            android:id="@+id/tv_resultQuran"
+                            android:id="@+id/tv_resultQeibatKardan"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="30dp"
@@ -85,12 +85,12 @@
                             android:textSize="25dp" />
 
                         <Button
-                            android:id="@+id/btn_removQuran"
+                            android:id="@+id/btn_removQeibatKardan"
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_marginStart="25dp"
-                            android:onClick="btn_removQuran"/>
+                            android:onClick="btn_removQeibatKardan"/>
 
 
 
@@ -103,7 +103,7 @@
                         android:layout_marginTop="12dp"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp"
-                        android:text="قرآن خواندن"
+                        android:text="غیبت کردن"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
@@ -134,16 +134,16 @@
                         android:orientation="horizontal"
                         android:layout_height="wrap_content">
                         <Button
-                            android:id="@+id/btn_addEtaat"
+                            android:id="@+id/btn_addTarkNAmaz"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_marginStart="15dp"
-                            android:onClick="btn_addEtaat"/>
+                            android:onClick="btn_addTarkNAmaz"/>
 
 
                         <TextView
-                            android:id="@+id/tv_resultEtaat"
+                            android:id="@+id/tv_resultTarkNAmaz"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="30dp"
@@ -152,12 +152,12 @@
                             android:textSize="25dp" />
 
                         <Button
-                            android:id="@+id/btn_removEtaat"
+                            android:id="@+id/btn_removTarkNAmaz"
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_marginStart="25dp"
-                            android:onClick="btn_removEtaat"/>
+                            android:onClick="btn_removTarkNAmaz"/>
 
 
 
@@ -170,7 +170,7 @@
                         android:layout_marginTop="12dp"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp"
-                        android:text="اطاعت از والدین"
+                        android:text="ترک نماز"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
@@ -201,16 +201,16 @@
                         android:orientation="horizontal"
                         android:layout_height="wrap_content">
                         <Button
-                            android:id="@+id/btn_addTavajoh"
+                            android:id="@+id/btn_addEsrafKrdn"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_marginStart="15dp"
-                            android:onClick="btn_addTavajoh"/>
+                            android:onClick="btn_addEsrafKrdn"/>
 
 
                         <TextView
-                            android:id="@+id/tv_resultTavajoh"
+                            android:id="@+id/tv_resultEsrafKrdn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="30dp"
@@ -219,12 +219,12 @@
                             android:textSize="25dp" />
 
                         <Button
-                            android:id="@+id/btn_removtavajoh"
+                            android:id="@+id/btn_removEsrafKrdn"
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_marginStart="25dp"
-                            android:onClick="btn_removTavajoh"/>
+                            android:onClick="btn_removEsrafKrdn"/>
 
 
 
@@ -237,7 +237,7 @@
                         android:layout_marginTop="12dp"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp"
-                        android:text="توجه در نماز"
+                        android:text="اسراف کردن"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
@@ -268,16 +268,16 @@
                         android:orientation="horizontal"
                         android:layout_height="wrap_content">
                         <Button
-                            android:id="@+id/btn_addTaqibat"
+                            android:id="@+id/btn_addSoutHaram"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_marginStart="15dp"
-                            android:onClick="btn_addTaqibat"/>
+                            android:onClick="btn_addSoutHaram"/>
 
 
                         <TextView
-                            android:id="@+id/tv_resultTaqibat"
+                            android:id="@+id/tv_resultSoutHaram"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="30dp"
@@ -286,12 +286,12 @@
                             android:textSize="25dp" />
 
                         <Button
-                            android:id="@+id/btn_removTaqibat"
+                            android:id="@+id/btn_removSoutHaram"
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_marginStart="25dp"
-                            android:onClick="btn_removTaqibat"/>
+                            android:onClick="btn_removSoutHaram"/>
 
 
 
@@ -304,678 +304,7 @@
                         android:layout_marginTop="12dp"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp"
-                        android:text="تعقیبات نماز"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-                <LinearLayout
-
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_height="wrap_content">
-                        <Button
-                            android:id="@+id/btn_addNamazSarVaqt"
-                            android:background="@drawable/ic_add"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
-                            android:onClick="btn_addNamazSarVaqt"/>
-
-
-                        <TextView
-                            android:id="@+id/tv_resultNamazSarVaqt"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:text="0"
-                            android:textColor="@color/light_blue_900"
-                            android:textSize="25dp" />
-
-                        <Button
-                            android:id="@+id/btn_removNamazSarVaqt"
-                            android:background="@drawable/refresh"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
-                            android:onClick="btn_removNamazSarVaqt"/>
-
-
-
-                    </LinearLayout>
-
-
-
-                    <TextView
-
-                        android:layout_marginTop="12dp"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp"
-                        android:text="نماز سروقت"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-                <LinearLayout
-
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_height="wrap_content">
-                        <Button
-                            android:id="@+id/btn_addAtamMasakin"
-                            android:background="@drawable/ic_add"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
-                            android:onClick="btn_addAtamMasakin"/>
-
-
-                        <TextView
-                            android:id="@+id/tv_resultAtamMasakin"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:text="0"
-                            android:textColor="@color/light_blue_900"
-                            android:textSize="25dp" />
-
-                        <Button
-                            android:id="@+id/btn_removAtamMasakin"
-                            android:background="@drawable/refresh"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
-                            android:onClick="btn_removAtamMasakin"/>
-
-
-
-                    </LinearLayout>
-
-
-
-                    <TextView
-
-                        android:layout_marginTop="12dp"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp"
-                        android:text="اطعام مساکین"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-                <LinearLayout
-
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_height="wrap_content">
-                        <Button
-                            android:id="@+id/btn_addDaemVozo"
-                            android:background="@drawable/ic_add"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
-                            android:onClick="btn_addDaemVozo"/>
-
-
-                        <TextView
-                            android:id="@+id/tv_resultDaemVozo"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:text="0"
-                            android:textColor="@color/light_blue_900"
-                            android:textSize="25dp" />
-
-                        <Button
-                            android:id="@+id/btn_removDaemVozo"
-                            android:background="@drawable/refresh"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
-                            android:onClick="btn_removDaemVozo"/>
-
-
-
-                    </LinearLayout>
-
-
-
-                    <TextView
-
-                        android:layout_marginTop="12dp"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp"
-                        android:text="دایم الوضو"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-                <LinearLayout
-
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_height="wrap_content">
-                        <Button
-                            android:id="@+id/btn_addSalavat"
-                            android:background="@drawable/ic_add"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
-                            android:onClick="btn_addSalavat"/>
-
-
-                        <TextView
-                            android:id="@+id/tv_resultSalavat"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:text="0"
-                            android:textColor="@color/light_blue_900"
-                            android:textSize="25dp" />
-
-                        <Button
-                            android:id="@+id/btn_removSalavat"
-                            android:background="@drawable/refresh"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
-                            android:onClick="btn_removSalavat"/>
-
-
-
-                    </LinearLayout>
-
-
-
-                    <TextView
-
-                        android:layout_marginTop="12dp"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp"
-                        android:text="صلوات"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-                <LinearLayout
-
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_height="wrap_content">
-                        <Button
-                            android:id="@+id/btn_addHefzNegah"
-                            android:background="@drawable/ic_add"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
-                            android:onClick="btn_addHefzNegah"/>
-
-
-                        <TextView
-                            android:id="@+id/tv_resultHefzNegah"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:text="0"
-                            android:textColor="@color/light_blue_900"
-                            android:textSize="25dp" />
-
-                        <Button
-                            android:id="@+id/btn_removHefzNegah"
-                            android:background="@drawable/refresh"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
-                            android:onClick="btn_removHefzNegah"/>
-
-
-
-                    </LinearLayout>
-
-
-
-                    <TextView
-
-                        android:layout_marginTop="12dp"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp"
-                        android:text="حفظ نگاه"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-                <LinearLayout
-
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_height="wrap_content">
-                        <Button
-                            android:id="@+id/btn_addSadaqe"
-                            android:background="@drawable/ic_add"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
-                            android:onClick="btn_addSadaqe"/>
-
-
-                        <TextView
-                            android:id="@+id/tv_resultSadaqe"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:text="0"
-                            android:textColor="@color/light_blue_900"
-                            android:textSize="25dp" />
-
-                        <Button
-                            android:id="@+id/btn_removSadaqe"
-                            android:background="@drawable/refresh"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
-                            android:onClick="btn_removSadaqe"/>
-
-
-
-                    </LinearLayout>
-
-
-
-                    <TextView
-
-                        android:layout_marginTop="12dp"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp"
-                        android:text="صدقه دادن"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-                <LinearLayout
-
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_height="wrap_content">
-                        <Button
-                            android:id="@+id/btn_addNamazShab"
-                            android:background="@drawable/ic_add"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
-                            android:onClick="btn_addNamazShab"/>
-
-
-                        <TextView
-                            android:id="@+id/tv_resultNamazShab"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:text="0"
-                            android:textColor="@color/light_blue_900"
-                            android:textSize="25dp" />
-
-                        <Button
-                            android:id="@+id/btn_removNamazShab"
-                            android:background="@drawable/refresh"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
-                            android:onClick="btn_removNamazShab"/>
-
-
-
-                    </LinearLayout>
-
-
-
-                    <TextView
-
-                        android:layout_marginTop="12dp"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp"
-                        android:text="نماز شب"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-                <LinearLayout
-
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_height="wrap_content">
-                        <Button
-                            android:id="@+id/btn_addAmrBeMArof"
-                            android:background="@drawable/ic_add"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
-                            android:onClick="btn_addAmrBeMArof"/>
-
-
-                        <TextView
-                            android:id="@+id/tv_resultAmrBeMArof"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:text="0"
-                            android:textColor="@color/light_blue_900"
-                            android:textSize="25dp" />
-
-                        <Button
-                            android:id="@+id/btn_removAmrBeMArof"
-                            android:background="@drawable/refresh"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
-                            android:onClick="btn_removAmrBeMArof"/>
-
-
-
-                    </LinearLayout>
-
-
-
-                    <TextView
-
-                        android:layout_marginTop="12dp"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp"
-                        android:text="امر به معروف"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-                <LinearLayout
-
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_height="wrap_content">
-                        <Button
-                            android:id="@+id/btn_addTobe"
-                            android:background="@drawable/ic_add"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
-                            android:onClick="btn_addTobe"/>
-
-
-                        <TextView
-                            android:id="@+id/tv_resultTobe"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:text="0"
-                            android:textColor="@color/light_blue_900"
-                            android:textSize="25dp" />
-
-                        <Button
-                            android:id="@+id/btn_removTobe"
-                            android:background="@drawable/refresh"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
-                            android:onClick="btn_removTobe"/>
-
-
-
-                    </LinearLayout>
-
-
-
-                    <TextView
-
-                        android:layout_marginTop="12dp"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp"
-                        android:text="توبه از گناه"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-                <LinearLayout
-
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_height="wrap_content">
-                        <Button
-                            android:id="@+id/btn_addNahiAzMonkar"
-                            android:background="@drawable/ic_add"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
-                            android:onClick="btn_addNahiAzMonkar"/>
-
-
-                        <TextView
-                            android:id="@+id/tv_resultNahiAzMonkar"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:text="0"
-                            android:textColor="@color/light_blue_900"
-                            android:textSize="25dp" />
-
-                        <Button
-                            android:id="@+id/btn_removNahiAzMonkar"
-                            android:background="@drawable/refresh"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
-                            android:onClick="btn_removNahiAzMonkar"/>
-
-
-
-                    </LinearLayout>
-
-
-
-                    <TextView
-
-                        android:layout_marginTop="12dp"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp"
-                        android:text="نهی از منکر"
+                        android:text="صوت حرام"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
@@ -1007,16 +336,16 @@
                         android:orientation="horizontal"
                         android:layout_height="wrap_content">
                         <Button
-                            android:id="@+id/btn_addMosiqiMojaz"
+                            android:id="@+id/btn_addAsabaniat"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_marginStart="15dp"
-                            android:onClick="btn_addMosiqiMojaz"/>
+                            android:onClick="btn_addAsabaniat"/>
 
 
                         <TextView
-                            android:id="@+id/tv_resultMosiqiMojaz"
+                            android:id="@+id/tv_resultAsabaniat"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="30dp"
@@ -1025,12 +354,12 @@
                             android:textSize="25dp" />
 
                         <Button
-                            android:id="@+id/btn_removMosiqiMojaz"
+                            android:id="@+id/btn_removAsabaniat"
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_marginStart="25dp"
-                            android:onClick="btn_removMosiqiMojaz"/>
+                            android:onClick="btn_removAsabaniat"/>
 
 
 
@@ -1043,7 +372,7 @@
                         android:layout_marginTop="12dp"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp"
-                        android:text="موسیقی مناسب"
+                        android:text="عصبانیت بیجا"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
@@ -1074,16 +403,16 @@
                         android:orientation="horizontal"
                         android:layout_height="wrap_content">
                         <Button
-                            android:id="@+id/btn_addEtaatKhoda"
+                            android:id="@+id/btn_addKhianat"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_marginStart="15dp"
-                            android:onClick="btn_addEtaatKhoda"/>
+                            android:onClick="btn_addKhianat"/>
 
 
                         <TextView
-                            android:id="@+id/tv_resultEtaatKhoda"
+                            android:id="@+id/tv_resultKhianat"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="30dp"
@@ -1092,12 +421,12 @@
                             android:textSize="25dp" />
 
                         <Button
-                            android:id="@+id/btn_removEtaatKhoda"
+                            android:id="@+id/btn_removKhianat"
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_marginStart="25dp"
-                            android:onClick="btn_removEtaatKhoda"/>
+                            android:onClick="btn_removKhianat"/>
 
 
 
@@ -1110,7 +439,7 @@
                         android:layout_marginTop="12dp"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp"
-                        android:text="اطاعت از خدا"
+                        android:text="خیانت در امانت"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
@@ -1141,16 +470,16 @@
                         android:orientation="horizontal"
                         android:layout_height="wrap_content">
                         <Button
-                            android:id="@+id/btn_addResaneHaram"
+                            android:id="@+id/btn_addTohmat"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_marginStart="15dp"
-                            android:onClick="btn_addResaneHaram"/>
+                            android:onClick="btn_addTohmat"/>
 
 
                         <TextView
-                            android:id="@+id/tv_resultResaneHaram"
+                            android:id="@+id/tv_resultTohmat"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="30dp"
@@ -1159,12 +488,12 @@
                             android:textSize="25dp" />
 
                         <Button
-                            android:id="@+id/btn_removResaneHaram"
+                            android:id="@+id/btn_removTohmat"
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_marginStart="25dp"
-                            android:onClick="btn_removResaneHaram"/>
+                            android:onClick="btn_removTohmat"/>
 
 
 
@@ -1177,7 +506,7 @@
                         android:layout_marginTop="12dp"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp"
-                        android:text="رسانه مناسب"
+                        android:text="تهمت زدن"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
@@ -1208,16 +537,16 @@
                         android:orientation="horizontal"
                         android:layout_height="wrap_content">
                         <Button
-                            android:id="@+id/btn_addAnjamTaqibat"
+                            android:id="@+id/btn_addTafraqe"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_marginStart="15dp"
-                            android:onClick="btn_addAnjamTaqibat"/>
+                            android:onClick="btn_addTafraqe"/>
 
 
                         <TextView
-                            android:id="@+id/tv_resultAnjamTaqibat"
+                            android:id="@+id/tv_resultTafraqe"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="30dp"
@@ -1226,12 +555,12 @@
                             android:textSize="25dp" />
 
                         <Button
-                            android:id="@+id/btn_removAnjamTaqibat"
+                            android:id="@+id/btn_removTafraqe"
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_marginStart="25dp"
-                            android:onClick="btn_removAnjamTaqibat"/>
+                            android:onClick="btn_removTafraqe"/>
 
 
 
@@ -1244,7 +573,678 @@
                         android:layout_marginTop="12dp"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp"
-                        android:text="انجام تعقیبات"
+                        android:text="تفرقه افکنی"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/btn_addNegahHaram"
+                            android:background="@drawable/ic_add"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="15dp"
+                            android:onClick="btn_addNegahHaram"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_resultNegahHaram"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:text="0"
+                            android:textColor="@color/light_blue_900"
+                            android:textSize="25dp" />
+
+                        <Button
+                            android:id="@+id/btn_removNegahHaram"
+                            android:background="@drawable/refresh"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="25dp"
+                            android:onClick="btn_removNegahHaram"/>
+
+
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:text="نگاه نامحرم"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/btn_addRezqHaram"
+                            android:background="@drawable/ic_add"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="15dp"
+                            android:onClick="btn_addRezqHaram"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_resultRezqHaram"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:text="0"
+                            android:textColor="@color/light_blue_900"
+                            android:textSize="25dp" />
+
+                        <Button
+                            android:id="@+id/btn_removRezqHaram"
+                            android:background="@drawable/refresh"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="25dp"
+                            android:onClick="btn_removRezqHaram"/>
+
+
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:text="رزق غیر حلال"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/btn_addAbroo"
+                            android:background="@drawable/ic_add"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="15dp"
+                            android:onClick="btn_addAbroo"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_resultAbroo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:text="0"
+                            android:textColor="@color/light_blue_900"
+                            android:textSize="25dp" />
+
+                        <Button
+                            android:id="@+id/btn_removAbroo"
+                            android:background="@drawable/refresh"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="25dp"
+                            android:onClick="btn_removAbroo"/>
+
+
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:text="ریختن آبرو"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/btn_addZakhmZaban"
+                            android:background="@drawable/ic_add"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="15dp"
+                            android:onClick="btn_addZakhmZaban"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_resultZakhmZaban"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:text="0"
+                            android:textColor="@color/light_blue_900"
+                            android:textSize="25dp" />
+
+                        <Button
+                            android:id="@+id/btn_removZakhmZaban"
+                            android:background="@drawable/refresh"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="25dp"
+                            android:onClick="btn_removZakhmZaban"/>
+
+
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:text="زخم زبان"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/btn_addPeyman"
+                            android:background="@drawable/ic_add"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="15dp"
+                            android:onClick="btn_addPeyman"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_resultPeyman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:text="0"
+                            android:textColor="@color/light_blue_900"
+                            android:textSize="25dp" />
+
+                        <Button
+                            android:id="@+id/btn_removPeyman"
+                            android:background="@drawable/refresh"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="25dp"
+                            android:onClick="btn_removPeyman"/>
+
+
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:text="پیمان شکنی"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/btn_addSokhanParidn"
+                            android:background="@drawable/ic_add"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="15dp"
+                            android:onClick="btn_addSokhanParidn"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_resultSokhanParidn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:text="0"
+                            android:textColor="@color/light_blue_900"
+                            android:textSize="25dp" />
+
+                        <Button
+                            android:id="@+id/btn_removSokhanParidn"
+                            android:background="@drawable/refresh"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="25dp"
+                            android:onClick="btn_removSokhanParidn"/>
+
+
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:text="درسخن پریدن"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/btn_addBeEhterami"
+                            android:background="@drawable/ic_add"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="15dp"
+                            android:onClick="btn_addBeEhterami"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_resultBeEhterami"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:text="0"
+                            android:textColor="@color/light_blue_900"
+                            android:textSize="25dp" />
+
+                        <Button
+                            android:id="@+id/btn_removBeEhterami"
+                            android:background="@drawable/refresh"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="25dp"
+                            android:onClick="btn_removBeEhterami"/>
+
+
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:text="گستاخی به والدین"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/btn_addTohin"
+                            android:background="@drawable/ic_add"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="15dp"
+                            android:onClick="btn_addTohin"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_resultTohin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:text="0"
+                            android:textColor="@color/light_blue_900"
+                            android:textSize="25dp" />
+
+                        <Button
+                            android:id="@+id/btn_removTohin"
+                            android:background="@drawable/refresh"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="25dp"
+                            android:onClick="btn_removTohin"/>
+
+
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:text="توهین کردن"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/btn_addFekrHaram"
+                            android:background="@drawable/ic_add"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="15dp"
+                            android:onClick="btn_addFekrHaram"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_resultFekrHaram"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:text="0"
+                            android:textColor="@color/light_blue_900"
+                            android:textSize="25dp" />
+
+                        <Button
+                            android:id="@+id/btn_removFekrHaram"
+                            android:background="@drawable/refresh"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="25dp"
+                            android:onClick="btn_removFekrHaram"/>
+
+
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:text="فکر حرام"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/btn_addMasrafAlkol"
+                            android:background="@drawable/ic_add"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="15dp"
+                            android:onClick="btn_addMasrafAlkol"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_resultMasrafAlkol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:text="0"
+                            android:textColor="@color/light_blue_900"
+                            android:textSize="25dp" />
+
+                        <Button
+                            android:id="@+id/btn_removMasrafAlkol"
+                            android:background="@drawable/refresh"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="25dp"
+                            android:onClick="btn_removMasrafAlkol"/>
+
+
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:text="مصرف الکل"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 

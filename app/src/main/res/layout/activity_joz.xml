@@ -4,14 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:textAlignment="center"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/bkcg_ayat"
     tools:context=".JozActivity">
+
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchJoz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center">
+
+        </androidx.appcompat.widget.SearchView>
 
 
         <ListView
             android:id="@+id/listView_JZ"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="85dp"
+            android:layout_below="@+id/searchJoz"
+            android:layout_marginTop="15dp"/>
 
 
 

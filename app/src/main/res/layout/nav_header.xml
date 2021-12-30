@@ -3,16 +3,16 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/light_blue_900"
+    android:background="#001C35"
     android:padding="16dp"
     >
 
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="20dp"
-        android:src="@mipmap/quran">
+        android:layout_height="200dp"
+
+        android:src="@drawable/quran_nav">
 
     </ImageView>
 </LinearLayout>

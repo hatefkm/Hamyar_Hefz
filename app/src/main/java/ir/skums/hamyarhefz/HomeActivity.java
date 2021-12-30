@@ -141,7 +141,7 @@ public class HomeActivity extends AppCompatActivity {
 
             switch (i) {
                 case 0:
-                    builder.normalImageRes(R.drawable.user_profile)
+                    builder.normalImageRes(R.drawable.quran)
                             .normalColor(Color.rgb(1,87,155))
                             .normalText("حفظ قرآن")
                             .listener(new OnBMClickListener() {
@@ -155,7 +155,7 @@ public class HomeActivity extends AppCompatActivity {
                     break;
 
                 case 1:
-                    builder.normalImageRes(R.drawable.user_profile)
+                    builder.normalImageRes(R.drawable.tasbih)
                             .normalColor(Color.rgb(1,87,155))
                             .normalText("ذکر و صلوات شمار")
                             .listener(new OnBMClickListener() {
@@ -169,7 +169,7 @@ public class HomeActivity extends AppCompatActivity {
                     break;
 
                 case 2:
-                    builder.normalImageRes(R.drawable.user_profile)
+                    builder.normalImageRes(R.drawable.amal)
                             .normalColor(Color.rgb(1,87,155))
                             .normalText("اعمال روزانه")
                             .listener(new OnBMClickListener() {
@@ -183,7 +183,7 @@ public class HomeActivity extends AppCompatActivity {
                     break;
 
                 case 3:
-                    builder.normalImageRes(R.drawable.user_profile)
+                    builder.normalImageRes(R.drawable.rahnama)
                             .normalColor(Color.rgb(1,87,155))
                             .normalText("راهنما")
 
