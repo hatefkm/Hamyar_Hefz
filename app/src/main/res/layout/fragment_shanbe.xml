@@ -82,6 +82,14 @@
             android:textSize="30dp" />
 
 
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/shanbeh" />
+
+
     </RelativeLayout>
 
 </FrameLayout>

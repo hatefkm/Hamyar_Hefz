@@ -36,18 +36,17 @@
         android:textSize="30dp" />
 
 
-
     <Button
         android:id="@+id/btnTsbihat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="تسبیحات حضرت زهرا"
-        android:textColor="@color/white"
-        android:textSize="30dp"
         android:layout_below="@+id/btnAyamHfte"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
-        android:onClick="btnTsbihat"/>
+        android:onClick="btnTsbihat"
+        android:text="تسبیحات حضرت زهرا"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
 
 
 

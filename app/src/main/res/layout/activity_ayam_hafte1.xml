@@ -13,6 +13,7 @@
         android:layout_marginTop="10dp"
         android:text="ذکر ایام هفته"
         android:textAlignment="center"
+        android:textSize="30dp"
         android:gravity="center_horizontal"
         android:id="@+id/txtZekrAyamHafte"/>
 
@@ -25,7 +26,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
 
 
             <FrameLayout

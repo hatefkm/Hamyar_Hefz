@@ -77,13 +77,7 @@ public class HomeActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
 
-                if (id == R.id.Tn_nav) {
-                    // Handle the camera action
-                    Intent intent = new Intent(HomeActivity.this,SettingActivity.class);
-                    startActivity(intent);
-                } else if (id == R.id.Rt_nav) {
-                    //Intent intent = new Intent(HomeActivity.this,SettingActivity.class);
-                    // startActivity(intent);
+                if (id == R.id.Rt_nav) {
 
                 } else if (id == R.id.DrMa_nav) {
                     Intent intent = new Intent(HomeActivity.this,UsActivity.class);

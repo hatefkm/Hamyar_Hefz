@@ -13,6 +13,7 @@
         android:layout_marginTop="40dp"
         android:text="تسبیحات حضرت زهرا"
         android:textAlignment="center"
+        android:textSize="30dp"
         android:id="@+id/txtTasbihat"/>
 
 
