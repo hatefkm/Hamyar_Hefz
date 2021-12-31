@@ -7,11 +7,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layoutDirection="rtl"
-
+android:background="@drawable/background"
     tools:context=".NoteDetailActivity">
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
+        android:background="@drawable/bck_play"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
         android:text="@string/add_problem_aye"
         android:textSize="30dp"
         android:textStyle="bold"
@@ -19,8 +23,10 @@
         android:padding="10dp"
       />
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bck_play"
+        android:gravity="center"
         android:layout_gravity="center"
         android:text="@string/name_sure"
         android:textSize="25dp"
@@ -38,8 +44,10 @@
         android:textSize="20dp"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bck_play"
+        android:gravity="center"
         android:layout_gravity="center"
         android:text="@string/number_aye"
         android:textSize="25dp"
@@ -57,8 +65,10 @@
         android:padding="5dp"
         android:textSize="20dp"/>
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bck_play"
+        android:gravity="center"
         android:layout_gravity="center"
         android:text="@string/aye"
         android:textSize="25dp"
@@ -77,8 +87,10 @@
 
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="95dp"
+        android:layout_height="53dp"
+        android:background="@drawable/bck_play"
+        android:textColor="@color/white"
         android:layout_gravity="center"
         android:layout_marginBottom="5dp"
 

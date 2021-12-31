@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/homebackground"
+    android:background="@drawable/background"
+
     tools:context=".Soal1Activity">
 
     <Button
         android:id="@+id/buttonSoal1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
         android:layout_centerInParent="true"
         android:onClick="btnSoal1"
-         />
+        android:text="Button" />
 </RelativeLayout>

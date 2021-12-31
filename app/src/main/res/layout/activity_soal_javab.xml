@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bck_qestion"
+    android:background="@drawable/question_background"
     tools:context=".SoalJavabActivity">
 
 
@@ -33,34 +33,36 @@
         android:paddingBottom="5pt"/>
 
 
-
-
-
-
     <Button
         android:id="@+id/btnBck"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="قبلی"
+        android:layout_width="95dp"
+        android:layout_height="43dp"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="20dp"
-        android:layout_marginBottom="15dp"/>
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/bck_play"
+        android:textColor="@color/white"
+        android:text="قبلی" />
 
     <Button
         android:id="@+id/btnShow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="نمایش جواب"
+        android:layout_width="95dp"
+        android:layout_height="43dp"
+        android:background="@drawable/bck_play"
+        android:textColor="@color/white"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="20dp"
-        android:layout_marginBottom="15dp"/>
+        android:layout_marginBottom="15dp"
+        android:text="نمایش جواب" />
 
 
     <Button
         android:id="@+id/btnNext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="95dp"
+        android:layout_height="43dp"
+        android:background="@drawable/bck_play"
+        android:textColor="@color/white"
         android:text="بعدی"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
