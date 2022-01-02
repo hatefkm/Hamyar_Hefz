@@ -36,6 +36,7 @@ tools:context=".ayatnavigationbar.NoteFragment">
                     android:layout_marginStart="5dp"/>
 
                 <Button
+                    android:id="@+id/btn_addNewNote"
                     android:layout_width="75dp"
                     android:layout_height="53dp"
                     android:background="@drawable/bck_play"
@@ -45,7 +46,7 @@ tools:context=".ayatnavigationbar.NoteFragment">
 
 
                     android:textSize="25dp"
-                    android:onClick="newNote"
+
                     android:layout_marginEnd="5dp"/>
             </LinearLayout>
 

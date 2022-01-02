@@ -11,7 +11,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_vertical"
+        android:gravity="center"
         >
 
 
@@ -19,53 +19,25 @@
             android:id="@+id/btn_addAllah"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_alignParentStart="true"
+
             android:background="@drawable/ic_add"
 
 
 
             android:layout_marginStart="20dp"
 
-            android:layout_marginBottom="20dp" />
+            android:layout_marginTop="30dp"/>
 
 
         <Button
             android:id="@+id/btn_resetAllah"
             android:layout_width="40dp"
             android:layout_height="40dp"
-
+            android:layout_marginTop="30dp"
             android:layout_marginStart="20dp"
 
-            android:layout_marginTop="0dp"
-            android:layout_marginBottom="20dp"
             android:layout_toRightOf="@+id/btn_addAllah"
             android:background="@drawable/refresh" />
-
-        <Button
-            android:id="@+id/btn_playAllah"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentStart="true"
-            android:background="@drawable/play_song_icon"
-
-            android:layout_marginStart="20dp"
-            android:layout_below="@+id/btn_addAllah"
-            android:layout_marginBottom="20dp" />
-
-
-
-        <Button
-            android:id="@+id/btn_puaseAllah"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-
-            android:layout_marginStart="20dp"
-
-            android:layout_marginTop="0dp"
-            android:layout_marginBottom="20dp"
-            android:layout_below="@+id/btn_resetAllah"
-            android:layout_toRightOf="@id/btn_playAllah"
-            android:background="@drawable/pause_song_icon" />
 
 
         <TextView
@@ -79,7 +51,7 @@
             android:layout_marginTop="30dp"
 
             android:text="0"
-            android:textColor="@color/light_blue_900"
+            android:textColor="#012C4E"
             android:textSize="30dp" />
 
 

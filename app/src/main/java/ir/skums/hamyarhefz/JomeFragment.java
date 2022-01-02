@@ -2,6 +2,7 @@ package ir.skums.hamyarhefz;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -20,12 +21,13 @@ public class JomeFragment extends Fragment {
     }
 
 
-    Button resetBtn;
+    Button resetBtn,btnPlay;
     Button addBtn;
     TextView resultTv;
     int counter =0;
     private static final String MY_PREFS = "counterPref";
     private static final String COUNTER_KEY = "counterKey";
+    static MediaPlayer mediaPlayer;
 
 
     // TODO: Rename and change types and number of parameters
@@ -57,6 +59,12 @@ public class JomeFragment extends Fragment {
         resultTv = view.findViewById(R.id.tv_resultJome);
 
 
+        btnPlay=view.findViewById(R.id.btn_playJome);
+        mediaPlayer = MediaPlayer.create(getActivity(), R.raw.jome_audio);
+
+
+
+
 
         SharedPreferences prefs = requireContext().getSharedPreferences("MY_PREFS", Context.MODE_PRIVATE);
         counter = prefs.getInt("COUNTER_KEY",0);
@@ -79,6 +87,33 @@ public class JomeFragment extends Fragment {
             {
                 counter = 0;
                 resultTv.setText(String.valueOf(counter));
+            }
+        });
+
+
+        btnPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+
+                //Checking playing any songs or not
+                if (mediaPlayer.isPlaying()) {
+
+                    //setting the play icon
+                    btnPlay.setBackgroundResource(R.drawable.play_song_icon);
+
+                    //Pausing the current media
+                    mediaPlayer.pause();
+
+                } else {
+
+                    //Setting the pause icon
+                    btnPlay.setBackgroundResource(R.drawable.pause_song_icon);
+
+                    //Starting the media player
+                    mediaPlayer.start();
+                }
+
             }
         });
 

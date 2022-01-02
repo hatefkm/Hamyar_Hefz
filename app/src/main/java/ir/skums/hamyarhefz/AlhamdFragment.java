@@ -2,6 +2,7 @@ package ir.skums.hamyarhefz;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -27,6 +28,7 @@ public class AlhamdFragment extends Fragment {
     int counter =0;
     private static final String MY_PREFS = "counterPref";
     private static final String COUNTER_KEY = "counterKey";
+
 
 
     // TODO: Rename and change types and number of parameters
@@ -56,6 +58,8 @@ public class AlhamdFragment extends Fragment {
         resetBtn = view.findViewById(R.id.btn_resetAlhamd);
         addBtn = view.findViewById(R.id.btn_addAlhamd);
         resultTv = view.findViewById(R.id.tv_resultAlhamd);
+
+
 
 
 

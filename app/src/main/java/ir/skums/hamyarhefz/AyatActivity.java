@@ -157,25 +157,7 @@ public class AyatActivity extends AppCompatActivity {
     }
 
 
-    //note
 
-
-    private void initWidgets()
-    {
-        noteListView = findViewById(R.id.noteListView_main);
-    }
-    private void setNoteAdapter()
-    {
-        NoteAdapter noteAdapter = new NoteAdapter(getApplicationContext() ,Note.noteArrayList);
-        noteListView.setAdapter(noteAdapter);
-    }
-
-
-    public void newNote(View view)
-    {
-        Intent newNoteIntent = new Intent(AyatActivity.this,NoteDetailActivity.class);
-        startActivity(newNoteIntent);
-    }
 
 
 

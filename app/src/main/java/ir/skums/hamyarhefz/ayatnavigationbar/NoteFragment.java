@@ -1,5 +1,6 @@
 package ir.skums.hamyarhefz.ayatnavigationbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,6 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import ir.skums.hamyarhefz.AyatActivity;
+import ir.skums.hamyarhefz.Note;
+import ir.skums.hamyarhefz.NoteAdapter;
+import ir.skums.hamyarhefz.NoteDetailActivity;
 import ir.skums.hamyarhefz.R;
 
 
@@ -18,6 +23,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -32,12 +39,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link NoteFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class NoteFragment extends Fragment {
 
 
@@ -46,6 +47,11 @@ public class NoteFragment extends Fragment {
     public NoteFragment() {
         // Required empty public constructor
     }
+
+
+    private ListView noteListView;
+    Button btnAddNote;
+
 
     // TODO: Rename and change types and number of parameters
     public static NoteFragment newInstance(String param1, String param2) {
@@ -68,6 +74,36 @@ public class NoteFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_note, container, false);
+        View view= inflater.inflate(R.layout.fragment_note, container, false);
+
+        noteListView = view.findViewById(R.id.noteListView_main);
+        btnAddNote = view.findViewById(R.id.btn_addNewNote);
+
+        NoteAdapter noteAdapter = new NoteAdapter(getContext() , Note.noteArrayList);
+        noteListView.setAdapter(noteAdapter);
+
+
+
+
+        btnAddNote.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent newNoteIntent = new Intent(getActivity(), NoteDetailActivity.class);
+                startActivity(newNoteIntent);
+
+            }
+        });
+
+
+
+
+        return view;
     }
+
+
+    //note
+
+
+
+
 }

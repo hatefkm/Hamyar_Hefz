@@ -85,8 +85,8 @@
 
             <Button
                 android:id="@+id/BtnDownload_frgPlayPanle"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_marginTop="15dp"
                 android:layout_toLeftOf="@id/BtnPlay_frgPlayPanel"
                 android:background="@drawable/ic_down_24" />

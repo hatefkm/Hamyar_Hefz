@@ -25,7 +25,7 @@ public class NoteAdapter extends ArrayAdapter<Note>
     {
         Note note = getItem(position);
         if(convertView==null);
-        convertView = LayoutInflater.from(getContext()).inflate(R.layout.note_cell,parent,false);
+             convertView = LayoutInflater.from(getContext()).inflate(R.layout.note_cell,parent,false);
         TextView nameSure = convertView.findViewById(R.id.txtNameSure_note_cell);
         TextView numberAye = convertView.findViewById(R.id.txtNumberAye_note_cell);
         TextView aye = convertView.findViewById(R.id.txtAye_note_cell);
