@@ -120,8 +120,6 @@ public class AyatActivity extends AppCompatActivity {
             }
 
         });
-
-
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -140,6 +138,8 @@ public class AyatActivity extends AppCompatActivity {
             }
 
         });
+
+
 
 
 

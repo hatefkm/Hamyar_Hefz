@@ -102,104 +102,6 @@ public class HomeActivity extends AppCompatActivity {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-        //Start BoomMenu
-
-        BoomMenuButton bmb = (BoomMenuButton) findViewById(R.id.bmb);
-
-        bmb.setButtonEnum(ButtonEnum.Ham);
-
-
-        bmb.setShowMoveEaseEnum(EaseEnum.EaseInOutBack);
-        bmb.setHideScaleEaseEnum(EaseEnum.EaseInBack);
-
-        bmb.setPiecePlaceEnum(PiecePlaceEnum.HAM_4);
-
-        bmb.setButtonPlaceEnum(ButtonPlaceEnum.HAM_4);
-
-
-
-        for (int i = 0; i < bmb.getPiecePlaceEnum().pieceNumber(); i++) {
-            HamButton.Builder builder = new HamButton.Builder().rotateImage(false);
-
-            switch (i) {
-                case 0:
-                    builder.normalImageRes(R.drawable.quran)
-                            .normalColor(Color.rgb(1,87,155))
-                            .normalText("حفظ قرآن")
-                            .listener(new OnBMClickListener() {
-                                @Override
-                                public void onBoomButtonClick(int index) {
-                                    // When the boom-button corresponding this builder is clicked.
-                                    Intent intent = new Intent(HomeActivity.this, JozActivity.class);
-                                    startActivity(intent);
-                                }
-                            });
-                    break;
-
-                case 1:
-                    builder.normalImageRes(R.drawable.tasbih)
-                            .normalColor(Color.rgb(1,87,155))
-                            .normalText("ذکر و صلوات شمار")
-                            .listener(new OnBMClickListener() {
-                                @Override
-                                public void onBoomButtonClick(int index) {
-                                    // When the boom-button corresponding this builder is clicked.
-                                    Intent intent = new Intent(HomeActivity.this, ZekrActivity.class);
-                                    startActivity(intent);
-                                }
-                            });
-                    break;
-
-                case 2:
-                    builder.normalImageRes(R.drawable.amal)
-                            .normalColor(Color.rgb(1,87,155))
-                            .normalText("اعمال روزانه")
-                            .listener(new OnBMClickListener() {
-                                @Override
-                                public void onBoomButtonClick(int index) {
-                                    // When the boom-button corresponding this builder is clicked.
-                                    Intent intent = new Intent(HomeActivity.this, AmalActivity.class);
-                                    startActivity(intent);
-                                }
-                            });
-                    break;
-
-                case 3:
-                    builder.normalImageRes(R.drawable.rahnama)
-                            .normalColor(Color.rgb(1,87,155))
-                            .normalText("راهنما")
-
-                            .listener(new OnBMClickListener() {
-                                @Override
-                                public void onBoomButtonClick(int index) {
-                                    // When the boom-button corresponding this builder is clicked.
-                                    Intent intent = new Intent(HomeActivity.this, RahnamaActivity.class);
-                                    startActivity(intent);
-                                }
-                            });
-                    break;
-
-
-
-            }
-
-
-            bmb.addBuilder(builder);
-        }
-        //end BoomMenu
-
     }
 
 
@@ -213,4 +115,35 @@ public class HomeActivity extends AppCompatActivity {
     }
 
 
+    public void btn_hfzQuran(View view) {
+
+        Intent intent = new Intent(HomeActivity.this,JozActivity.class);
+        startActivity(intent);
+
+
+    }
+
+    public void btn_zekrsalavatShomar(View view) {
+
+        Intent intent = new Intent(HomeActivity.this,ZekrActivity.class);
+        startActivity(intent);
+
+
+    }
+
+    public void btn_Amal(View view) {
+
+        Intent intent = new Intent(HomeActivity.this,AmalActivity.class);
+        startActivity(intent);
+
+
+    }
+
+    public void btn_rahnama(View view) {
+
+        Intent intent = new Intent(HomeActivity.this,RahnamaActivity.class);
+        startActivity(intent);
+
+
+    }
 }
