@@ -7,104 +7,222 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.os.Handler;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
-
+import android.widget.Toast;
 
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link PlayPanleFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class PlayPanleFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
     public PlayPanleFragment() {
         // Required empty public constructor
     }
 
 
-    Button btnPlay, btnPause, btnDownload;
-    TextView  txtSongStart, txtSongEnd;
+    Button btnPlay, btnDownload;
+    TextView txtSongStart, txtSongEnd, txtView;
     SeekBar seekMusicBar;
 
     static MediaPlayer mediaPlayer;
     int position;
+    private int timeInt;
 
     ArrayList<File> mySongs;
 
     Thread updateSeekBar;
 
-    private static PlayPanleFragment instance=null;
-
-
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment PlayPanleFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static PlayPanleFragment newInstance(String param1, String param2) {
-        PlayPanleFragment fragment = new PlayPanleFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
 
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_play_panle, container, false);
+
+
+        View view = inflater.inflate(R.layout.fragment_play_panle, container, false);
+
+
+        //media player
+        //Assigning the address of the andorid Materials
+        btnPlay = view.findViewById(R.id.BtnPlay_frgPlayPanel);
+
+        btnDownload = view.findViewById(R.id.BtnDownload_frgPlayPanle);
+        txtSongStart = view.findViewById(R.id.TxtSongStart_frgPlayPanel);
+        txtSongEnd = view.findViewById(R.id.TxtSongEnd_frgPlayPanel);
+
+        seekMusicBar = view.findViewById(R.id.SeekBar_frgPlayPanel);
+
+        mediaPlayer = MediaPlayer.create(getActivity(), R.raw.audio);
+
+        try {
+            // 1- check song duration
+            setSongDuration();
+
+
+            // 2- set seekbar info
+            seekMusicBar.setMax(mediaPlayer.getDuration());
+
+
+            // 3- run thread
+            updateSeekBar = new Thread() {
+                @Override
+                public void run() {
+
+                    int TotalDuration = mediaPlayer.getDuration();
+                    int CurrentPosition = 0;
+
+                    while (CurrentPosition < TotalDuration) {
+                        try {
+
+                            sleep(500);
+                            CurrentPosition = mediaPlayer.getCurrentPosition();
+                            seekMusicBar.setProgress(CurrentPosition);
+
+                        } catch (InterruptedException | IllegalStateException e) {
+
+                            e.printStackTrace();
+                        }
+                    }
+
+                }
+            };
+
+
+            // 4- start thread
+            updateSeekBar.start();
+
+
+            //Setting the Music player from the position of the seekbar
+            seekMusicBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+                @Override
+                public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+
+                }
+
+                @Override
+                public void onStartTrackingTouch(SeekBar seekBar) {
+
+                }
+
+                @Override
+                public void onStopTrackingTouch(SeekBar seekBar) {
+
+                    //getting the progress of the seek bar and setting it to Media Player
+                    mediaPlayer.seekTo(seekBar.getProgress());
+
+                }
+            });
+
+
+            //Creating the Handler to update the current duration
+            final Handler handler = new Handler();
+            final int delay = 1000;
+
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+
+                    //Getting the current duration from the media player
+                  //  String currentTime = String.valueOf(mediaPlayer.getCurrentPosition());
+
+                    int crTime= mediaPlayer.getCurrentPosition();
+                    //Setting the current duration in textView
+                    String time = "";
+
+                    int min = crTime / 1000 / 60;
+                    int sec = crTime / 1000 % 60;
+
+                   time = time + min +":" + sec ;
+                   if (sec < 10) {
+
+                     time = min +":"+"0"+sec;
+
+                   }
+                    txtSongStart.setText(time);
+                    handler.postDelayed(this,delay);
+
+
+                }
+
+            }, delay);
+
+
+            btnPlay.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    //Checking playing any songs or not
+                    if (mediaPlayer.isPlaying()) {
+
+                        //setting the play icon
+                        btnPlay.setBackgroundResource(R.drawable.play_song_icon);
+
+                        //Pausing the current media
+                        mediaPlayer.pause();
+
+                    } else {
+
+                        //Setting the pause icon
+                        btnPlay.setBackgroundResource(R.drawable.pause_song_icon);
+
+                        //Starting the media player
+                        mediaPlayer.start();
+                    }
+                }
+            });
 
 
 
+        } catch (Exception ex) {
+            Log.d("=error", "onCreateView: " + ex.getMessage());
+        }
+
+        return view;
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        instance=this;
-
-
     }
 
 
-    public static PlayPanleFragment getInstance(){
-        return instance;
+    //Preparing the Time format for setting to textView
+    public void setSongDuration() {
+
+        int duration = mediaPlayer.getDuration();
+
+
+
+        String time = "";
+        int min = duration / 1000 / 60;
+        int sec = duration / 1000 % 60;
+
+        time = time + min +":" +sec;
+
+        //if (sec < 10) {
+
+         //  time += "0";
+
+      //  }
+
+
+        txtSongEnd.setText(time);
+
     }
 }

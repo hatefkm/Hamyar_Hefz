@@ -32,6 +32,7 @@ public class Salavat1Activity extends AppCompatActivity {
 
 
 
+
         SharedPreferences prefs = getSharedPreferences("MY_PREFS" , MODE_PRIVATE);
         counter = prefs.getInt("COUNTER_KEY",0);
         resultTv.setText(String.valueOf(counter));

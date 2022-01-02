@@ -1,6 +1,8 @@
 package ir.skums.hamyarhefz;
 
+import android.content.Context;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,47 +15,32 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link SeshanbeFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class SeshanbeFragment extends Fragment {
 
 
 
 
-    int counter =0;
-    private static final String MY_PREFS = "counterPref";
-    private static final String COUNTER_KEY = "counterKey";
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
     public SeshanbeFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment SeshanbeFragment.
-     */
+
+    Button resetBtn,btnPlay;
+    Button addBtn;
+    TextView resultTv;
+    int counter =0;
+    private static final String MY_PREFS = "counterPref";
+    private static final String COUNTER_KEY = "counterKey";
+    static MediaPlayer mediaPlayer;
+
+
     // TODO: Rename and change types and number of parameters
     public static SeshanbeFragment newInstance(String param1, String param2) {
         SeshanbeFragment fragment = new SeshanbeFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
+
         fragment.setArguments(args);
         return fragment;
     }
@@ -62,8 +49,7 @@ public class SeshanbeFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+
         }
 
 
@@ -77,10 +63,75 @@ public class SeshanbeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_seshanbe, container, false);
+        View view= inflater.inflate(R.layout.fragment_seshanbe, container, false);
 
 
 
+        resetBtn = view.findViewById(R.id.btn_resetSeshanbe);
+        addBtn = view.findViewById(R.id.btn_addSeshanbe);
+        resultTv = view.findViewById(R.id.tv_resultSeshanbe);
+
+
+        btnPlay=view.findViewById(R.id.btn_playSeshanbe);
+        mediaPlayer = MediaPlayer.create(getActivity(), R.raw.seshanbe_audio);
+
+
+
+        SharedPreferences prefs = requireContext().getSharedPreferences("MY_PREFS", Context.MODE_PRIVATE);
+        counter = prefs.getInt("COUNTER_KEY",0);
+        resultTv.setText(String.valueOf(counter));
+
+
+        addBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                counter++;
+                resultTv.setText(String.valueOf(counter));
+            }
+        });
+
+
+        resetBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                counter = 0;
+                resultTv.setText(String.valueOf(counter));
+            }
+        });
+
+
+
+
+        btnPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+
+                //Checking playing any songs or not
+                if (mediaPlayer.isPlaying()) {
+
+                    //setting the play icon
+                    btnPlay.setBackgroundResource(R.drawable.play_song_icon);
+
+                    //Pausing the current media
+                    mediaPlayer.pause();
+
+                } else {
+
+                    //Setting the pause icon
+                    btnPlay.setBackgroundResource(R.drawable.pause_song_icon);
+
+                    //Starting the media player
+                    mediaPlayer.start();
+                }
+
+            }
+        });
+
+
+        return view;
 
 
 
