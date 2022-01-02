@@ -26,7 +26,10 @@ import ir.skums.hamyarhefz.ayatnavigationbar.QuestionFragment;
 import ir.skums.hamyarhefz.ayatnavigationbar.HomeFragment;
 import ir.skums.hamyarhefz.ayatnavigationbar.TranslateFragment;
 
-
+import ir.skums.hamyarhefz.AyatActivity;
+import com.gauravk.audiovisualizer.visualizer.BarVisualizer;
+import com.gauravk.audiovisualizer.visualizer.BlastVisualizer;
+import com.gauravk.audiovisualizer.visualizer.CircleLineVisualizer;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
@@ -47,7 +50,10 @@ import android.widget.ListView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import android.view.animation.AccelerateInterpolator;
+import android.view.animation.Animation;
+import android.view.animation.AnimationSet;
+import android.view.animation.TranslateAnimation;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -96,32 +102,29 @@ public class AyatActivity extends AppCompatActivity {
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomnavigationbar);
         bottomNavigationView.setBackground(null);
         bottomNavigationView.getMenu().getItem(2).setEnabled(false);
-        getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer,new HomeFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer, new HomeFragment()).commit();
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 Fragment temp = null;
-                switch (item.getItemId())
-                {
-                    case R.id.Home:  temp = new HomeFragment();
+                switch (item.getItemId()) {
+                    case R.id.Home:
+                        temp = new HomeFragment();
                         break;
-                    case R.id.Note:  temp = new NoteFragment();
+                    case R.id.Note:
+                        temp = new NoteFragment();
                         break;
-                    case R.id.Question:  temp = new QuestionFragment();
+                    case R.id.Question:
+                        temp = new QuestionFragment();
                         break;
-                    case R.id.Translate:  temp = new TranslateFragment();
+                    case R.id.Translate:
+                        temp = new TranslateFragment();
                 }
-                getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer,temp).addToBackStack(null).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer, temp).addToBackStack(null).commit();
                 return true;
             }
 
         });
-
-
-
-
-
-
 
 
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -132,21 +135,16 @@ public class AyatActivity extends AppCompatActivity {
                 //         .setAction("Action", null).show();
 
 
-
-                    getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayoutPlay,new PlayPanleFragment()).addToBackStack(null).commit();
-
-
-                  //  FragmentManager fm=getSupportFragmentManager();
-                    //fm.beginTransaction().add(R.id.FrameLayoutPlay,new PlayPanleFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayoutPlay, new PlayPanleFragment()).addToBackStack(null).commit();
 
 
+                //  FragmentManager fm=getSupportFragmentManager();
+                //fm.beginTransaction().add(R.id.FrameLayoutPlay,new PlayPanleFragment()).commit();
 
 
             }
 
         });
-
-
 
 
         //Assigning the address of the andorid Materials
@@ -161,21 +159,49 @@ public class AyatActivity extends AppCompatActivity {
 
         seekMusicBar = (SeekBar) findViewById(R.id.SeekBar);
 
+        btnPlay.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Checking playing any songs or not
+                if (mediaPlayer.isPlaying()) {
+
+                    //setting the play icon
+                    btnPlay.setBackgroundResource(R.drawable.play_song_icon);
+
+                    //Pausing the current media
+                    mediaPlayer.pause();
+
+                } else {
+
+                    //Setting the pause icon
+                    btnPlay.setBackgroundResource(R.drawable.pause_song_icon);
+
+                    //Starting the media player
+                    mediaPlayer.start();
+
+                    //Creating the Animation
+                    TranslateAnimation moveAnim = new TranslateAnimation(-25, 25, -25, 25);
+                    moveAnim.setInterpolator(new AccelerateInterpolator());
+                    moveAnim.setDuration(600);
+                    moveAnim.setFillEnabled(true);
+                    moveAnim.setFillAfter(true);
+                    moveAnim.setRepeatMode(Animation.REVERSE);
+                    moveAnim.setRepeatCount(1);
+
+                    //Setting the Animation for the Image
+                    imageView.startAnimation(moveAnim);
+
+                    //Calling the BarVisualizer
+
+                }
+            }
+        });
 
 
-        //Checking if any song playing or not
-        if (mediaPlayer != null) {
-
-            //we will start mediaPlayer if currently there is no songs in it
-            mediaPlayer.start();
-            mediaPlayer.release();
-        }
-
-
-        //Getting the Required Details from the past Intent
-        Intent intent = getIntent();
-        Bundle bundle = intent.getExtras();
     }
+
+
+
 
 
 
