@@ -1,5 +1,7 @@
 package ir.skums.hamyarhefz.ayatnavigationbar;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,6 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import ir.skums.hamyarhefz.Note;
+import ir.skums.hamyarhefz.NoteAdapter;
+import ir.skums.hamyarhefz.NoteDetailActivity;
 import ir.skums.hamyarhefz.R;
 
 
@@ -18,6 +23,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -44,6 +50,7 @@ public class NoteFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private ListView noteListView;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -77,7 +84,39 @@ public class NoteFragment extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
+            noteListView = noteListView.findViewById(R.id.noteListView_main);
         }
+    }
+
+    public void onResume() {
+
+        super.onResume();
+        initWidgets();
+        setNoteAdapter();
+
+
+    }
+
+
+
+    public void initWidgets()
+    {
+        noteListView = noteListView.findViewById(R.id.noteListView_main);
+    }
+    private void setNoteAdapter()
+    {
+        NoteAdapter noteAdapter = new NoteAdapter(getApplicationContext() , Note.noteArrayList);
+        noteListView.setAdapter(noteAdapter);
+    }
+
+    private Context getApplicationContext() {
+    }
+
+
+    public void newNote(View view)
+    {
+        Intent newNoteIntent = new Intent(NoteFragment.class,NoteDetailActivity.class);
+        startActivity(newNoteIntent);
     }
 
     @Override
