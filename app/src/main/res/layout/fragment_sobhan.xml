@@ -23,24 +23,7 @@
 
             android:layout_marginStart="20dp"
 
-            android:layout_marginBottom="20dp" />
-
-
-
-        <Button
-            android:id="@+id/btn_playSobhan"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentStart="true"
-            android:background="@drawable/play_song_icon"
-
-
-
-            android:layout_marginStart="20dp"
-            android:layout_below="@+id/btn_addSobhan"
-
-            android:layout_marginBottom="20dp" />
-
+            android:layout_marginTop="30dp" />
 
 
         <Button
@@ -50,25 +33,11 @@
 
             android:layout_marginStart="20dp"
 
-            android:layout_marginTop="0dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"
+
             android:layout_toRightOf="@+id/btn_addSobhan"
             android:background="@drawable/refresh" />
 
-
-
-        <Button
-            android:id="@+id/btn_puaseSobhan"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-
-            android:layout_marginStart="20dp"
-
-            android:layout_marginTop="0dp"
-            android:layout_marginBottom="20dp"
-            android:layout_below="@+id/btn_resetSobhan"
-            android:layout_toRightOf="@id/btn_playSobhan"
-            android:background="@drawable/pause_song_icon" />
 
         <TextView
             android:id="@+id/tv_resultSobhan"
@@ -81,7 +50,7 @@
             android:layout_marginTop="30dp"
 
             android:text="0"
-            android:textColor="@color/light_blue_900"
+            android:textColor="#012C4E"
             android:textSize="30dp" />
 
 

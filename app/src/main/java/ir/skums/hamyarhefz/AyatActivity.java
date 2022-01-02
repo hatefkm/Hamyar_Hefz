@@ -1,6 +1,5 @@
 package ir.skums.hamyarhefz;
 
-import static com.google.android.material.floatingactionbutton.FloatingActionButton.*;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -55,6 +54,7 @@ import android.widget.ListView;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 
 public class AyatActivity extends AppCompatActivity {
@@ -62,11 +62,11 @@ public class AyatActivity extends AppCompatActivity {
 
 
     Button btnPlay, btnPause, btnDownload;
-    TextView  txtSongStart, txtSongEnd;
+    TextView  txtSongStart, txtSongEnd, txtView;;
     SeekBar seekMusicBar;
 
 
-    ImageView imageView;
+
 
     LinearLayout layout ;
     PlayPanleFragment playPanleFragment;
@@ -80,6 +80,7 @@ public class AyatActivity extends AppCompatActivity {
     public static final String EXTRA_NAME = "song_name";
     static MediaPlayer mediaPlayer;
     int position;
+    private int timeInt;
 
 
     Thread updateSeekBar;
@@ -96,32 +97,29 @@ public class AyatActivity extends AppCompatActivity {
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomnavigationbar);
         bottomNavigationView.setBackground(null);
         bottomNavigationView.getMenu().getItem(2).setEnabled(false);
-        getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer,new HomeFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer, new HomeFragment()).commit();
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 Fragment temp = null;
-                switch (item.getItemId())
-                {
-                    case R.id.Home:  temp = new HomeFragment();
+                switch (item.getItemId()) {
+                    case R.id.Home:
+                        temp = new HomeFragment();
                         break;
-                    case R.id.Note:  temp = new NoteFragment();
+                    case R.id.Note:
+                        temp = new NoteFragment();
                         break;
-                    case R.id.Question:  temp = new QuestionFragment();
+                    case R.id.Question:
+                        temp = new QuestionFragment();
                         break;
-                    case R.id.Translate:  temp = new TranslateFragment();
+                    case R.id.Translate:
+                        temp = new TranslateFragment();
                 }
-                getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer,temp).addToBackStack(null).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer, temp).addToBackStack(null).commit();
                 return true;
             }
 
         });
-
-
-
-
-
-
 
 
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -132,14 +130,11 @@ public class AyatActivity extends AppCompatActivity {
                 //         .setAction("Action", null).show();
 
 
-
-                    getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayoutPlay,new PlayPanleFragment()).addToBackStack(null).commit();
-
-
-                  //  FragmentManager fm=getSupportFragmentManager();
-                    //fm.beginTransaction().add(R.id.FrameLayoutPlay,new PlayPanleFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayoutPlay, new PlayPanleFragment()).addToBackStack(null).commit();
 
 
+                //  FragmentManager fm=getSupportFragmentManager();
+                //fm.beginTransaction().add(R.id.FrameLayoutPlay,new PlayPanleFragment()).commit();
 
 
             }
@@ -149,33 +144,10 @@ public class AyatActivity extends AppCompatActivity {
 
 
 
-        //Assigning the address of the andorid Materials
-        btnPlay = (Button) findViewById(R.id.BtnPlay);
-        btnPause = (Button) findViewById(R.id.BtnPause);
-        btnDownload = (Button) findViewById(R.id.BtnDownload);
 
 
-        txtSongStart = (TextView) findViewById(R.id.TxtSongStart);
-        txtSongEnd = (TextView) findViewById(R.id.TxtSongEnd);
-
-
-        seekMusicBar = (SeekBar) findViewById(R.id.SeekBar);
-
-
-
-        //Checking if any song playing or not
-        if (mediaPlayer != null) {
-
-            //we will start mediaPlayer if currently there is no songs in it
-            mediaPlayer.start();
-            mediaPlayer.release();
-        }
-
-
-        //Getting the Required Details from the past Intent
-        Intent intent = getIntent();
-        Bundle bundle = intent.getExtras();
     }
+
 
 
 
@@ -185,25 +157,11 @@ public class AyatActivity extends AppCompatActivity {
     }
 
 
-    //note
 
 
-    private void initWidgets()
-    {
-        noteListView = findViewById(R.id.noteListView_main);
-    }
-    private void setNoteAdapter()
-    {
-        NoteAdapter noteAdapter = new NoteAdapter(getApplicationContext() ,Note.noteArrayList);
-        noteListView.setAdapter(noteAdapter);
-    }
 
 
-    public void newNote(View view)
-    {
-        Intent newNoteIntent = new Intent(AyatActivity.this,NoteDetailActivity.class);
-        startActivity(newNoteIntent);
-    }
+
 
 
 

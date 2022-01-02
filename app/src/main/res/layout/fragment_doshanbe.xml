@@ -20,23 +20,14 @@
             android:layout_height="40dp"
             android:layout_alignParentStart="true"
             android:background="@drawable/ic_add"
-
-
-
-            android:layout_marginStart="20dp"
-
-            android:layout_marginBottom="20dp" />
+            android:layout_marginStart="20dp" />
 
 
         <Button
             android:id="@+id/btn_resetDoshanbe"
             android:layout_width="40dp"
             android:layout_height="40dp"
-
             android:layout_marginStart="20dp"
-
-            android:layout_marginTop="0dp"
-            android:layout_marginBottom="20dp"
             android:layout_toRightOf="@+id/btn_addDoshanbe"
             android:background="@drawable/refresh" />
 
@@ -44,48 +35,30 @@
             android:id="@+id/btn_playDoshanbe"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_alignParentStart="true"
             android:background="@drawable/play_song_icon"
-            android:layout_centerInParent="true"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="50dp"
             android:layout_below="@+id/btn_addDoshanbe"
             android:layout_marginBottom="20dp" />
 
-
-
-        <Button
-            android:id="@+id/btn_puaseDoshanbe"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="20dp"
-
-            android:layout_marginTop="0dp"
-            android:layout_marginBottom="20dp"
-            android:layout_below="@+id/btn_resetDoshanbe"
-            android:layout_toRightOf="@id/btn_playDoshanbe"
-            android:background="@drawable/pause_song_icon" />
 
 
         <TextView
             android:id="@+id/tv_resultDoshanbe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-
             android:layout_marginStart="30dp"
             android:layout_toRightOf="@+id/btn_resetDoshanbe"
-            android:layout_marginTop="30dp"
-
+            android:layout_marginTop="20dp"
             android:text="0"
-            android:textColor="@color/light_blue_900"
+            android:textColor="#012C4E"
             android:textSize="30dp" />
 
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="100dp"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
             android:layout_alignParentRight="true"
             android:layout_marginEnd="5dp"
+            android:layout_toRightOf="@id/tv_resultDoshanbe"
             android:src="@drawable/doshanbe" />
 
 
