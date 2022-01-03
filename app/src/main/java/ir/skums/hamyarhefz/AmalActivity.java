@@ -3,6 +3,7 @@ package ir.skums.hamyarhefz;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -26,110 +27,31 @@ public class AmalActivity extends AppCompatActivity {
 
 
 
-        //Start BoomMenu
 
-        BoomMenuButton bmb = (BoomMenuButton) findViewById(R.id.bmb);
+    }
 
-        bmb.setButtonEnum(ButtonEnum.TextInsideCircle);
+    public void ebadat(View view) {
+        Intent intent = new Intent(AmalActivity.this, EbadatActivity.class);
+        startActivity(intent);
+    }
 
+    public void Akhlagh_bad(View view) {
+        Intent intent = new Intent(AmalActivity.this, AkhlaghBAdActivity.class);
+        startActivity(intent);
+    }
 
-        bmb.setShowMoveEaseEnum(EaseEnum.EaseInOutBack);
-        bmb.setHideScaleEaseEnum(EaseEnum.EaseInBack);
+    public void Amal_nik(View view) {
+        Intent intent = new Intent(AmalActivity.this, AmalNikActivity.class);
+        startActivity(intent);
+    }
 
-        bmb.setPiecePlaceEnum(PiecePlaceEnum.DOT_5_3);
+    public void Amal_bad(View view) {
+        Intent intent = new Intent(AmalActivity.this, AmalBadActivity.class);
+        startActivity(intent);
+    }
 
-        bmb.setButtonPlaceEnum(ButtonPlaceEnum.SC_5_3);
-
-
-
-        for (int i = 0; i < bmb.getPiecePlaceEnum().pieceNumber(); i++) {
-            TextInsideCircleButton.Builder builder = new TextInsideCircleButton.Builder();
-
-            switch (i) {
-                case 0:
-                    builder.normalImageRes(R.drawable.ebadat_person)
-                            .normalColor(Color.rgb(1,87,155))
-                            .normalText("عبادات")
-                            .listener(new OnBMClickListener() {
-                                @Override
-                                public void onBoomButtonClick(int index) {
-                                    // When the boom-button corresponding this builder is clicked.
-                                    Intent intent = new Intent(AmalActivity.this, EbadatActivity.class);
-                                    startActivity(intent);
-                                }
-                            });
-                    break;
-
-                case 1:
-
-                    builder.normalImageRes(R.drawable.amal_nik)
-                            .normalColor(Color.rgb(1,87,155))
-                            .normalText("اعمال نیک")
-                            .listener(new OnBMClickListener() {
-                                @Override
-                                public void onBoomButtonClick(int index) {
-                                    // When the boom-button corresponding this builder is clicked.
-                                    Intent intent = new Intent(AmalActivity.this, AmalNikActivity.class);
-                                    startActivity(intent);
-                                }
-                            });
-
-                    break;
-
-                case 2:
-                    builder.normalImageRes(R.drawable.ic_baseline_info_24)
-                            .normalColor(Color.rgb(1,87,155))
-                            .normalText("توضیحات")
-                            .listener(new OnBMClickListener() {
-                                @Override
-                                public void onBoomButtonClick(int index) {
-                                    // When the boom-button corresponding this builder is clicked.
-                                    Intent intent = new Intent(AmalActivity.this, TozihatAmalActivity.class);
-                                    startActivity(intent);
-                                }
-                            });
-
-                    break;
-
-                case 3:
-                    builder.normalImageRes(R.drawable.amal_bad)
-                            .normalColor(Color.rgb(1,87,155))
-                            .normalText("اعمال بد")
-
-                            .listener(new OnBMClickListener() {
-                                @Override
-                                public void onBoomButtonClick(int index) {
-                                    // When the boom-button corresponding this builder is clicked.
-                                    Intent intent = new Intent(AmalActivity.this, AmalBadActivity.class);
-                                    startActivity(intent);
-                                }
-                            });
-                break;
-
-                case 4:
-                    builder.normalImageRes(R.drawable.amal_bad)
-                            .normalColor(Color.rgb(1,87,155))
-                            .normalText("اخلاق بد")
-
-                            .listener(new OnBMClickListener() {
-                                @Override
-                                public void onBoomButtonClick(int index) {
-                                    // When the boom-button corresponding this builder is clicked.
-                                    Intent intent = new Intent(AmalActivity.this, AkhlaghBAdActivity.class);
-                                    startActivity(intent);
-                                }
-                            });
-                break;
-
-
-
-            }
-
-
-            bmb.addBuilder(builder);
-        }
-        //end BoomMenu
-
-
+    public void btn_TozihatAmal(View view) {
+        Intent intent = new Intent(AmalActivity.this, TozihatAmalActivity.class);
+        startActivity(intent);
     }
 }
