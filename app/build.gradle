@@ -73,6 +73,10 @@ dependencies {
     implementation 'com.karumi:dexter:6.2.3'
 
 
+    //database
+    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
+
+
 
 
 

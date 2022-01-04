@@ -5,11 +5,31 @@
     android:layout_height="match_parent"
     tools:context=".ayatnavigationbar.TranslateFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textAlignment="center"
-        android:text="Translate fragment" />
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtView_Tarjome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:paddingEnd="30dp"
+                android:paddingStart="25dp"
+                android:textAlignment="center"/>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
 
 </FrameLayout>

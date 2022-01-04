@@ -1,7 +1,10 @@
 package ir.skums.hamyarhefz;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -9,13 +12,22 @@ import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class JozActivity extends AppCompatActivity {
 
+    private DatabaseHelper databaseHelper;
+    private SQLiteDatabase database;
 
-    ListView listView ;
+
+    List<Jozha> jozhaList;
+    ListView listViewJozha;
+    JozhaAdapter adapter;
+
+
     int i;
 
     @Override
@@ -23,9 +35,17 @@ public class JozActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_joz);
 
-        listView = (ListView) findViewById(R.id.listView_JZ);
+        databaseHelper=new DatabaseHelper(this);
+        try {
+            databaseHelper.updateDatabase();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        database=databaseHelper.getReadableDatabase();
 
-        ArrayList<String> arrayList = new ArrayList<>();
+
+
+/*     ArrayList<String> arrayList = new ArrayList<>();
         for (String s : Arrays.asList("جزء 1", "جزء 2", "جزء 3", "جزء 4", "جزء 5", "جزء 6", "جزء 7", "جزء 8", "جزء 9", "جزء 10", "جزء 11", "جزء 12", "جزء 13", "جزء 14", "جزء 15", "جزء 16", "جزء 17", "جزء 18", "جزء 19", "جزء 20", "جزء 21", "جزء 22", "جزء 23", "جزء 24", "جزء 25", "جزء 26", "جزء 27", "جزء 28", "جزء 29", "جزء 30")) {
             arrayList.add(s);
         }
@@ -162,8 +182,30 @@ public class JozActivity extends AppCompatActivity {
 
             }
         });
+*/
 
 
+
+        listViewJozha=findViewById(R.id.listViewJozha);
+        jozhaList=new ArrayList<>();
+        showJozhaFromDatabase();
+
+
+    }
+
+    private void showJozhaFromDatabase() {
+        Cursor cursorJozha=database.rawQuery("select * from tblquran",null);
+        if (cursorJozha.moveToFirst()){
+            do {
+                jozhaList.add(new Jozha(
+                        cursorJozha.getInt(0),
+                        cursorJozha.getString(1)));
+            }while (cursorJozha.moveToNext());
+        }
+
+        cursorJozha.close();
+        adapter=new JozhaAdapter(this,R.layout.list_layout_joz,jozhaList,database);
+        listViewJozha.setAdapter(adapter);
 
     }
 

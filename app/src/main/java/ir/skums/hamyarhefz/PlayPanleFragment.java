@@ -1,6 +1,7 @@
 package ir.skums.hamyarhefz;
 
 import android.media.MediaPlayer;
+
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -15,15 +16,16 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.concurrent.TimeUnit;
+
 
 public class PlayPanleFragment extends Fragment {
 
+
+    private static final int PERMISSION_STORAGE_CODE = 1000;
 
     public PlayPanleFragment() {
         // Required empty public constructor
@@ -192,8 +194,18 @@ public class PlayPanleFragment extends Fragment {
             Log.d("=error", "onCreateView: " + ex.getMessage());
         }
 
+
+
+        btnDownload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
         return view;
     }
+
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
