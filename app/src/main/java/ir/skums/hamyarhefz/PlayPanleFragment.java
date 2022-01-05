@@ -267,7 +267,7 @@ public class PlayPanleFragment extends Fragment {
              request=new DownloadManager.Request(Uri.parse("https://dl.next1.ir/files/2021/12/tak/MoeinZ-ShayadDeletTangShodeToam-128(www.Next1.ir).mp3"))
                     .setTitle("Joz"+".mp3")
                     .setDescription("در حال دانلود")
-                    .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE)
+                    .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
                     .setDestinationUri(Uri.fromFile(file))
                     .setRequiresCharging(false)
                     .setAllowedOverMetered(true)
@@ -277,7 +277,7 @@ public class PlayPanleFragment extends Fragment {
              request=new DownloadManager.Request(Uri.parse("https://dl.next1.ir/files/2021/12/tak/MoeinZ-ShayadDeletTangShodeToam-128(www.Next1.ir).mp3"))
                     .setTitle("Jozha")
                     .setDescription("در حال دانلود")
-                    .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE)
+                    .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
                     .setDestinationUri(Uri.fromFile(file))
                     .setAllowedOverRoaming(true);
 
@@ -307,6 +307,6 @@ public class PlayPanleFragment extends Fragment {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        getParentFragment().getActivity().unregisterReceiver(onDowbloadComplete);
+       getActivity().unregisterReceiver(onDowbloadComplete);
     }
 }

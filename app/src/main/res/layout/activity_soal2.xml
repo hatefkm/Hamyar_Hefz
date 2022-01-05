@@ -10,24 +10,32 @@
 
     <Button
         android:id="@+id/buttonEbteda"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ابتدای مشابه"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="152dp"
-        android:layout_marginTop="200dp"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
         android:layout_centerHorizontal="true"
-        android:onClick="btnEbteda"/>
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bck_play"
+        android:onClick="btnEbteda"
+        android:text="ابتدای مشابه"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="152dp" />
 
     <Button
         android:id="@+id/buttonEnteha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="انتهای مشابه"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="477dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
         android:layout_below="@+id/buttonEbteda"
-        android:onClick="btnEnteha"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bck_play"
+        android:onClick="btnEnteha"
+        android:text="انتهای مشابه"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="477dp" />
 </RelativeLayout>

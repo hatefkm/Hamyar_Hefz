@@ -39,7 +39,7 @@
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="60dp"
             android:layout_marginBottom="5dp"
             android:alignmentMode="alignMargins"
             android:columnCount="2"
@@ -197,7 +197,7 @@
             android:layout_width="380dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="45dp"
             android:background="@drawable/home_btn"
             android:onClick="btn_TozihatAmal"
             android:orientation="horizontal"

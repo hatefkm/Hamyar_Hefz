@@ -115,7 +115,7 @@ public class AyatActivity extends AppCompatActivity {
                     case R.id.Translate:
                         temp = new TranslateFragment();
                 }
-                getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer, temp).addToBackStack(null).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer, temp).commit();
                 return true;
             }
 

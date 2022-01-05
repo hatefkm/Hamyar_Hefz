@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import ir.skums.hamyarhefz.AyatActivity;
 import ir.skums.hamyarhefz.NoteDetailActivity;
 import ir.skums.hamyarhefz.R;
+import ir.skums.hamyarhefz.ShowNoteActivity;
 import ir.skums.hamyarhefz.Soal1Activity;
 
 
@@ -44,6 +45,7 @@ import java.util.List;
 public class NoteFragment extends Fragment {
     private ListView noteListView;
     private Button btn_addNewNote;
+    private Button btn_ShowNote;
 
     public NoteFragment() {
         // Required empty public constructor
@@ -70,16 +72,45 @@ public class NoteFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_note, container, false);
+
         btn_addNewNote=view.findViewById(R.id.btn_addNewNote);
+        btn_ShowNote=view.findViewById(R.id.btn_ShowNote);
 
 
+
+
+
+        btn_addNewNote.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), NoteDetailActivity.class);
+                startActivity(intent);
+
+
+
+
+
+
+            }
+        });
+
+        btn_ShowNote.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), ShowNoteActivity.class);
+                startActivity(intent);
+
+
+
+
+
+
+            }
+        });
 
 
         return view;
     }
 
-    public void btn_addNewNote(View view) {
-        Intent intent = new Intent(getActivity(), NoteDetailActivity.class);
-        startActivity(intent);
-    }
+
 }

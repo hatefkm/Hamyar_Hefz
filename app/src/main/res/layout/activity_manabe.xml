@@ -10,6 +10,7 @@
 
 
     <TextView
+        android:id="@+id/txtManabeTitle"
         android:layout_width="110dp"
         android:layout_height="70dp"
         android:layout_centerInParent="true"
@@ -21,8 +22,35 @@
         android:textSize="40dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_alignParentTop="true">
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp">
 
     </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtManabeTitle"
+        android:text="قران کریم"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:id="@+id/textManabeQ"
+
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textManabeQ"
+        android:gravity="center_horizontal"
+        android:text="صوت استاد پرهیزگار"
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </TextView>
+
 
 </RelativeLayout>

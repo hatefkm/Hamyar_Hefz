@@ -10,9 +10,12 @@
 
     <Button
         android:id="@+id/buttonSoal1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
         android:layout_centerInParent="true"
+        android:background="@drawable/bck_play"
+        android:textColor="@color/white"
         android:onClick="btnSoal1"
-        android:text="Button" />
+        android:text="ابتدا و انتهای مشابه"
+        android:textSize="30dp"/>
 </RelativeLayout>
