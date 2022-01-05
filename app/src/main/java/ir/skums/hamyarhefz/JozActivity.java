@@ -78,6 +78,7 @@ public class JozActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
                 Intent intent = new Intent(JozActivity.this, AyatActivity.class);
+
                 startActivity(intent);
 
 
