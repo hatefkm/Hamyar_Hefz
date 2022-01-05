@@ -1,7 +1,15 @@
 package ir.skums.hamyarhefz;
 
+import static android.content.Context.DOWNLOAD_SERVICE;
+
+import android.app.DownloadManager;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.media.MediaPlayer;
 
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -16,6 +24,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import java.io.File;
@@ -43,6 +52,9 @@ public class PlayPanleFragment extends Fragment {
     ArrayList<File> mySongs;
 
     Thread updateSeekBar;
+
+    private Uri uri;
+    private long downloadId;
 
 
     @Override
@@ -194,11 +206,20 @@ public class PlayPanleFragment extends Fragment {
             Log.d("=error", "onCreateView: " + ex.getMessage());
         }
 
+        //download
+        getParentFragment().getActivity().registerReceiver(onDowbloadComplete,new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE));
+
 
 
         btnDownload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                beginDownload();
+
+
+
+
+
 
             }
         });
@@ -236,5 +257,56 @@ public class PlayPanleFragment extends Fragment {
 
         txtSongEnd.setText(time);
 
+    }
+
+    private void beginDownload(){
+        File file=new File(getParentFragment().getActivity().getExternalFilesDir(null),"Jozha" );
+        DownloadManager.Request request=null;
+
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+             request=new DownloadManager.Request(Uri.parse("https://dl.next1.ir/files/2021/12/tak/MoeinZ-ShayadDeletTangShodeToam-128(www.Next1.ir).mp3"))
+                    .setTitle("Jozha")
+                    .setDescription("در حال دانلود")
+                    .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+                    .setDestinationUri(Uri.fromFile(file))
+                    .setRequiresCharging(false)
+                    .setAllowedOverMetered(true)
+                    .setAllowedOverRoaming(true);
+        }
+        else {
+             request=new DownloadManager.Request(Uri.parse("https://dl.next1.ir/files/2021/12/tak/MoeinZ-ShayadDeletTangShodeToam-128(www.Next1.ir).mp3"))
+                    .setTitle("Jozha")
+                    .setDescription("در حال دانلود")
+                    .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+                    .setDestinationUri(Uri.fromFile(file))
+                    .setAllowedOverRoaming(true);
+
+
+
+        }
+
+        DownloadManager downloadManager=(DownloadManager)getActivity().getSystemService(DOWNLOAD_SERVICE);
+        downloadId=downloadManager.enqueue(request);
+
+
+    }
+
+    private BroadcastReceiver onDowbloadComplete = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+
+            long id=intent.getLongExtra(DownloadManager.EXTRA_DOWNLOAD_ID,-1);
+            if (downloadId==id){
+
+                Toast.makeText(getActivity(), "دانلود کامل شد" ,Toast.LENGTH_SHORT).show();
+            }
+
+        }
+    };
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        getParentFragment().getActivity().unregisterReceiver(onDowbloadComplete);
     }
 }
