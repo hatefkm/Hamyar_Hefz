@@ -62,126 +62,7 @@ public class JozActivity extends AppCompatActivity {
                     Intent intent = new Intent(JozActivity.this,AyatActivity.class);
                     startActivity(intent);
                 }
-                else if(i==1){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==2){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==3){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==4){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==5){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==6){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==7){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==8){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==9){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==10){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==11){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==12){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==13){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==14){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==15){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==16){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==17){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==18){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==19){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==20){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==21){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==22){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }else if(i==23){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==24){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==25){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==26){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==27){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==28){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
-                else if(i==29){
-                    Intent intent = new Intent(JozActivity.this,AyatActivity.class);
-                    startActivity(intent);
-                }
 
-
-
-            }
-        });
 */
 
 
@@ -189,6 +70,19 @@ public class JozActivity extends AppCompatActivity {
         listViewJozha=findViewById(R.id.listViewJozha);
         jozhaList=new ArrayList<>();
         showJozhaFromDatabase();
+
+        listViewJozha.setAdapter(adapter);
+
+        listViewJozha.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                Intent intent = new Intent(JozActivity.this, AyatActivity.class);
+                startActivity(intent);
+
+
+            }
+        });
 
 
     }
