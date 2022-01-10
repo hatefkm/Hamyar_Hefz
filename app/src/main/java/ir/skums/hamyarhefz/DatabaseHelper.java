@@ -1,6 +1,7 @@
 package ir.skums.hamyarhefz;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Build;
@@ -12,21 +13,18 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
-    private static String db_name="matnquran.db";
+    private static final String db_name="matnquran.db";
     private static String db_path="";
-    private static int db_version=1;
+    private static final int db_version=1;
 
     private SQLiteDatabase database;
-    private Context context;
+    private final Context context;
     private boolean needUpdate=false;
 
     public DatabaseHelper(Context context){
         super(context,db_name,null,db_version);
 
-        if (Build.VERSION.SDK_INT >=17)
-            db_path=context.getApplicationInfo().dataDir+"/databases/";
-        else
-            db_path="/data/data/"+context.getPackageName()+"/databases/";
+        db_path=context.getApplicationInfo().dataDir+"/databases/";
         this.context=context;
         copyDatabase();
         this.getReadableDatabase();
@@ -105,4 +103,5 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             database.close();
         super.close();
     }
+
 }

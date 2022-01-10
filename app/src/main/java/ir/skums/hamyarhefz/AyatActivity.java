@@ -61,37 +61,12 @@ public class AyatActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
 
 
-    Button btnPlay, btnPause, btnDownload;
-    TextView  txtSongStart, txtSongEnd, txtView;;
-    SeekBar seekMusicBar;
-
-
-
-
-    LinearLayout layout ;
-    PlayPanleFragment playPanleFragment;
-
-
-    private ListView noteListView;
-
-
-
-    String songName;
-    public static final String EXTRA_NAME = "song_name";
-    static MediaPlayer mediaPlayer;
-    int position;
-    private int timeInt;
-
-
-    Thread updateSeekBar;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ayat);
 
-        //note
+
 
 
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomnavigationbar);
@@ -124,16 +99,7 @@ public class AyatActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
-                //         .setAction("Action", null).show();
-
-
                 getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayoutPlay, new PlayPanleFragment()).addToBackStack(null).commit();
-
-
-                //  FragmentManager fm=getSupportFragmentManager();
-                //fm.beginTransaction().add(R.id.FrameLayoutPlay,new PlayPanleFragment()).commit();
-
 
             }
 
