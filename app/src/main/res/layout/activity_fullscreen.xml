@@ -15,24 +15,12 @@
 
         <ImageView
             android:id="@+id/imgSplash"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="370dp"
             android:layout_centerInParent="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="50pt"
-            android:src="@drawable/quran_gold" />
+            android:src="@drawable/splash_hamyar" />
 
-        <TextView
-            android:id="@+id/txtSplash"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/imgSplash"
-            android:layout_marginTop="10dp"
-            android:text="همیار حفظ"
-            android:textColor="#F7FAF5"
-            android:textSize="30dp"
-            android:layout_centerInParent="true"/>
 
 
     </RelativeLayout>
