@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="75dp"
     tools:context=".ayatnavigationbar.HomeFragment16">
 
     <!-- TODO: Update blank fragment layout -->
@@ -14,17 +15,37 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
             <TextView
-                android:id="@+id/txtView_Home"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="30dp"
                 android:paddingEnd="30dp"
                 android:paddingStart="25dp"
-                android:text="@string/joz17"
+                android:text="@string/joz17_1"
                 android:textAlignment="center"/>
 
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:paddingEnd="30dp"
+                android:paddingStart="25dp"
+                android:text="@string/joz17_2"
+                android:textAlignment="center"/>
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:paddingEnd="30dp"
+                android:paddingStart="25dp"
+                android:text="@string/joz17_3"
+                android:textAlignment="center"/>
 
 
         </LinearLayout>

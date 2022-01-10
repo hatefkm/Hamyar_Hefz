@@ -257,12 +257,12 @@ public class PlayPanleFragment2 extends Fragment {
     }
 
     private void beginDownload(){
-        File file=new File(getActivity().getExternalFilesDir(null),"Joz"+".mp3" );
+        File file=new File(getActivity().getExternalFilesDir(null),"Joz3"+".mp3" );
         DownloadManager.Request request=null;
 
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
-             request=new DownloadManager.Request(Uri.parse("https://dl.next1.ir/files/2021/12/tak/MoeinZ-ShayadDeletTangShodeToam-128(www.Next1.ir).mp3"))
-                    .setTitle("Joz"+".mp3")
+             request=new DownloadManager.Request(Uri.parse("https://uploadb.me/direct/tl4t5s2mxh0z/PART-03.mp3.html"))
+                    .setTitle("Joz3"+".mp3")
                     .setDescription("در حال دانلود")
                     .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
                     .setDestinationUri(Uri.fromFile(file))
@@ -271,8 +271,8 @@ public class PlayPanleFragment2 extends Fragment {
                     .setAllowedOverRoaming(true);
         }
         else {
-             request=new DownloadManager.Request(Uri.parse("https://dl.next1.ir/files/2021/12/tak/MoeinZ-ShayadDeletTangShodeToam-128(www.Next1.ir).mp3"))
-                    .setTitle("Jozha")
+             request=new DownloadManager.Request(Uri.parse("https://uploadb.me/direct/tl4t5s2mxh0z/PART-03.mp3.html"))
+                    .setTitle("Joz3"+".mp3")
                     .setDescription("در حال دانلود")
                     .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
                     .setDestinationUri(Uri.fromFile(file))

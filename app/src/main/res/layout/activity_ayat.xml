@@ -7,24 +7,14 @@
     android:background="@drawable/list_joz"
     tools:context=".AyatActivity">
 
-    <androidx.appcompat.widget.SearchView
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:id="@+id/searchAyat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:textAlignment="center">
-
-    </androidx.appcompat.widget.SearchView>
 
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/framecontainer"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/searchAyat"
+        android:layout_marginTop="75dp"
+
         >
 
 
