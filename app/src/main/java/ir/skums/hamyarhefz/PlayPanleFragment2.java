@@ -78,7 +78,7 @@ public class PlayPanleFragment2 extends Fragment {
 
         seekMusicBar = view.findViewById(R.id.SeekBar_frgPlayPanel);
 
-        mediaPlayer = MediaPlayer.create(getActivity(), R.raw.audio);
+        mediaPlayer = MediaPlayer.create(getActivity(), Uri.parse("/storage/emulated/0/Android/data/ir.skums.hamyarhefz/files/Joz3.mp3"));
 
         try {
             // 1- check song duration
