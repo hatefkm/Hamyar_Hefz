@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/txtRahnamaTitle"
-        android:layout_width="110dp"
-        android:layout_height="70dp"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
         android:layout_marginTop="5dp"
@@ -19,8 +19,11 @@
 
         android:paddingTop="3dp"
         android:text="راهنما"
-        android:textSize="45dp"
-        android:layout_marginBottom="20dp">
+        android:textSize="40dp"
+        android:textColor="#012C4E"
+
+
+        android:layout_marginBottom="25dp">
 
     </TextView>
 
@@ -37,6 +40,9 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:text="@string/rahnama_text"
+
+
+            android:textColor="#012C4E"
             android:textSize="20dp"
             android:textStyle="bold">
 

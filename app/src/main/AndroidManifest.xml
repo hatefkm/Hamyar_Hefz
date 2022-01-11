@@ -138,7 +138,7 @@
             android:name=".FullscreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="true"
-            android:label="@string/app_name"
+        
             android:theme="@style/Theme.HamyarHefz.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

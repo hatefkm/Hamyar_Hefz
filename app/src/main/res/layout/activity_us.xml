@@ -9,7 +9,7 @@
 
 <TextView
     android:id="@+id/txtUsTitle"
-    android:layout_width="120dp"
+    android:layout_width="100dp"
     android:layout_height="60dp"
     android:layout_alignParentTop="true"
     android:layout_centerInParent="true"
@@ -17,7 +17,8 @@
     android:layout_marginBottom="20dp"
     android:background="@drawable/bck_play"
     android:textAlignment="center"
-    android:textSize="35dp"
+    android:textColor="#012C4E"
+    android:textSize="30dp"
 
     android:paddingTop="3dp"
     android:text="درباره ما"/>
@@ -36,6 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:textColor="#012C4E"
             android:text="@string/us_text"
             android:textSize="20dp"
             android:textStyle="bold">

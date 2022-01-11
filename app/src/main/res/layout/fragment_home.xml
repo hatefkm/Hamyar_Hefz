@@ -23,6 +23,8 @@
                 android:paddingTop="30dp"
                 android:paddingEnd="30dp"
                 android:paddingStart="25dp"
+                android:textColor="#012C4E"
+                android:textSize="14dp"
                 android:text="@string/joz1_1"
                 android:textAlignment="center"/>
 
@@ -34,6 +36,8 @@
                 android:paddingTop="30dp"
                 android:paddingEnd="30dp"
                 android:paddingStart="25dp"
+                android:textColor="#012C4E"
+                android:textSize="14dp"
                 android:text="@string/joz1_2"
                 android:textAlignment="center"/>
 
@@ -45,6 +49,8 @@
                 android:paddingTop="30dp"
                 android:paddingEnd="30dp"
                 android:paddingStart="25dp"
+                android:textColor="#012C4E"
+                android:textSize="14dp"
                 android:text="@string/joz1_3"
                 android:textAlignment="center"/>
 
