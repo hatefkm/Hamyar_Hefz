@@ -11,30 +11,32 @@
 
     <TextView
         android:id="@+id/txtManabeTitle"
-        android:layout_width="110dp"
-        android:layout_height="70dp"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
         android:layout_centerInParent="true"
         android:layout_marginTop="5dp"
         android:background="@drawable/bck_play"
         android:textAlignment="center"
         android:paddingTop="3dp"
         android:text="منابع"
-        android:textSize="40dp"
+        android:textSize="30dp"
+        android:textColor="#012C4E"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_alignParentTop="true"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="40dp">
 
     </TextView>
 
     <TextView
+        android:id="@+id/textManabeQ"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtManabeTitle"
-        android:text="قران کریم"
         android:gravity="center_horizontal"
+        android:text="قران کریم"
+        android:textColor="#012C4E"
         android:textSize="20dp"
-        android:id="@+id/textManabeQ"
 
         android:textStyle="bold">
 
@@ -47,6 +49,7 @@
         android:layout_below="@+id/textManabeQ"
         android:gravity="center_horizontal"
         android:text="صوت استاد پرهیزگار"
+        android:textColor="#012C4E"
         android:textSize="20dp"
         android:textStyle="bold">
 
