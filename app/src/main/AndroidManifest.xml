@@ -14,6 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fab_Bottom_app_bar">
         <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".ShowNoteActivity"
             android:exported="false" />
         <activity
@@ -54,63 +63,92 @@
             android:exported="false" />
         <activity
             android:name=".AyatActivity"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity1"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity2"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity3"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity4"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity5"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity6"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity7"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity8"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity9"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity10"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity11"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity12"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity13"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity14"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity15"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity16"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity17"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity18"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity19"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity20"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity21"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity22"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity23"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity24"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity25"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity26"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity27"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity28"
-            android:exported="false" /> <activity
+            android:exported="false" />
+        <activity
             android:name=".AyatActivity29"
             android:exported="false" />
         <activity
@@ -134,18 +172,7 @@
         <activity
             android:name=".RahnamaActivity"
             android:exported="false" />
-        <activity
-            android:name=".FullscreenActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:exported="true"
-        
-            android:theme="@style/Theme.HamyarHefz.Fullscreen">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>

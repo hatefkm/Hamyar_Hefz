@@ -21,13 +21,17 @@
 
 
         <ScrollView
+            android:id="@+id/scrol_home"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_above="@id/exitBtn"
+
+            android:layout_marginBottom="5dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
+                android:layout_marginBottom="20dp"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -190,19 +194,17 @@
         </ScrollView>
 
 
-
-
-
         <com.airbnb.lottie.LottieAnimationView
             android:layout_width="80dp"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="30dp"
             app:lottie_autoPlay="true"
             app:lottie_fileName="right.json"
-            app:lottie_loop="true" />
+            app:lottie_loop="true"
+            android:layout_above="@+id/scrol_home"/>
 
         <Button
             android:id="@+id/exitBtn"

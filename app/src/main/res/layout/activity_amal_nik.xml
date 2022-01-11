@@ -30,6 +30,7 @@
                 android:background="@drawable/bck_play"
                 android:text="اعمال نیک"
                 android:textAlignment="center"
+                android:textColor="#012C4E"
                 android:paddingTop="5dp"
 
                 android:textSize="24dp" />
