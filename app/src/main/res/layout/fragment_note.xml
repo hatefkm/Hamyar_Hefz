@@ -32,6 +32,7 @@ tools:context=".ayatnavigationbar.NoteFragment">
                     android:layout_marginTop="110dp"
                     android:text="اضافه کردن ایات مشکل"
                     android:textSize="25dp"
+                    android:textColor="#012C4E"
                     android:textStyle="bold" />
 
 
@@ -56,6 +57,7 @@ tools:context=".ayatnavigationbar.NoteFragment">
                     android:text="@string/list_problem_aye"
                     android:textSize="25dp"
                     android:textStyle="bold"
+                    android:textColor="#012C4E"
                     android:layout_marginTop="130dp"/>
 
 

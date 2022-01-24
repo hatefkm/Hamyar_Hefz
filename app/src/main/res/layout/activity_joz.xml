@@ -30,6 +30,8 @@
                     android:layout_marginTop="75dp"
                     android:layout_marginEnd="32dp"
                     android:layout_marginBottom="75dp"
+                    android:textColor="#012C4E"
+
                     android:layout_gravity="center_horizontal"
                     android:textAlignment="center" />
 

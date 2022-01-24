@@ -33,6 +33,7 @@
                 android:text="عبادات"
                 android:textAlignment="center"
                 android:paddingTop="5dp"
+                android:textColor="#012C4E"
 
                 android:textSize="24dp" />
 

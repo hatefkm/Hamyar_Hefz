@@ -18,6 +18,7 @@
         android:background="@drawable/bck_play"
         android:paddingTop="5dp"
         android:text="@string/list_problem_aye"
+        android:textColor="#012C4E"
         android:textAlignment="center"
         android:textSize="24dp" />
 
@@ -36,6 +37,7 @@
         android:layout_height="match_parent"
         android:dividerHeight="2dp"
         android:textDirection="rtl"
+        android:textColor="#012C4E"
         android:paddingBottom="50dp"/>
 
 </LinearLayout>
