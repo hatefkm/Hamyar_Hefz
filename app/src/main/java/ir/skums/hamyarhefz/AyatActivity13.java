@@ -27,7 +27,7 @@ public class AyatActivity13 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ayat13);
+        setContentView(R.layout.activity_ayat);
 
 
 

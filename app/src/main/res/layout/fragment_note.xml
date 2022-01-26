@@ -12,71 +12,78 @@ tools:context=".ayatnavigationbar.NoteFragment">
 
 
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:id="@+id/linier_moshkel"
-                android:layout_width="match_parent"
+
+        <LinearLayout
+            android:id="@+id/linier_moshkel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layoutDirection="rtl"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="15dp"
-                android:layoutDirection="rtl"
-                android:paddingEnd="30dp"
-                android:paddingStart="30dp"
-                android:gravity="center"
-
-                android:orientation="vertical">
+                android:layout_marginTop="110dp"
+                android:text="اضافه کردن ایات مشکل"
+                android:textSize="25dp"
+                android:textColor="#012C4E"
+                android:textStyle="bold" />
 
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="110dp"
-                    android:text="اضافه کردن ایات مشکل"
-                    android:textSize="25dp"
-                    android:textColor="#012C4E"
-                    android:textStyle="bold" />
+            <Button
+                android:id="@+id/btn_addNewNote"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:background="@drawable/bck_play"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp"
+
+                android:text="@string/add"
 
 
-                <Button
-                    android:id="@+id/btn_addNewNote"
-                    android:layout_width="100dp"
-                    android:layout_height="70dp"
-                    android:background="@drawable/bck_play"
-                    android:textColor="@color/white"
-                    android:layout_marginTop="30dp"
+                android:textSize="25dp"
 
-                    android:text="@string/add"
+                android:layout_marginEnd="5dp"/>
 
-
-                    android:textSize="25dp"
-
-                    android:layout_marginEnd="5dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/list_problem_aye"
-                    android:textSize="25dp"
-                    android:textStyle="bold"
-                    android:textColor="#012C4E"
-                    android:layout_marginTop="130dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/list_problem_aye"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#012C4E"
+                android:layout_marginTop="130dp"/>
 
 
-                <Button
-                    android:id="@+id/btn_ShowNote"
-                    android:layout_width="100dp"
-                    android:layout_height="70dp"
-                    android:background="@drawable/bck_play"
-                    android:textColor="@color/white"
-                    android:layout_marginTop="30dp"
+            <Button
+                android:id="@+id/btn_ShowNote"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:background="@drawable/bck_play"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp"
 
-                    android:text="نمایش"
+                android:text="نمایش"
 
 
-                    android:textSize="25dp"
+                android:textSize="25dp"
 
-                    android:layout_marginEnd="5dp"/>
-            </LinearLayout>
+                android:layout_marginEnd="5dp"/>
+        </LinearLayout>
 
+
+
+    </ScrollView>
 
 
 
