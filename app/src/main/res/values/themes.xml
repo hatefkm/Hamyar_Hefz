@@ -13,7 +13,7 @@
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/light_blue_A200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSecondary">#C440CBF6</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
@@ -23,7 +23,7 @@
     <style name="Theme.Fab_Bottom_app_bar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">#012C4E</item>
         <item name="colorPrimaryVariant">#005781</item>
-        <item name="colorOnPrimary">#000</item>
+        <item name="colorOnPrimary">#C440CBF6</item>
     </style>
 
 
@@ -40,22 +40,22 @@
         <item name="colorPrimaryVariant">#044E22</item>
         <item name="colorOnPrimary">@color/good</item>
         <item name="colorSecondary">#DAEEEEEE</item>
-        <item name="colorSecondaryVariant">@color/black</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">#C440CBF6</item>
+        <item name="colorOnSecondary">#C440CBF6</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
 
     </style>
 
-    <color name="good">#E91E63</color>
+    <color name="good">#A69024</color>
 
     <style name="Theme.Fab_Bottom_app_bar.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.Fab_Bottom_app_bar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Fab_Bottom_app_bar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="Theme.Fab_Bottom_app_bar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

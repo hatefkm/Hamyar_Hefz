@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
 
-    tools:context=".Soal1Activity">
+    tools:context=".Soal1ActivityJ4">
 
     <Button
         android:id="@+id/buttonSoal1"

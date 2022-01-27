@@ -1,12 +1,14 @@
 package ir.skums.hamyarhefz;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Soal1Activity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+import ir.skums.hamyarhefz.soalat.EbEnJ30Activity;
+
+public class Soal1ActivityJ30 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,7 +17,7 @@ public class Soal1Activity extends AppCompatActivity {
     }
 
     public void btnSoal1(View view) {
-        Intent intent = new Intent(Soal1Activity.this,SoalJavabActivity.class);
+        Intent intent = new Intent(Soal1ActivityJ30.this, EbEnJ30Activity.class);
         startActivity(intent);
     }
 }

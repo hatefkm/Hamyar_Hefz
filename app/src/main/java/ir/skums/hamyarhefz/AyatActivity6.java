@@ -13,7 +13,6 @@ import androidx.fragment.app.Fragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import ir.skums.hamyarhefz.ayatnavigationbar.HomeFragment;
 import ir.skums.hamyarhefz.ayatnavigationbar.HomeFragment6;
 import ir.skums.hamyarhefz.ayatnavigationbar.NoteFragment;
 import ir.skums.hamyarhefz.ayatnavigationbar.QuestionFragment;
@@ -81,7 +80,7 @@ public class AyatActivity6 extends AppCompatActivity {
 
 
     public void btnSoal(View view) {
-        Intent intent = new Intent(AyatActivity6.this,Soal1Activity.class);
+        Intent intent = new Intent(AyatActivity6.this, Soal2ActivityJ7.class);
         startActivity(intent);
     }
 
