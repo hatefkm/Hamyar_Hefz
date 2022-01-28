@@ -14,16 +14,16 @@
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
         android:layout_marginTop="5dp"
+        android:layout_marginBottom="25dp"
+
         android:background="@drawable/bck_play"
+
+        android:text="راهنما"
         android:textAlignment="center"
 
-        android:paddingTop="3dp"
-        android:text="راهنما"
-        android:textSize="40dp"
+
         android:textColor="#012C4E"
-
-
-        android:layout_marginBottom="25dp">
+        android:textSize="40dp">
 
     </TextView>
 

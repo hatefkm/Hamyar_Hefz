@@ -16,7 +16,7 @@ public class RahnamaActivity extends AppCompatActivity {
         txtMatn=findViewById(R.id.txtRahnamaMatn);
         txtTitle=findViewById(R.id.txtRahnamaTitle);
 
-        Typeface type=Typeface.createFromAsset(getAssets(), "fonts/yekan.ttf");
+        Typeface type=Typeface.createFromAsset(getAssets(), "fonts/b_nazanin.TTF");
         txtMatn.setTypeface(type);
         txtTitle.setTypeface(type);
 

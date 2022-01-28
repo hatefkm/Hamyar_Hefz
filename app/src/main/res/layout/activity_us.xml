@@ -7,21 +7,21 @@
     android:background="@drawable/rahnama_background"
     tools:context=".UsActivity">
 
-<TextView
-    android:id="@+id/txtUsTitle"
-    android:layout_width="100dp"
-    android:layout_height="60dp"
-    android:layout_alignParentTop="true"
-    android:layout_centerInParent="true"
-    android:layout_marginTop="8dp"
-    android:layout_marginBottom="20dp"
-    android:background="@drawable/bck_play"
-    android:textAlignment="center"
-    android:textColor="#012C4E"
-    android:textSize="30dp"
+    <TextView
+        android:id="@+id/txtUsTitle"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bck_play"
 
-    android:paddingTop="3dp"
-    android:text="درباره ما"/>
+        android:text="درباره ما"
+
+        android:textAlignment="center"
+        android:textColor="#012C4E"
+        android:textSize="30dp" />
 
 
     <ScrollView

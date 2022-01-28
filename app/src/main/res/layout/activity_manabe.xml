@@ -8,23 +8,20 @@
     tools:context=".ManabeActivity">
 
 
-
     <TextView
         android:id="@+id/txtManabeTitle"
         android:layout_width="90dp"
         android:layout_height="50dp"
+        android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
         android:layout_marginTop="5dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/bck_play"
-        android:textAlignment="center"
-        android:paddingTop="3dp"
+
         android:text="منابع"
-        android:textSize="30dp"
+        android:textAlignment="center"
         android:textColor="#012C4E"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginBottom="40dp">
+        android:textSize="30dp">
 
     </TextView>
 

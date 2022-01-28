@@ -16,7 +16,7 @@ public class UsActivity extends AppCompatActivity {
         txtMatn=findViewById(R.id.txtUsTitle);
         txtTitle=findViewById(R.id.us_text);
 
-        Typeface type=Typeface.createFromAsset(getAssets(), "fonts/yekan.ttf");
+        Typeface type=Typeface.createFromAsset(getAssets(), "fonts/b_nazanin.TTF");
         txtMatn.setTypeface(type);
         txtTitle.setTypeface(type);
 
