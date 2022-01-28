@@ -44,14 +44,13 @@
             android:layout_below="@+id/btn_addPanjshanbe" />
 
 
-
         <TextView
             android:id="@+id/tv_resultPanjshanbe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:layout_toRightOf="@+id/btn_resetPanjshanbe"
             android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/btn_resetPanjshanbe"
             android:text="0"
             android:textColor="#012C4E"
             android:textSize="30dp" />
@@ -62,6 +61,7 @@
             android:layout_height="80dp"
             android:layout_alignParentRight="true"
             android:layout_marginEnd="5dp"
+            android:layout_toRightOf="@id/tv_resultPanjshanbe"
             android:src="@drawable/panjshanbe" />
 
 

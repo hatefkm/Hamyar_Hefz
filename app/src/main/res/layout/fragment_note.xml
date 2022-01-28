@@ -11,32 +11,32 @@ android:layout_height="match_parent"
 tools:context=".ayatnavigationbar.NoteFragment">
 
 
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="85dp">
 
 
         <LinearLayout
             android:id="@+id/linier_moshkel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp"
-            android:layoutDirection="rtl"
-            android:paddingEnd="30dp"
-            android:paddingStart="30dp"
             android:gravity="center"
+            android:layoutDirection="rtl"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:paddingStart="30dp"
 
-            android:orientation="vertical">
+            android:paddingEnd="30dp">
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="110dp"
+                android:layout_marginTop="55dp"
                 android:text="اضافه کردن ایات مشکل"
-                android:textSize="25dp"
                 android:textColor="#012C4E"
+                android:textSize="25dp"
                 android:textStyle="bold" />
 
 
@@ -44,43 +44,42 @@ tools:context=".ayatnavigationbar.NoteFragment">
                 android:id="@+id/btn_addNewNote"
                 android:layout_width="100dp"
                 android:layout_height="70dp"
-                android:background="@drawable/bck_play"
-                android:textColor="@color/white"
                 android:layout_marginTop="30dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/bck_play"
 
                 android:text="@string/add"
 
 
-                android:textSize="25dp"
+                android:textColor="@color/white"
 
-                android:layout_marginEnd="5dp"/>
+                android:textSize="25dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
                 android:text="@string/list_problem_aye"
-                android:textSize="25dp"
-                android:textStyle="bold"
                 android:textColor="#012C4E"
-                android:layout_marginTop="130dp"/>
+                android:textSize="25dp"
+                android:textStyle="bold" />
 
 
             <Button
                 android:id="@+id/btn_ShowNote"
                 android:layout_width="100dp"
                 android:layout_height="70dp"
-                android:background="@drawable/bck_play"
-                android:textColor="@color/white"
                 android:layout_marginTop="30dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/bck_play"
 
                 android:text="نمایش"
 
 
-                android:textSize="25dp"
+                android:textColor="@color/white"
 
-                android:layout_marginEnd="5dp"/>
+                android:textSize="25dp" />
         </LinearLayout>
-
 
 
     </ScrollView>
