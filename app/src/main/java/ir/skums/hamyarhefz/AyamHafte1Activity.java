@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -55,7 +56,6 @@ public class AyamHafte1Activity extends AppCompatActivity {
        //     resultTvSeshanbe.setText(String.valueOf(counter));
 
       //  });
-
 
 
 

@@ -3,11 +3,14 @@ package ir.skums.hamyarhefz;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
 public class EbadatActivity extends AppCompatActivity {
+
+
 
     int counterQuran=0;
     int counterEtaat=0;
@@ -60,6 +63,8 @@ public class EbadatActivity extends AppCompatActivity {
         tv_resultYadAkherat = findViewById(R.id.tv_resultYadAkherat);
 
 
+
+
         SharedPreferences prefs = getSharedPreferences("MY_PREFS" , MODE_PRIVATE);
 
         counterQuran = prefs.getInt("COUNTER_KEY",0);
@@ -103,6 +108,29 @@ public class EbadatActivity extends AppCompatActivity {
         tv_resultAnjamTaqibat.setText(String.valueOf(counterAnjamTaqibat));
         tv_resultFateheAmvat.setText(String.valueOf(counterFateheAmvat));
         tv_resultYadAkherat.setText(String.valueOf(counterYadAkherat));
+
+
+        Typeface type=Typeface.createFromAsset(getAssets(), "fonts/b_titr.TTF");
+        tv_resultQuran.setTypeface(type);
+        tv_resultEtaat.setTypeface(type);
+        tv_resultTavajoh.setTypeface(type);
+        tv_resultTaqibat.setTypeface(type);
+        tv_resultNamazSarVaqt.setTypeface(type);
+        tv_resultAtamMasakin.setTypeface(type);
+        tv_resultDaemVozo.setTypeface(type);
+        tv_resultSalavat.setTypeface(type);
+        tv_resultHefzNegah.setTypeface(type);
+        tv_resultSadaqe.setTypeface(type);
+        tv_resultNamazShab.setTypeface(type);
+        tv_resultAmrBeMArof.setTypeface(type);
+        tv_resultTobe.setTypeface(type);
+        tv_resultNahiAzMonkar.setTypeface(type);
+        tv_resultMosiqiMojaz.setTypeface(type);
+        tv_resultEtaatKhoda.setTypeface(type);
+        tv_resultResaneHaram.setTypeface(type);
+        tv_resultAnjamTaqibat.setTypeface(type);
+        tv_resultFateheAmvat.setTypeface(type);
+        tv_resultYadAkherat.setTypeface(type);
 
 
     }
@@ -368,5 +396,12 @@ public class EbadatActivity extends AppCompatActivity {
         tv_resultYadAkherat.setText(String.valueOf(counterYadAkherat));
 
 
+    }
+
+    @Override
+    protected void onResume() {
+        SharedPreferences prefs = getSharedPreferences("MY_PREFS" , MODE_PRIVATE);
+
+        super.onResume();
     }
 }

@@ -2,6 +2,7 @@ package ir.skums.hamyarhefz;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 
@@ -121,6 +122,8 @@ public class YekshanbeFragment extends Fragment {
 
             }
         });
+        Typeface type=Typeface.createFromAsset(getActivity().getAssets(), "fonts/b_titr.TTF");
+        resultTv.setTypeface(type);
 
 
 

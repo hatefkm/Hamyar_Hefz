@@ -2,6 +2,7 @@ package ir.skums.hamyarhefz;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 
@@ -86,6 +87,9 @@ public class AlhamdFragment extends Fragment {
                 resultTv.setText(String.valueOf(counter));
             }
         });
+
+        Typeface type=Typeface.createFromAsset(getActivity().getAssets(), "fonts/b_titr.TTF");
+        resultTv.setTypeface(type);
 
         return view;
     }

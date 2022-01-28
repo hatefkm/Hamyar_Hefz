@@ -2,6 +2,7 @@ package ir.skums.hamyarhefz;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,7 +36,10 @@ public class JozhaAdapter extends ArrayAdapter<Jozha> {
         View view=inflater.inflate(layoutRes,null);
         Jozha jozha=jozhaList.get(position);
         TextView textViewTitleJozha=view.findViewById(R.id.textViewTitleJozha);
+
         textViewTitleJozha.setText(jozha.getTitle());
+        Typeface type=Typeface.createFromAsset(context.getAssets(), "fonts/b_titr.TTF");
+        textViewTitleJozha.setTypeface(type);
         return view;
     }
 }

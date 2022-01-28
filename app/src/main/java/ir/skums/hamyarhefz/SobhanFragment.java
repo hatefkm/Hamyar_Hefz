@@ -2,6 +2,7 @@ package ir.skums.hamyarhefz;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -80,6 +81,9 @@ public class SobhanFragment extends Fragment {
                 resultTv.setText(String.valueOf(counter));
             }
         });
+
+        Typeface type=Typeface.createFromAsset(getActivity().getAssets(), "fonts/b_titr.TTF");
+        resultTv.setTypeface(type);
 
 
 

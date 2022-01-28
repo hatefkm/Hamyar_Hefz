@@ -10,40 +10,44 @@
         <item name="colorPrimary">#013E6E</item>
         <item name="colorPrimaryVariant">#005781</item>
         <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryDark">#012C4E</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/light_blue_A200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">#C440CBF6</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="l">#012C4E</item>
         <!-- Customize your theme here. -->
     </style>
 
     <!-- Base application theme. -->
     <style name="Theme.Fab_Bottom_app_bar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">#012C4E</item>
+        <item name="colorPrimaryDark">#012C4E</item>
+        <item name="android:navigationBarColor">#001525</item>
         <item name="colorPrimaryVariant">#005781</item>
         <item name="colorOnPrimary">#C440CBF6</item>
+
     </style>
 
 
 
     <style name="ThemeOverlay.HamyarHefz.FullscreenContainer" parent="">
-        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
-        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+        <item name="fullscreenBackgroundColor">#012C4E</item>
+        <item name="fullscreenTextColor">#012C4E</item>
     </style>
 
 
     <style name="Theme.Setting2" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#08BF60</item>
-        <item name="colorPrimaryVariant">#044E22</item>
+        <item name="colorPrimary">#012C4E</item>
+        <item name="colorPrimaryVariant">#04304E</item>
         <item name="colorOnPrimary">@color/good</item>
         <item name="colorSecondary">#DAEEEEEE</item>
         <item name="colorSecondaryVariant">#C440CBF6</item>
         <item name="colorOnSecondary">#C440CBF6</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="l">#012C4E</item>
         <!-- Customize your theme here. -->
 
     </style>
@@ -54,6 +58,9 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
+
+
 
     <style name="Theme.Fab_Bottom_app_bar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
 

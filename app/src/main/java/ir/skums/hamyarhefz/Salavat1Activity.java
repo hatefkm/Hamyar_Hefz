@@ -3,6 +3,7 @@ package ir.skums.hamyarhefz;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 
 import android.widget.Button;
@@ -47,6 +48,8 @@ public class Salavat1Activity extends AppCompatActivity {
             resultTv.setText(String.valueOf(counter));
 
         });
+        Typeface type=Typeface.createFromAsset(getAssets(), "fonts/b_titr.TTF");
+        resultTv.setTypeface(type);
     }
 
     @Override

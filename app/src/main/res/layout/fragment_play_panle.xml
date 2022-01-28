@@ -39,10 +39,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="false"
+                android:textColor="#012C4E"
+
+
                 android:layout_centerInParent="true"
-                android:layout_centerHorizontal="true"
-
-
                 android:layout_toLeftOf="@id/SeekBar_frgPlayPanel"
                 android:singleLine="true"
                 android:text="0:00"
@@ -56,6 +56,7 @@
                 android:layout_alignParentRight="false"
                 android:layout_centerInParent="true"
                 android:layout_marginRight="20dp"
+                android:textColor="#012C4E"
                 android:layout_toRightOf="@id/SeekBar_frgPlayPanel"
                 android:singleLine="true"
                 android:text="0:00"

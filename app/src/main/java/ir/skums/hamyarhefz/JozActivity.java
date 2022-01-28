@@ -3,12 +3,14 @@ package ir.skums.hamyarhefz;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -26,6 +28,7 @@ public class JozActivity extends AppCompatActivity {
     List<Jozha> jozhaList;
     ListView listViewJozha;
     JozhaAdapter adapter;
+    TextView txtview;
 
 
     int i;
@@ -51,6 +54,11 @@ public class JozActivity extends AppCompatActivity {
         showJozhaFromDatabase();
 
         listViewJozha.setAdapter(adapter);
+
+
+
+
+
 
 
         listViewJozha.setOnItemClickListener(new AdapterView.OnItemClickListener() {

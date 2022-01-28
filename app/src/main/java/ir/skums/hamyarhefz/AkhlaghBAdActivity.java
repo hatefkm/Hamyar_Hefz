@@ -3,6 +3,7 @@ package ir.skums.hamyarhefz;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -56,6 +57,10 @@ public class AkhlaghBAdActivity extends AppCompatActivity {
         tv_resultBadAkhlaqi = findViewById(R.id.tv_resultBadAkhlaqi);
         tv_resultFozoli = findViewById(R.id.tv_resultFozoli);
         tv_resultKhabarChini = findViewById(R.id.tv_resultKhabarChini);
+
+        Typeface type=Typeface.createFromAsset(getAssets(), "fonts/b_titr.TTF");
+
+
 
         SharedPreferences prefs = getSharedPreferences("MY_PREFS" , MODE_PRIVATE);
 
