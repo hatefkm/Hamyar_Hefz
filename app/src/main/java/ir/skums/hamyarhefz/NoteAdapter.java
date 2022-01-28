@@ -1,6 +1,7 @@
 package ir.skums.hamyarhefz;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,6 +33,13 @@ public class NoteAdapter extends ArrayAdapter<Note>
         nameSure.setText(note.getNameSure());
         numberAye.setText(note.getNumberAye());
         aye.setText(note.getAye());
+        Typeface type=Typeface.createFromAsset(getContext().getAssets(), "fonts/b_titr.TTF");
+        aye.setTypeface(type);
+        nameSure.setTypeface(type);
+        numberAye.setTypeface(type);
         return convertView;
     }
+
+
+
 }

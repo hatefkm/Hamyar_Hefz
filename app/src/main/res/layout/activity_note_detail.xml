@@ -48,9 +48,10 @@ android:background="@drawable/background"
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@color/black_overlay"
+                android:background="#8A000000"
                 android:padding="8dp"
                 android:layout_marginTop="8dp"
+                android:textColor="@color/white"
                 android:textSize="20dp"/>
 
             <TextView
@@ -71,7 +72,8 @@ android:background="@drawable/background"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textDirection="ltr"
-                android:background="@color/black_overlay"
+                android:background="#8A000000"
+                android:textColor="@color/white"
                 android:layout_marginTop="8dp"
                 android:padding="5dp"
                 android:textSize="20dp"/>
@@ -87,16 +89,18 @@ android:background="@drawable/background"
                 android:textColor="#012C4E"
 
                 android:layout_marginTop="20dp"/>
+
+
             <EditText
                 android:id="@+id/edtAye_note"
                 android:layout_width="310dp"
                 android:layout_height="wrap_content"
-                android:padding="60dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
-                android:background="@color/black_overlay"
-                android:textSize="20dp"/>
-
+                android:background="#8A000000"
+                android:textColor="@color/white"
+                android:padding="60dp"
+                android:textSize="20dp" />
 
             <Button
                 android:layout_width="95dp"

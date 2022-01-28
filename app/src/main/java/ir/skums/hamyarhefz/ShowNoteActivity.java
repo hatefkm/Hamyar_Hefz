@@ -2,16 +2,21 @@ package ir.skums.hamyarhefz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import android.content.Intent;
 
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class ShowNoteActivity extends AppCompatActivity {
 
     private ListView noteListView;
+    NoteAdapter noteAdapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +25,22 @@ public class ShowNoteActivity extends AppCompatActivity {
 
         initWidgets();
         setNoteAdapter();
+
+
+        noteListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+
+                noteAdapter.notifyDataSetChanged();
+                noteAdapter.remove(Note.noteArrayList.remove(i));
+
+                return false;
+            }
+        });
+
+
+
     }
 
 
@@ -29,8 +50,9 @@ public class ShowNoteActivity extends AppCompatActivity {
     }
     private void setNoteAdapter()
     {
-        NoteAdapter noteAdapter = new NoteAdapter(getApplicationContext() ,Note.noteArrayList);
+        noteAdapter = new NoteAdapter(getApplicationContext() ,Note.noteArrayList);
         noteListView.setAdapter(noteAdapter);
+
     }
 
     public void newNote(View view)
@@ -44,8 +66,19 @@ public class ShowNoteActivity extends AppCompatActivity {
     protected void onResume() {
 
 
+
+        super.onResume();
         initWidgets();
         setNoteAdapter();
-        super.onResume();
+
+    }
+
+    @Override
+    protected void onStop() {
+
+        super.onStop();
+        initWidgets();
+        setNoteAdapter();
+
     }
 }

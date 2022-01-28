@@ -2,31 +2,39 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:layout_centerHorizontal="true"
     android:padding="15dp"
     android:layoutDirection="rtl"
     android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/txtNameSure_note_cell"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAlignment="center"
         android:layout_marginTop="5dp"
         android:textDirection="rtl"
+        android:textColor="#012C4E"
         android:text="@string/name_sure"
         android:textSize="20dp"/>
     <TextView
         android:id="@+id/txtNumberAye_note_cell"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textDirection="ltr"
         android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:textColor="#012C4E"
+
         android:text="@string/number_aye"
         android:textSize="20dp"/>
     <TextView
         android:id="@+id/txtAye_note_cell"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textDirection="rtl"
+        android:textAlignment="center"
+        android:textColor="#012C4E"
         android:layout_marginTop="5dp"
         android:text="@string/aye"
         android:textSize="20dp"/>
