@@ -19,7 +19,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import ir.skums.hamyarhefz.ayatnavigationbar.NoteFragment;
 import ir.skums.hamyarhefz.ayatnavigationbar.QuestionFragment;
 import ir.skums.hamyarhefz.ayatnavigationbar.HomeFragment;
-import ir.skums.hamyarhefz.ayatnavigationbar.TranslateFragment;
+import ir.skums.hamyarhefz.ayatnavigationbar.NamSoreFragment;
 
 
 public class AyatActivity extends AppCompatActivity {
@@ -53,7 +53,7 @@ public class AyatActivity extends AppCompatActivity {
                         temp = new QuestionFragment();
                         break;
                     case R.id.Translate:
-                        temp = new TranslateFragment();
+                        temp = new NamSoreFragment();
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer, temp).commit();
                 return true;

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="85dp"
+    android:layout_marginTop="30dp"
+    tools:context=".ayatnavigationbar.NamSoreFragment">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtView_Tarjome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:paddingEnd="30dp"
+                android:paddingStart="25dp"
+                android:textColor="#012C4E"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:text="سوره هاي جزء بيست و هفتم \n \n الذاريات از آيه 31 تا 60  \n\n الطور از آيه 1 تا 49 (کامل)  \n\n النجم از آيه 1 تا 62 (کامل)  \n\n القمر از آيه 1 تا 55 (کامل)  \n\n الرحمن از آيه 1 تا 78 (کامل)  \n\n الواقعه از آيه 1 تا 96 (کامل)  \n\n الحديد از آيه 1 تا 29 (کامل)"
+                android:textAlignment="center"/>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

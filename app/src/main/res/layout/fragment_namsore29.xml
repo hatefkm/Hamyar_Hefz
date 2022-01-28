@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="85dp"
+    tools:context=".ayatnavigationbar.NamSoreFragment">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtView_Tarjome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:paddingEnd="30dp"
+                android:paddingStart="25dp"
+                android:textColor="#012C4E"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:text="سوره هاي جزء سي ام \n \n النبا از آيه 1 تا 40 (کامل)  \n\n النازعات از آيه 1 تا 46 (کامل)  \n\n عبس از آيه 1 تا 42 (کامل)  \n\n التکوير از آيه 1 تا 29 (کامل)  \n\n الانفطار از آيه 1 تا 19 (کامل)  \n\n المطففين از آيه 1 تا 36 (کامل)  \n\n الانشقاق از آيه 1 تا 25 (کامل)  \n\n البروج از آيه 1 تا 22 (کامل)  \n\n الطارق از آيه 1 تا 17 (کامل)  \n\n الاعلي از آيه 1 تا 19 (کامل)  \n\n الغاشيه از آيه 1 تا 26 (کامل)  \n\n الفجر از آيه 1 تا 30 (کامل)  \n\n البلد از آيه 1 تا 20 (کامل)  \n\n الشمس از آيه 1 تا 15 (کامل)  \n\n الليل از آيه 1 تا 21 (کامل)  \n\n الضحي از آيه 1 تا 11 (کامل)  \n\n الشرح از آيه 1 تا 8 (کامل)  \n\n التين از آيه 1 تا 8 (کامل)  \n\n العلق از آيه 1 تا 19 (کامل)  \n\n القدر از آيه 1 تا 5 (کامل)  \n\n البينة از آيه 1 تا 8 (کامل)  \n\n الزلزلة از آيه 1 تا 8 (کامل)  \n\n العاديات از آيه 1 تا 11 (کامل)  \n\n القارعة از آيه 1 تا 11 (کامل)  \n\n التکاثر از آيه 1 تا 8 (کامل)  \n\n العصر از آيه 1 تا 3 (کامل)  \n\n الهمزة از آيه 1 تا 9 (کامل)  \n\n الفيل از آيه 1 تا 5 (کامل)  \n\n قريش از آيه 1 تا 4 (کامل)  \n\n الماعون از آيه 1 تا 7 (کامل)  \n\n الکوثر از آيه 1 تا 3 (کامل)  \n\n الکافرون از آيه 1 تا 6 (کامل)  \n\n النصر از آيه 1 تا 3 (کامل)  \n\n المسد از آيه 1 تا 5 (کامل)  \n\n الاخلاص از آيه 1 تا 4 (کامل)  \n\n الفلق از آيه 1 تا 5 (کامل)  \n\n الناس از آيه 1 تا 6 (کامل)"
+                android:textAlignment="center"/>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

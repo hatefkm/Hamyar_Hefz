@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="85dp"
+    tools:context=".ayatnavigationbar.NamSoreFragment">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtView_Tarjome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:paddingEnd="30dp"
+                android:paddingStart="25dp"
+                android:textColor="#012C4E"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:text="سوره هاي جزء بيست و دوم \n \n الاحزاب از آيه 31 تا 73  \n\n سبا از آيه 1 تا 54 (کامل)  \n\n فاطر از ايه 1 تا 45 (کامل)  \n\n يس از آيه 1 تا 27"
+                android:textAlignment="center"/>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

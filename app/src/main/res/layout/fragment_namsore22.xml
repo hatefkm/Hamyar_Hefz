@@ -3,7 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ayatnavigationbar.TranslateFragment">
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="85dp"
+    tools:context=".ayatnavigationbar.NamSoreFragment">
 
 
 
@@ -23,6 +26,10 @@
                 android:paddingTop="30dp"
                 android:paddingEnd="30dp"
                 android:paddingStart="25dp"
+                android:textColor="#012C4E"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:text="سوره هاي جزء بيست و سوم \n \n يس از آيه 28 تا 83  \n\n الصافات از آيه 1 تا 182 (کامل)  \n\n ص از آيه 1 تا 88 (کامل)  \n\n الزمر از آيه 1 تا 31"
                 android:textAlignment="center"/>
 
 

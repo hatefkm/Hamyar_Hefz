@@ -1,27 +1,25 @@
 package ir.skums.hamyarhefz.ayatnavigationbar;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.fragment.app.Fragment;
 
-import ir.skums.hamyarhefz.PlayPanleFragment;
 import ir.skums.hamyarhefz.R;
 
-public class TranslateFragment extends Fragment {
+public class NamSoreFragment3 extends Fragment {
 
-
-    public TranslateFragment() {
+    TextView txtView_Tarjome;
+    public NamSoreFragment3() {
         // Required empty public constructor
     }
 
-    public static TranslateFragment newInstance(String param1, String param2) {
-        TranslateFragment fragment = new TranslateFragment();
+    public static NamSoreFragment3 newInstance(String param1, String param2) {
+        NamSoreFragment3 fragment = new NamSoreFragment3();
         Bundle args = new Bundle();
 
         fragment.setArguments(args);
@@ -40,10 +38,12 @@ public class TranslateFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view= inflater.inflate(R.layout.fragment_home, container, false);
+        View view= inflater.inflate(R.layout.fragment_namsore3, container, false);
 
 
-
+        txtView_Tarjome=view.findViewById(R.id.txtView_Tarjome);
+        Typeface type=Typeface.createFromAsset(getActivity().getAssets(), "fonts/b_titr.TTF");
+        txtView_Tarjome.setTypeface(type);
 
 
 
