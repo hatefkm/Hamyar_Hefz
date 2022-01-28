@@ -67,8 +67,8 @@ public class JomeFragment extends Fragment {
 
 
 
-        SharedPreferences prefs = requireContext().getSharedPreferences("MY_PREFS", Context.MODE_PRIVATE);
-        counter = prefs.getInt("COUNTER_KEY",0);
+        SharedPreferences prefsJome = requireContext().getSharedPreferences("MY_PREFSJome", Context.MODE_PRIVATE);
+        counter = prefsJome.getInt("COUNTER_KEY",0);
         resultTv.setText(String.valueOf(counter));
 
 
@@ -122,5 +122,16 @@ public class JomeFragment extends Fragment {
         resultTv.setTypeface(type);
 
         return view;
+    }
+
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+        SharedPreferences.Editor editorJome = requireContext().getSharedPreferences("MY_PREFSJome" , Context.MODE_PRIVATE).edit();
+        editorJome.putInt("COUNTER_KEY" , counter);
+        editorJome.apply();
+
     }
 }

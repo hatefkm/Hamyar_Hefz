@@ -3,6 +3,7 @@ package ir.skums.hamyarhefz;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -56,26 +57,84 @@ public class AmalBadActivity extends AppCompatActivity {
         tv_resultFekrHaram = findViewById(R.id.tv_resultFekrHaram);
         tv_resultMasrafAlkol = findViewById(R.id.tv_resultMasrafAlkol);
 
-        SharedPreferences prefs = getSharedPreferences("MY_PREFS" , MODE_PRIVATE);
+        SharedPreferences prefsQeibatKardan = getSharedPreferences("MY_PREFSQeibatKardan" , MODE_PRIVATE);
+        SharedPreferences prefsTarkNAmaz = getSharedPreferences("MY_PREFSTarkNAmaz" , MODE_PRIVATE);
+        SharedPreferences prefsEsrafKrdn = getSharedPreferences("MY_PREFSEsrafKrdn" , MODE_PRIVATE);
+        SharedPreferences prefsSoutHaram = getSharedPreferences("MY_PREFSSoutHaram" , MODE_PRIVATE);
+        SharedPreferences prefsAsabaniat = getSharedPreferences("MY_PREFSAsabaniat" , MODE_PRIVATE);
+        SharedPreferences prefsKhianat = getSharedPreferences("MY_PREFSKhianat" , MODE_PRIVATE);
+        SharedPreferences prefsTohmat = getSharedPreferences("MY_PREFSTohmat" , MODE_PRIVATE);
+        SharedPreferences prefsTafraqe = getSharedPreferences("MY_PREFSTafraqe" , MODE_PRIVATE);
+        SharedPreferences prefsNegahHaram = getSharedPreferences("MY_PREFSNegahHaram" , MODE_PRIVATE);
+        SharedPreferences prefsRezqHaram = getSharedPreferences("MY_PREFSRezqHaram" , MODE_PRIVATE);
+        SharedPreferences prefsAbroo = getSharedPreferences("MY_PREFSAbroo" , MODE_PRIVATE);
+        SharedPreferences prefsZakhmZaban = getSharedPreferences("MY_PREFSZakhmZaban" , MODE_PRIVATE);
+        SharedPreferences prefsPeyman = getSharedPreferences("MY_PREFSPeyman" , MODE_PRIVATE);
+        SharedPreferences prefsSokhanParidn = getSharedPreferences("MY_PREFSSokhanParidn" , MODE_PRIVATE);
+        SharedPreferences prefsBeEhterami = getSharedPreferences("MY_PREFSBeEhterami" , MODE_PRIVATE);
+        SharedPreferences prefsTohin = getSharedPreferences("MY_PREFSTohin" , MODE_PRIVATE);
+        SharedPreferences prefsFekrHaram = getSharedPreferences("MY_PREFSFekrHaram" , MODE_PRIVATE);
+        SharedPreferences prefsMasrafAlkol = getSharedPreferences("MY_PREFSMasrafAlkol" , MODE_PRIVATE);
 
-        counterQeibatKardan = prefs.getInt("COUNTER_KEY",0);
-        counterTarkNAmaz = prefs.getInt("COUNTER_KEY",0);
-        counterEsrafKrdn = prefs.getInt("COUNTER_KEY",0);
-        counterSoutHaram= prefs.getInt("COUNTER_KEY",0);
-        counterAsabaniat = prefs.getInt("COUNTER_KEY",0);
-        counterKhianat = prefs.getInt("COUNTER_KEY",0);
-        counterTohmat = prefs.getInt("COUNTER_KEY",0);
-        counterTafraqe = prefs.getInt("COUNTER_KEY",0);
-        counterNegahHaram = prefs.getInt("COUNTER_KEY",0);
-        counterRezqHaram = prefs.getInt("COUNTER_KEY",0);
-        counterAbroo = prefs.getInt("COUNTER_KEY",0);
-        counterZakhmZaban = prefs.getInt("COUNTER_KEY",0);
-        counterPeyman = prefs.getInt("COUNTER_KEY",0);
-        counterSokhanParidn = prefs.getInt("COUNTER_KEY",0);
-        counterBeEhterami = prefs.getInt("COUNTER_KEY",0);
-        counterTohin= prefs.getInt("COUNTER_KEY",0);
-        counterFekrHaram = prefs.getInt("COUNTER_KEY",0);
-        counterMasrafAlkol= prefs.getInt("COUNTER_KEY",0);
+        counterQeibatKardan = prefsQeibatKardan.getInt("COUNTER_KEY",0);
+        counterTarkNAmaz = prefsTarkNAmaz.getInt("COUNTER_KEY",0);
+        counterEsrafKrdn = prefsEsrafKrdn.getInt("COUNTER_KEY",0);
+        counterSoutHaram= prefsSoutHaram.getInt("COUNTER_KEY",0);
+        counterAsabaniat = prefsAsabaniat.getInt("COUNTER_KEY",0);
+        counterKhianat = prefsKhianat.getInt("COUNTER_KEY",0);
+        counterTohmat = prefsTohmat.getInt("COUNTER_KEY",0);
+        counterTafraqe = prefsTafraqe.getInt("COUNTER_KEY",0);
+        counterNegahHaram = prefsNegahHaram.getInt("COUNTER_KEY",0);
+        counterRezqHaram = prefsRezqHaram.getInt("COUNTER_KEY",0);
+        counterAbroo = prefsAbroo.getInt("COUNTER_KEY",0);
+        counterZakhmZaban = prefsZakhmZaban.getInt("COUNTER_KEY",0);
+        counterPeyman = prefsPeyman.getInt("COUNTER_KEY",0);
+        counterSokhanParidn = prefsSokhanParidn.getInt("COUNTER_KEY",0);
+        counterBeEhterami = prefsBeEhterami.getInt("COUNTER_KEY",0);
+        counterTohin= prefsTohin.getInt("COUNTER_KEY",0);
+        counterFekrHaram = prefsFekrHaram.getInt("COUNTER_KEY",0);
+        counterMasrafAlkol= prefsMasrafAlkol.getInt("COUNTER_KEY",0);
+
+        tv_resultQeibatKardan.setText(String.valueOf(counterQeibatKardan));
+        tv_resultTarkNAmaz.setText(String.valueOf(counterTarkNAmaz));
+        tv_resultEsrafKrdn.setText(String.valueOf(counterEsrafKrdn));
+        tv_resultSoutHaram.setText(String.valueOf(counterSoutHaram));
+        tv_resultAsabaniat.setText(String.valueOf(counterAsabaniat));
+        tv_resultKhianat.setText(String.valueOf(counterKhianat));
+        tv_resultTohmat.setText(String.valueOf(counterTohmat));
+        tv_resultTafraqe.setText(String.valueOf(counterTafraqe));
+        tv_resultNegahHaram.setText(String.valueOf(counterRezqHaram));
+        tv_resultRezqHaram.setText(String.valueOf(counterRezqHaram));
+        tv_resultAbroo.setText(String.valueOf(counterAbroo));
+        tv_resultZakhmZaban.setText(String.valueOf(counterZakhmZaban));
+        tv_resultPeyman.setText(String.valueOf(counterSokhanParidn));
+        tv_resultSokhanParidn.setText(String.valueOf(counterSokhanParidn));
+        tv_resultBeEhterami.setText(String.valueOf(counterBeEhterami));
+        tv_resultTohin.setText(String.valueOf(counterTohin));
+        tv_resultFekrHaram.setText(String.valueOf(counterFekrHaram));
+        tv_resultMasrafAlkol.setText(String.valueOf(counterMasrafAlkol));
+
+        Typeface type=Typeface.createFromAsset(getAssets(), "fonts/b_titr.TTF");
+        tv_resultQeibatKardan.setTypeface(type);
+        tv_resultTarkNAmaz.setTypeface(type);
+        tv_resultEsrafKrdn.setTypeface(type);
+        tv_resultSoutHaram.setTypeface(type);
+        tv_resultAsabaniat.setTypeface(type);
+        tv_resultKhianat.setTypeface(type);
+        tv_resultTohmat.setTypeface(type);
+        tv_resultTafraqe.setTypeface(type);
+        tv_resultNegahHaram.setTypeface(type);
+        tv_resultRezqHaram.setTypeface(type);
+        tv_resultAbroo.setTypeface(type);
+        tv_resultZakhmZaban.setTypeface(type);
+        tv_resultPeyman.setTypeface(type);
+        tv_resultSokhanParidn.setTypeface(type);
+        tv_resultBeEhterami.setTypeface(type);
+        tv_resultTohin.setTypeface(type);
+        tv_resultFekrHaram.setTypeface(type);
+        tv_resultMasrafAlkol.setTypeface(type);
+
+
 
 
 
@@ -311,4 +370,72 @@ public class AmalBadActivity extends AppCompatActivity {
         counterMasrafAlkol = 0;
         tv_resultMasrafAlkol.setText(String.valueOf(counterMasrafAlkol));
     }
-}
+
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        SharedPreferences.Editor editorQeibatKardan = getSharedPreferences("MY_PREFSQeibatKardan", MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorTarkNAmaz = getSharedPreferences("MY_PREFSTarkNAmaz", MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorEsrafKrdn = getSharedPreferences("MY_PREFSEsrafKrdn", MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorSoutHaram = getSharedPreferences("MY_PREFSSoutHaram", MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorAsabaniat = getSharedPreferences("MY_PREFSAsabaniat", MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorKhianat = getSharedPreferences("MY_PREFSKhianat", MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorTohmat = getSharedPreferences("MY_PREFSTohmat", MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorTafraqe = getSharedPreferences("MY_PREFSTafraqe", MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorNegahHaram = getSharedPreferences("MY_PREFSNegahHaram", MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorRezqHaram = getSharedPreferences("MY_PREFSRezqHaram", MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorAbroo = getSharedPreferences("MY_PREFSAbroo", MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorZakhmZaban = getSharedPreferences("MY_PREFSZakhmZaban", MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorPeyman = getSharedPreferences("MY_PREFSPeyman", MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorSokhanParidn = getSharedPreferences("MY_PREFSSokhanParidn", MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorBeEhterami = getSharedPreferences("MY_PREFSBeEhterami", MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorTohin = getSharedPreferences("MY_PREFSTohin", MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorFekrHaram = getSharedPreferences("MY_PREFSFekrHaram", MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorMasrafAlkol = getSharedPreferences("MY_PREFSMasrafAlkol", MODE_PRIVATE).edit();
+
+        editorQeibatKardan.putInt("COUNTER_KEY",counterQeibatKardan);
+        editorTarkNAmaz.putInt("COUNTER_KEY",counterTarkNAmaz);
+        editorEsrafKrdn.putInt("COUNTER_KEY",counterEsrafKrdn);
+        editorSoutHaram.putInt("COUNTER_KEY",counterSoutHaram);
+        editorAsabaniat.putInt("COUNTER_KEY",counterAsabaniat);
+        editorKhianat.putInt("COUNTER_KEY",counterKhianat);
+        editorTohmat.putInt("COUNTER_KEY",counterTohmat);
+        editorTafraqe.putInt("COUNTER_KEY",counterTafraqe);
+        editorNegahHaram.putInt("COUNTER_KEY",counterNegahHaram);
+        editorRezqHaram.putInt("COUNTER_KEY",counterRezqHaram);
+        editorAbroo.putInt("COUNTER_KEY",counterAbroo);
+        editorZakhmZaban.putInt("COUNTER_KEY",counterZakhmZaban);
+        editorPeyman.putInt("COUNTER_KEY",counterPeyman);
+        editorSokhanParidn.putInt("COUNTER_KEY",counterSokhanParidn);
+        editorBeEhterami.putInt("COUNTER_KEY",counterBeEhterami);
+        editorTohin.putInt("COUNTER_KEY",counterTohin);
+        editorFekrHaram.putInt("COUNTER_KEY",counterFekrHaram);
+        editorMasrafAlkol.putInt("COUNTER_KEY",counterMasrafAlkol);
+
+        editorQeibatKardan.apply();
+        editorTarkNAmaz.apply();
+        editorEsrafKrdn.apply();
+        editorSoutHaram.apply();
+        editorAsabaniat.apply();
+        editorKhianat.apply();
+        editorTohmat.apply();
+        editorTafraqe.apply();
+        editorNegahHaram.apply();
+        editorRezqHaram.apply();
+        editorAbroo.apply();
+        editorZakhmZaban.apply();
+        editorPeyman.apply();
+        editorSokhanParidn.apply();
+        editorBeEhterami.apply();
+        editorTohin.apply();
+        editorFekrHaram.apply();
+        editorMasrafAlkol.apply();
+
+
+
+
+    }
+
+
+    }

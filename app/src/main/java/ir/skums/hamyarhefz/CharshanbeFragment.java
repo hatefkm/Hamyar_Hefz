@@ -71,8 +71,8 @@ public class CharshanbeFragment extends Fragment {
         mediaPlayer = MediaPlayer.create(getActivity(), R.raw.charshanbe_audio);
 
 
-        SharedPreferences prefs = requireContext().getSharedPreferences("MY_PREFS", Context.MODE_PRIVATE);
-        counter = prefs.getInt("COUNTER_KEY",0);
+        SharedPreferences prefsCharShanbe = requireContext().getSharedPreferences("MY_PREFSCharShanbe", Context.MODE_PRIVATE);
+        counter = prefsCharShanbe.getInt("COUNTER_KEY",0);
         resultTv.setText(String.valueOf(counter));
 
 
@@ -127,6 +127,16 @@ public class CharshanbeFragment extends Fragment {
 
 
         return view;
+
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+        SharedPreferences.Editor editorCharShanbe = requireContext().getSharedPreferences("MY_PREFSCharShanbe" , Context.MODE_PRIVATE).edit();
+        editorCharShanbe.putInt("COUNTER_KEY" , counter);
+        editorCharShanbe.apply();
 
     }
 }

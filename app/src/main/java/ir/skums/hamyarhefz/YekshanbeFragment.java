@@ -72,8 +72,8 @@ public class YekshanbeFragment extends Fragment {
 
 
 
-        SharedPreferences prefs = requireContext().getSharedPreferences("MY_PREFS", Context.MODE_PRIVATE);
-        counter = prefs.getInt("COUNTER_KEY",0);
+        SharedPreferences prefsYekshanbe = requireContext().getSharedPreferences("MY_PREFSYekshanbe", Context.MODE_PRIVATE);
+        counter = prefsYekshanbe.getInt("COUNTER_KEY",0);
         resultTv.setText(String.valueOf(counter));
 
 
@@ -130,6 +130,16 @@ public class YekshanbeFragment extends Fragment {
 
 
         return view;
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+        SharedPreferences.Editor editorYekshanbe = requireContext().getSharedPreferences("MY_PREFSYekshanbe" , Context.MODE_PRIVATE).edit();
+        editorYekshanbe.putInt("COUNTER_KEY" , counter);
+        editorYekshanbe.apply();
+
     }
 
 

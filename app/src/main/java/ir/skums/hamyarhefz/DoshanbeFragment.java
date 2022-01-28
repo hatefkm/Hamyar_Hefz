@@ -72,8 +72,8 @@ public class DoshanbeFragment extends Fragment {
 
 
 
-        SharedPreferences prefs = requireContext().getSharedPreferences("MY_PREFS", Context.MODE_PRIVATE);
-        counter = prefs.getInt("COUNTER_KEY",0);
+        SharedPreferences prefsDoShanbe = requireContext().getSharedPreferences("MY_PREFSDoShanbe", Context.MODE_PRIVATE);
+        counter = prefsDoShanbe.getInt("COUNTER_KEY",0);
         resultTv.setText(String.valueOf(counter));
 
 
@@ -129,6 +129,16 @@ public class DoshanbeFragment extends Fragment {
 
 
         return view;
+
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+        SharedPreferences.Editor editorDoShanbe = requireContext().getSharedPreferences("MY_PREFSDoShanbe" , Context.MODE_PRIVATE).edit();
+        editorDoShanbe.putInt("COUNTER_KEY" , counter);
+        editorDoShanbe.apply();
 
     }
 }

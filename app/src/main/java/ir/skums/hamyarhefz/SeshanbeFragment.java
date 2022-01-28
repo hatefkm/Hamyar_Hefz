@@ -78,8 +78,8 @@ public class SeshanbeFragment extends Fragment {
 
 
 
-        SharedPreferences prefs = requireContext().getSharedPreferences("MY_PREFS", Context.MODE_PRIVATE);
-        counter = prefs.getInt("COUNTER_KEY",0);
+        SharedPreferences prefsSeshanbe = requireContext().getSharedPreferences("MY_PREFSSeshanbe", Context.MODE_PRIVATE);
+        counter = prefsSeshanbe.getInt("COUNTER_KEY",0);
         resultTv.setText(String.valueOf(counter));
 
 
@@ -142,6 +142,8 @@ public class SeshanbeFragment extends Fragment {
 
     }
 
+
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -152,6 +154,16 @@ public class SeshanbeFragment extends Fragment {
 
 
 
+
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+        SharedPreferences.Editor editorSeshanbe = requireContext().getSharedPreferences("MY_PREFSSeshanbe" , Context.MODE_PRIVATE).edit();
+        editorSeshanbe.putInt("COUNTER_KEY" , counter);
+        editorSeshanbe.apply();
 
     }
 }

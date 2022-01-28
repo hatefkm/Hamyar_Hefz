@@ -32,6 +32,9 @@ public class EbadatActivity extends AppCompatActivity {
     int counterAnjamTaqibat=0;
     int counterFateheAmvat=0;
     int counterYadAkherat=0;
+
+
+
     TextView tv_resultQuran,tv_resultEtaat,tv_resultTavajoh,tv_resultTaqibat,tv_resultNamazSarVaqt,tv_resultAtamMasakin,tv_resultDaemVozo,tv_resultSalavat,tv_resultHefzNegah,tv_resultSadaqe,tv_resultNamazShab,tv_resultAmrBeMArof,tv_resultTobe,tv_resultNahiAzMonkar,tv_resultMosiqiMojaz,tv_resultEtaatKhoda,tv_resultResaneHaram,tv_resultAnjamTaqibat,tv_resultFateheAmvat,tv_resultYadAkherat;
 
     @Override
@@ -65,28 +68,48 @@ public class EbadatActivity extends AppCompatActivity {
 
 
 
-        SharedPreferences prefs = getSharedPreferences("MY_PREFS" , MODE_PRIVATE);
 
-        counterQuran = prefs.getInt("COUNTER_KEY",0);
-        counterEtaat = prefs.getInt("COUNTER_KEY",0);
-        counterTavajoh = prefs.getInt("COUNTER_KEY",0);
-        counterTaqibat= prefs.getInt("COUNTER_KEY",0);
-        counterNamazSarVaqt = prefs.getInt("COUNTER_KEY",0);
-        counterAtamMasakin = prefs.getInt("COUNTER_KEY",0);
-        counterDaemVozo = prefs.getInt("COUNTER_KEY",0);
-        counterSalavat = prefs.getInt("COUNTER_KEY",0);
-        counterHefzNegah = prefs.getInt("COUNTER_KEY",0);
-        counterSadaqe = prefs.getInt("COUNTER_KEY",0);
-        counterNamazShab = prefs.getInt("COUNTER_KEY",0);
-        counterAmrBeMArof = prefs.getInt("COUNTER_KEY",0);
-        counterTobe = prefs.getInt("COUNTER_KEY",0);
-        counterNahiAzMonkar = prefs.getInt("COUNTER_KEY",0);
-        counterMosiqiMojaz = prefs.getInt("COUNTER_KEY",0);
-        counterEtaatKhoda= prefs.getInt("COUNTER_KEY",0);
-        counterResaneHaram = prefs.getInt("COUNTER_KEY",0);
-        counterAnjamTaqibat= prefs.getInt("COUNTER_KEY",0);
-        counterFateheAmvat = prefs.getInt("COUNTER_KEY",0);
-        counterYadAkherat = prefs.getInt("COUNTER_KEY",0);
+        SharedPreferences prefsQuran = getSharedPreferences("MY_PREFS_Quran" , MODE_PRIVATE);
+        SharedPreferences prefsTavajoh = getSharedPreferences("MY_PREFS_Tavajoh" , MODE_PRIVATE);
+        SharedPreferences prefsTaqibat = getSharedPreferences("MY_PREFS_Taqibat" , MODE_PRIVATE);
+        SharedPreferences prefsNamazSarVaqt = getSharedPreferences("MY_PREFS_NamazSarVaqt" , MODE_PRIVATE);
+        SharedPreferences prefsAtamMasakin = getSharedPreferences("MY_PREFS_AtamMasakin" , MODE_PRIVATE);
+        SharedPreferences prefsDaemVozo = getSharedPreferences("MY_PREFS_DaemVozo" , MODE_PRIVATE);
+        SharedPreferences prefsSalavat = getSharedPreferences("MY_PREFS_Salavat" , MODE_PRIVATE);
+        SharedPreferences prefsHefzNegah = getSharedPreferences("MY_PREFS_HefzNegah" , MODE_PRIVATE);
+        SharedPreferences prefsSadaqe = getSharedPreferences("MY_PREFS_Sadaqe" , MODE_PRIVATE);
+        SharedPreferences prefsNamazShab  = getSharedPreferences("MY_PREFS_NamazShab" , MODE_PRIVATE);
+        SharedPreferences prefsAmrBeMArof = getSharedPreferences("MY_PREFS_AmrBeMArof" , MODE_PRIVATE);
+        SharedPreferences prefsEtaat = getSharedPreferences("MY_PREFS_Etaat" , MODE_PRIVATE);
+        SharedPreferences prefsTobe = getSharedPreferences("MY_PREFS_Tobe" , MODE_PRIVATE);
+        SharedPreferences prefsNahiAzMonkar = getSharedPreferences("MY_PREFS_NahiAzMonkar" , MODE_PRIVATE);
+        SharedPreferences prefsMosiqiMojaz = getSharedPreferences("MY_PREFS_MosiqiMojaz" , MODE_PRIVATE);
+        SharedPreferences prefsResaneHaram = getSharedPreferences("MY_PREFS_ResaneHaram" , MODE_PRIVATE);
+        SharedPreferences prefsEtaatKhoda = getSharedPreferences("MY_PREFS_EtaatKhoda" , MODE_PRIVATE);
+        SharedPreferences prefsAnjamTaqibat = getSharedPreferences("MY_PREFS_AnjamTaqibat" , MODE_PRIVATE);
+        SharedPreferences prefsFateheAmvat= getSharedPreferences("MY_PREFS_FateheAmvat" , MODE_PRIVATE);
+        SharedPreferences prefsYadAkherat = getSharedPreferences("MY_PREFS_YadAkherat" , MODE_PRIVATE);
+
+        counterQuran = prefsQuran.getInt("COUNTER_KEY",0);
+        counterEtaat = prefsEtaat.getInt("COUNTER_KEY",0);
+        counterTavajoh = prefsTavajoh.getInt("COUNTER_KEY",0);
+        counterTaqibat= prefsTaqibat.getInt("COUNTER_KEY",0);
+        counterNamazSarVaqt = prefsNamazSarVaqt.getInt("COUNTER_KEY",0);
+        counterAtamMasakin = prefsAtamMasakin.getInt("COUNTER_KEY",0);
+        counterDaemVozo = prefsDaemVozo.getInt("COUNTER_KEY",0);
+        counterSalavat = prefsSalavat.getInt("COUNTER_KEY",0);
+        counterHefzNegah = prefsHefzNegah.getInt("COUNTER_KEY",0);
+        counterSadaqe = prefsSadaqe.getInt("COUNTER_KEY",0);
+        counterNamazShab = prefsNamazShab.getInt("COUNTER_KEY",0);
+        counterAmrBeMArof = prefsAmrBeMArof.getInt("COUNTER_KEY",0);
+        counterTobe = prefsTobe.getInt("COUNTER_KEY",0);
+        counterNahiAzMonkar = prefsNahiAzMonkar.getInt("COUNTER_KEY",0);
+        counterMosiqiMojaz = prefsMosiqiMojaz.getInt("COUNTER_KEY",0);
+        counterEtaatKhoda= prefsEtaatKhoda.getInt("COUNTER_KEY",0);
+        counterResaneHaram = prefsResaneHaram.getInt("COUNTER_KEY",0);
+        counterAnjamTaqibat= prefsAnjamTaqibat.getInt("COUNTER_KEY",0);
+        counterFateheAmvat = prefsFateheAmvat.getInt("COUNTER_KEY",0);
+        counterYadAkherat = prefsYadAkherat.getInt("COUNTER_KEY",0);
 
         tv_resultQuran.setText(String.valueOf(counterQuran));
         tv_resultEtaat.setText(String.valueOf(counterEtaat));
@@ -399,9 +422,69 @@ public class EbadatActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onResume() {
-        SharedPreferences prefs = getSharedPreferences("MY_PREFS" , MODE_PRIVATE);
+    protected void onStop() {
+        super.onStop();
+        SharedPreferences.Editor editorQuran = getSharedPreferences("MY_PREFS_Quran" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorEtaat = getSharedPreferences("MY_PREFS_Etaat" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorTavajoh = getSharedPreferences("MY_PREFS_Tavajoh" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorTaqibat = getSharedPreferences("MY_PREFS_Taqibat" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorNamazSarVaqt = getSharedPreferences("MY_PREFS_NamazSarVaqt" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorAtamMasakin = getSharedPreferences("MY_PREFS_AtamMasakin" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorDaemVozo = getSharedPreferences("MY_PREFS_DaemVozo" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorSalavat = getSharedPreferences("MY_PREFS_Salavat" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorHefzNegah = getSharedPreferences("MY_PREFS_HefzNegah" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorSadaqe = getSharedPreferences("MY_PREFS_Sadaqe" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorNamazShab = getSharedPreferences("MY_PREFS_NamazShab" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorAmrBeMArof = getSharedPreferences("MY_PREFS_AmrBeMArof" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorTobe = getSharedPreferences("MY_PREFS_Tobe" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorNahiAzMonkar = getSharedPreferences("MY_PREFS_NahiAzMonkar" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorMosiqiMojaz = getSharedPreferences("MY_PREFS_MosiqiMojaz" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorEtaatKhoda = getSharedPreferences("MY_PREFS_EtaatKhoda" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorResaneHaram = getSharedPreferences("MY_PREFS_ResaneHaram" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorAnjamTaqibat = getSharedPreferences("MY_PREFS_AnjamTaqibat" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorFateheAmvat = getSharedPreferences("MY_PREFS_FateheAmvat" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorYadAkherat = getSharedPreferences("MY_PREFS_YadAkherat" , MODE_PRIVATE).edit();
 
-        super.onResume();
+        editorQuran.putInt("COUNTER_KEY" , counterQuran);
+        editorEtaat.putInt("COUNTER_KEY" , counterEtaat);
+        editorTavajoh.putInt("COUNTER_KEY" , counterTavajoh);
+        editorTaqibat.putInt("COUNTER_KEY" , counterTaqibat);
+        editorNamazSarVaqt.putInt("COUNTER_KEY" , counterNamazSarVaqt);
+        editorAtamMasakin.putInt("COUNTER_KEY" , counterAtamMasakin);
+        editorDaemVozo.putInt("COUNTER_KEY" , counterDaemVozo);
+        editorSalavat.putInt("COUNTER_KEY" , counterSalavat);
+        editorHefzNegah.putInt("COUNTER_KEY" , counterHefzNegah);
+        editorSadaqe.putInt("COUNTER_KEY" , counterSadaqe);
+        editorNamazShab.putInt("COUNTER_KEY" , counterNamazShab);
+        editorAmrBeMArof.putInt("COUNTER_KEY" , counterAmrBeMArof);
+        editorTobe.putInt("COUNTER_KEY" , counterTobe);
+        editorNahiAzMonkar.putInt("COUNTER_KEY" , counterNahiAzMonkar);
+        editorMosiqiMojaz.putInt("COUNTER_KEY" , counterMosiqiMojaz);
+        editorEtaatKhoda.putInt("COUNTER_KEY" , counterEtaatKhoda);
+        editorResaneHaram.putInt("COUNTER_KEY" , counterResaneHaram);
+        editorAnjamTaqibat.putInt("COUNTER_KEY" , counterAnjamTaqibat);
+        editorFateheAmvat.putInt("COUNTER_KEY" , counterFateheAmvat);
+        editorYadAkherat.putInt("COUNTER_KEY" , counterYadAkherat);
+
+        editorQuran.apply();
+        editorEtaat.apply();
+        editorTavajoh.apply();
+        editorTaqibat.apply();
+        editorNamazSarVaqt.apply();
+        editorAtamMasakin.apply();
+        editorDaemVozo.apply();
+        editorSalavat.apply();
+        editorHefzNegah.apply();
+        editorSadaqe.apply();
+        editorNamazShab.apply();
+        editorAmrBeMArof.apply();
+        editorTobe.apply();
+        editorNahiAzMonkar.apply();
+        editorMosiqiMojaz.apply();
+        editorEtaatKhoda.apply();
+        editorResaneHaram.apply();
+        editorAnjamTaqibat.apply();
+        editorFateheAmvat.apply();
+        editorYadAkherat.apply();
     }
 }

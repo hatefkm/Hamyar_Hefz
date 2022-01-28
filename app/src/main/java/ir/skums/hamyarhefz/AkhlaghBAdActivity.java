@@ -58,28 +58,44 @@ public class AkhlaghBAdActivity extends AppCompatActivity {
         tv_resultFozoli = findViewById(R.id.tv_resultFozoli);
         tv_resultKhabarChini = findViewById(R.id.tv_resultKhabarChini);
 
-        Typeface type=Typeface.createFromAsset(getAssets(), "fonts/b_titr.TTF");
 
 
 
-        SharedPreferences prefs = getSharedPreferences("MY_PREFS" , MODE_PRIVATE);
 
-        counterEtlafVaqt = prefs.getInt("COUNTER_KEY",0);
-        counterQororBija = prefs.getInt("COUNTER_KEY",0);
-        counterDoroq = prefs.getInt("COUNTER_KEY",0);
-        counterLajbazi= prefs.getInt("COUNTER_KEY",0);
-        counterNHesadat = prefs.getInt("COUNTER_KEY",0);
-        counterNaOmidi = prefs.getInt("COUNTER_KEY",0);
-        counterBokhl = prefs.getInt("COUNTER_KEY",0);
-        counterHavas = prefs.getInt("COUNTER_KEY",0);
-        counterTakabor = prefs.getInt("COUNTER_KEY",0);
-        counterPorKhori = prefs.getInt("COUNTER_KEY",0);
-        counterSosti = prefs.getInt("COUNTER_KEY",0);
-        counterAdamRaz = prefs.getInt("COUNTER_KEY",0);
-        counterRia = prefs.getInt("COUNTER_KEY",0);
-        counterBadAkhlaqi = prefs.getInt("COUNTER_KEY",0);
-        counterFozoli = prefs.getInt("COUNTER_KEY",0);
-        counterKhabarChini= prefs.getInt("COUNTER_KEY",0);
+
+        SharedPreferences prefsEtlafVaqt = getSharedPreferences("MY_PREFSEtlafVaqt" , MODE_PRIVATE);
+        SharedPreferences prefsQororBija = getSharedPreferences("MY_PREFSQororBija" , MODE_PRIVATE);
+        SharedPreferences prefsDoroq = getSharedPreferences("MY_PREFSDoroq" , MODE_PRIVATE);
+        SharedPreferences prefsLajbazi = getSharedPreferences("MY_PREFSLajbazi" , MODE_PRIVATE);
+        SharedPreferences prefsNHesadat = getSharedPreferences("MY_PREFSNHesadat" , MODE_PRIVATE);
+        SharedPreferences prefsNaOmidi = getSharedPreferences("MY_PREFSNaOmidi" , MODE_PRIVATE);
+        SharedPreferences prefsBokhl = getSharedPreferences("MY_PREFSBokhl" , MODE_PRIVATE);
+        SharedPreferences prefsHavas = getSharedPreferences("MY_PREFSHavas" , MODE_PRIVATE);
+        SharedPreferences prefsTakabor = getSharedPreferences("MY_PREFSTakabor" , MODE_PRIVATE);
+        SharedPreferences prefsPorKhori = getSharedPreferences("MY_PREFSPorKhori" , MODE_PRIVATE);
+        SharedPreferences prefsSosti = getSharedPreferences("MY_PREFSSosti" , MODE_PRIVATE);
+        SharedPreferences prefsAdamRaz = getSharedPreferences("MY_PREFSAdamRaz" , MODE_PRIVATE);
+        SharedPreferences prefsRia = getSharedPreferences("MY_PREFSRia" , MODE_PRIVATE);
+        SharedPreferences prefsBadAkhlaqi = getSharedPreferences("MY_PREFSBadAkhlaqi" , MODE_PRIVATE);
+        SharedPreferences prefsFozoli = getSharedPreferences("MY_PREFSFozoli" , MODE_PRIVATE);
+        SharedPreferences prefsKhabarChini = getSharedPreferences("MY_PREFSKhabarChini" , MODE_PRIVATE);
+
+        counterEtlafVaqt = prefsEtlafVaqt.getInt("COUNTER_KEY",0);
+        counterQororBija = prefsQororBija.getInt("COUNTER_KEY",0);
+        counterDoroq = prefsDoroq.getInt("COUNTER_KEY",0);
+        counterLajbazi= prefsLajbazi.getInt("COUNTER_KEY",0);
+        counterNHesadat = prefsNHesadat.getInt("COUNTER_KEY",0);
+        counterNaOmidi = prefsNaOmidi.getInt("COUNTER_KEY",0);
+        counterBokhl = prefsBokhl.getInt("COUNTER_KEY",0);
+        counterHavas = prefsHavas.getInt("COUNTER_KEY",0);
+        counterTakabor = prefsTakabor.getInt("COUNTER_KEY",0);
+        counterPorKhori = prefsPorKhori.getInt("COUNTER_KEY",0);
+        counterSosti = prefsSosti.getInt("COUNTER_KEY",0);
+        counterAdamRaz = prefsAdamRaz.getInt("COUNTER_KEY",0);
+        counterRia = prefsRia.getInt("COUNTER_KEY",0);
+        counterBadAkhlaqi = prefsBadAkhlaqi.getInt("COUNTER_KEY",0);
+        counterFozoli = prefsFozoli.getInt("COUNTER_KEY",0);
+        counterKhabarChini= prefsKhabarChini.getInt("COUNTER_KEY",0);
 
 
 
@@ -99,6 +115,26 @@ public class AkhlaghBAdActivity extends AppCompatActivity {
         tv_resultBadAkhlaqi.setText(String.valueOf(counterBadAkhlaqi));
         tv_resultFozoli.setText(String.valueOf(counterFozoli));
         tv_resultKhabarChini.setText(String.valueOf(counterKhabarChini));
+
+
+
+        Typeface type=Typeface.createFromAsset(getAssets(), "fonts/b_titr.TTF");
+        tv_resultEtlafVaqt.setTypeface(type);
+        tv_resultQororBija.setTypeface(type);
+        tv_resultDoroq.setTypeface(type);
+        tv_resultLajbazi.setTypeface(type);
+        tv_resultNHesadat.setTypeface(type);
+        tv_resultNaOmidi.setTypeface(type);
+        tv_resultBokhl.setTypeface(type);
+        tv_resultHavas.setTypeface(type);
+        tv_resultTakabor.setTypeface(type);
+        tv_resultPorKhori.setTypeface(type);
+        tv_resultSosti.setTypeface(type);
+        tv_resultAdamRaz.setTypeface(type);
+        tv_resultRia.setTypeface(type);
+        tv_resultBadAkhlaqi.setTypeface(type);
+        tv_resultFozoli.setTypeface(type);
+        tv_resultKhabarChini.setTypeface(type);
 
 
 
@@ -294,4 +330,69 @@ public class AkhlaghBAdActivity extends AppCompatActivity {
         counterKhabarChini = 0;
         tv_resultKhabarChini.setText(String.valueOf(counterKhabarChini));
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        SharedPreferences.Editor editorEtlafVaqt = getSharedPreferences("MY_PREFSEtlafVaqt" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorQororBija = getSharedPreferences("MY_PREFSQororBija" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorDoroq = getSharedPreferences("MY_PREFSDoroq" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorLajbazi = getSharedPreferences("MY_PREFSLajbazi" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorNHesadat = getSharedPreferences("MY_PREFSNHesadat" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorNaOmidi = getSharedPreferences("MY_PREFSNaOmidi" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorBokhl = getSharedPreferences("MY_PREFSBokhl" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorHavas = getSharedPreferences("MY_PREFSHavas" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorTakabor = getSharedPreferences("MY_PREFSTakabor" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorPorKhori = getSharedPreferences("MY_PREFSPorKhori" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorSosti = getSharedPreferences("MY_PREFSSosti" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorAdamRaz = getSharedPreferences("MY_PREFSAdamRaz" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorRia = getSharedPreferences("MY_PREFSRia" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorBadAkhlaqi = getSharedPreferences("MY_PREFSBadAkhlaqi" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorFozoli = getSharedPreferences("MY_PREFSFozoli" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorKhabarChini = getSharedPreferences("MY_PREFSKhabarChini" , MODE_PRIVATE).edit();
+
+        editorEtlafVaqt.putInt("COUNTER_KEY",counterEtlafVaqt);
+        editorQororBija.putInt("COUNTER_KEY",counterQororBija);
+        editorDoroq.putInt("COUNTER_KEY",counterDoroq);
+        editorLajbazi.putInt("COUNTER_KEY",counterLajbazi);
+        editorNHesadat.putInt("COUNTER_KEY",counterNHesadat);
+        editorNaOmidi.putInt("COUNTER_KEY",counterNaOmidi);
+        editorBokhl.putInt("COUNTER_KEY",counterBokhl);
+        editorHavas.putInt("COUNTER_KEY",counterHavas);
+        editorTakabor.putInt("COUNTER_KEY",counterTakabor);
+        editorPorKhori.putInt("COUNTER_KEY",counterPorKhori);
+        editorSosti.putInt("COUNTER_KEY",counterSosti);
+        editorAdamRaz.putInt("COUNTER_KEY",counterAdamRaz);
+        editorRia.putInt("COUNTER_KEY",counterRia);
+        editorBadAkhlaqi.putInt("COUNTER_KEY",counterBadAkhlaqi);
+        editorFozoli.putInt("COUNTER_KEY",counterFozoli);
+        editorKhabarChini.putInt("COUNTER_KEY",counterKhabarChini);
+
+        editorEtlafVaqt.apply();
+        editorQororBija.apply();
+        editorDoroq.apply();
+        editorLajbazi.apply();
+        editorNHesadat.apply();
+        editorNaOmidi.apply();
+        editorBokhl.apply();
+        editorHavas.apply();
+        editorTakabor.apply();
+        editorPorKhori.apply();
+        editorSosti.apply();
+        editorAdamRaz.apply();
+        editorRia.apply();
+        editorBadAkhlaqi.apply();
+        editorFozoli.apply();
+        editorKhabarChini.apply();
+
+
+
+
+
+
+
+    }
+
+
+
 }

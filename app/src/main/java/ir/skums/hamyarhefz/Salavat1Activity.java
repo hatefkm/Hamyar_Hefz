@@ -59,4 +59,6 @@ public class Salavat1Activity extends AppCompatActivity {
         editor.putInt("COUNTER_KEY" , counter);
         editor.apply();
     }
+
+
 }

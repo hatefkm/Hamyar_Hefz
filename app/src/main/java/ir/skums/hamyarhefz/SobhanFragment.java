@@ -58,8 +58,8 @@ public class SobhanFragment extends Fragment {
 
 
 
-        SharedPreferences prefs = requireContext().getSharedPreferences("MY_PREFS", Context.MODE_PRIVATE);
-        counter = prefs.getInt("COUNTER_KEY",0);
+        SharedPreferences prefsSobhan = requireContext().getSharedPreferences("MY_PREFSSobhan", Context.MODE_PRIVATE);
+        counter = prefsSobhan.getInt("COUNTER_KEY",0);
         resultTv.setText(String.valueOf(counter));
 
 
@@ -90,5 +90,17 @@ public class SobhanFragment extends Fragment {
 
 
         return view;
+    }
+
+
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+        SharedPreferences.Editor editorSobhan = requireContext().getSharedPreferences("MY_PREFSSobhan" , Context.MODE_PRIVATE).edit();
+        editorSobhan.putInt("COUNTER_KEY" , counter);
+        editorSobhan.apply();
+
     }
 }

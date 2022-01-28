@@ -61,8 +61,8 @@ public class AllahAkbarkFragment extends Fragment {
 
 
 
-        SharedPreferences prefs = requireContext().getSharedPreferences("MY_PREFS", Context.MODE_PRIVATE);
-        counter = prefs.getInt("COUNTER_KEY",0);
+        SharedPreferences prefsAlahakbar = requireContext().getSharedPreferences("MY_PREFSAlahakbar", Context.MODE_PRIVATE);
+        counter = prefsAlahakbar.getInt("COUNTER_KEY",0);
         resultTv.setText(String.valueOf(counter));
 
 
@@ -90,5 +90,15 @@ public class AllahAkbarkFragment extends Fragment {
 
 
         return view;
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+        SharedPreferences.Editor editorAlahakbar = requireContext().getSharedPreferences("MY_PREFSAlahakbar" , Context.MODE_PRIVATE).edit();
+        editorAlahakbar.putInt("COUNTER_KEY" , counter);
+        editorAlahakbar.apply();
+
     }
 }

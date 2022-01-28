@@ -67,8 +67,8 @@ public class ShanbeFragment extends Fragment {
 
 
 
-        SharedPreferences prefs = requireContext().getSharedPreferences("MY_PREFS", Context.MODE_PRIVATE);
-        counter = prefs.getInt("COUNTER_KEY",0);
+        SharedPreferences prefsShanbe = requireContext().getSharedPreferences("MY_PREFSShanbe", Context.MODE_PRIVATE);
+        counter = prefsShanbe.getInt("COUNTER_KEY",0);
         resultTv.setText(String.valueOf(counter));
 
 
@@ -130,5 +130,15 @@ public class ShanbeFragment extends Fragment {
 
 
         return view;
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+        SharedPreferences.Editor editorShanbe = requireContext().getSharedPreferences("MY_PREFSShanbe" , Context.MODE_PRIVATE).edit();
+        editorShanbe.putInt("COUNTER_KEY" , counter);
+        editorShanbe.apply();
+
     }
 }

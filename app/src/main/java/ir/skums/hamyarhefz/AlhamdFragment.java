@@ -64,8 +64,8 @@ public class AlhamdFragment extends Fragment {
 
 
 
-        SharedPreferences prefs = requireContext().getSharedPreferences("MY_PREFS", Context.MODE_PRIVATE);
-        counter = prefs.getInt("COUNTER_KEY",0);
+        SharedPreferences prefsAlhamd = requireContext().getSharedPreferences("MY_PREFSAlhamd", Context.MODE_PRIVATE);
+        counter = prefsAlhamd.getInt("COUNTER_KEY",0);
         resultTv.setText(String.valueOf(counter));
 
 
@@ -92,5 +92,16 @@ public class AlhamdFragment extends Fragment {
         resultTv.setTypeface(type);
 
         return view;
+    }
+
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+        SharedPreferences.Editor editorAlhamd = requireContext().getSharedPreferences("MY_PREFSAlhamd" , Context.MODE_PRIVATE).edit();
+        editorAlhamd.putInt("COUNTER_KEY" , counter);
+        editorAlhamd.apply();
+
     }
 }

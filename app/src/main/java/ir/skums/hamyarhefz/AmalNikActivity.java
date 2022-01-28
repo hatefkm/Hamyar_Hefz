@@ -3,6 +3,7 @@ package ir.skums.hamyarhefz;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -89,38 +90,67 @@ public class AmalNikActivity extends AppCompatActivity {
         tv_resultVarzesh = findViewById(R.id.tv_resultVarzesh);
         tv_resultEib = findViewById(R.id.tv_resultEib);
 
-        SharedPreferences prefs = getSharedPreferences("MY_PREFS" , MODE_PRIVATE);
+        SharedPreferences prefsVafaBeAhd  = getSharedPreferences("MY_PREFSVafaBeAhd" , MODE_PRIVATE);
+        SharedPreferences prefsBarnameRizi = getSharedPreferences("MY_PREFSBarnameRizi" , MODE_PRIVATE);
+        SharedPreferences prefsSaboor  = getSharedPreferences("MY_PREFSSaboor" , MODE_PRIVATE);
+        SharedPreferences prefsMohebat  = getSharedPreferences("MY_PREFSMohebat" , MODE_PRIVATE);
+        SharedPreferences prefsRaayatHijab  = getSharedPreferences("MY_PREFSRaayatHijab" , MODE_PRIVATE);
+        SharedPreferences prefsPoozesh  = getSharedPreferences("MY_PREFSPoozesh" , MODE_PRIVATE);
+        SharedPreferences prefsEhteram   = getSharedPreferences("MY_PREFSEhteram" , MODE_PRIVATE);
+        SharedPreferences prefsKhoshro  = getSharedPreferences("MY_PREFSKhoshro" , MODE_PRIVATE);
+        SharedPreferences prefsFrotan  = getSharedPreferences("MY_PREFSFrotan" , MODE_PRIVATE);
+        SharedPreferences prefsEsraf  = getSharedPreferences("MY_PREFSEsraf" , MODE_PRIVATE);
+        SharedPreferences prefsBesmeallah  = getSharedPreferences("MY_PREFSBesmeallah" , MODE_PRIVATE);
+        SharedPreferences prefsBakhshidn  = getSharedPreferences("MY_PREFSBakhshidn" , MODE_PRIVATE);
+        SharedPreferences prefsFaragiriElm  = getSharedPreferences("MY_PREFSFaragiriElm" , MODE_PRIVATE);
+        SharedPreferences prefsSokhanHaq = getSharedPreferences("MY_PREFSSokhanHaq" , MODE_PRIVATE);
+        SharedPreferences prefsRAstGoii = getSharedPreferences("MY_PREFSRAstGoii" , MODE_PRIVATE);
+        SharedPreferences prefsEfatKalam  = getSharedPreferences("MY_PREFSEfatKalam" , MODE_PRIVATE);
+        SharedPreferences prefsMashverat  = getSharedPreferences("MY_PREFSMashverat" , MODE_PRIVATE);
+        SharedPreferences prefsBrdnKhashm  = getSharedPreferences("MY_PREFSBrdnKhashm" , MODE_PRIVATE);
+        SharedPreferences prefsMesvak  = getSharedPreferences("MY_PREFSMesvak" , MODE_PRIVATE);
+        SharedPreferences prefsSalamAval  = getSharedPreferences("MY_PREFSSalamAval" , MODE_PRIVATE);
+        SharedPreferences prefsKomakBeDigaran  = getSharedPreferences("MY_PREFSKomakBeDigaran" , MODE_PRIVATE);
+        SharedPreferences prefsRaayatNazm  = getSharedPreferences("MY_PREFSRaayatNazm" , MODE_PRIVATE);
+        SharedPreferences prefsIsar  = getSharedPreferences("MY_PREFSIsar" , MODE_PRIVATE);
+        SharedPreferences prefsMotalee  = getSharedPreferences("MY_PREFSMotalee" , MODE_PRIVATE);
+        SharedPreferences prefsQeibatNakardn  = getSharedPreferences("MY_PREFSQeibatNakardn" , MODE_PRIVATE);
+        SharedPreferences prefsAmanat  = getSharedPreferences("MY_PREFSAmanat" , MODE_PRIVATE);
+        SharedPreferences prefsHamsardari  = getSharedPreferences("MY_PREFSHamsardari" , MODE_PRIVATE);
+        SharedPreferences prefsRezq  = getSharedPreferences("MY_PREFSRezq" , MODE_PRIVATE);
+        SharedPreferences prefsVarzesh  = getSharedPreferences("MY_PREFSVarzesh" , MODE_PRIVATE);
+        SharedPreferences prefsEib  = getSharedPreferences("MY_PREFSEib" , MODE_PRIVATE);
 
-        counterVafaBeAhd = prefs.getInt("COUNTER_KEY",0);
-        counterBarnameRizi = prefs.getInt("COUNTER_KEY",0);
-        counterSaboor = prefs.getInt("COUNTER_KEY",0);
-        counterMohebat= prefs.getInt("COUNTER_KEY",0);
-        counterRaayatHijab = prefs.getInt("COUNTER_KEY",0);
-        counterPoozesh = prefs.getInt("COUNTER_KEY",0);
-        counterEhteram = prefs.getInt("COUNTER_KEY",0);
-        counterKhoshro = prefs.getInt("COUNTER_KEY",0);
-        counterFrotan = prefs.getInt("COUNTER_KEY",0);
-        counterEsraf = prefs.getInt("COUNTER_KEY",0);
-        counterBesmeallah = prefs.getInt("COUNTER_KEY",0);
-        counterBakhshidn = prefs.getInt("COUNTER_KEY",0);
-        counterFaragiriElm = prefs.getInt("COUNTER_KEY",0);
-        counterSokhanHaq = prefs.getInt("COUNTER_KEY",0);
-        counterRAstGoii = prefs.getInt("COUNTER_KEY",0);
-        counterEfatKalam= prefs.getInt("COUNTER_KEY",0);
-        counterMashverat = prefs.getInt("COUNTER_KEY",0);
-        counterFroBrdnKhashm= prefs.getInt("COUNTER_KEY",0);
-        counterSalamAval = prefs.getInt("COUNTER_KEY",0);
-        counterMesvak = prefs.getInt("COUNTER_KEY",0);
-        counterKomakBeDigaran = prefs.getInt("COUNTER_KEY",0);
-        counterRaayatNazm = prefs.getInt("COUNTER_KEY",0);
-        counterIsar = prefs.getInt("COUNTER_KEY",0);
-        counterMotalee = prefs.getInt("COUNTER_KEY",0);
-        counterQeibatNakardn = prefs.getInt("COUNTER_KEY",0);
-        counterAmanat = prefs.getInt("COUNTER_KEY",0);
-        counterHamsardari = prefs.getInt("COUNTER_KEY",0);
-        counterRezq = prefs.getInt("COUNTER_KEY",0);
-        counterVarzesh = prefs.getInt("COUNTER_KEY",0);
-        counterEib = prefs.getInt("COUNTER_KEY",0);
+        counterVafaBeAhd = prefsVafaBeAhd .getInt("COUNTER_KEY",0);
+        counterBarnameRizi = prefsBarnameRizi.getInt("COUNTER_KEY",0);
+        counterSaboor = prefsSaboor.getInt("COUNTER_KEY",0);
+        counterMohebat= prefsMohebat.getInt("COUNTER_KEY",0);
+        counterRaayatHijab = prefsRaayatHijab.getInt("COUNTER_KEY",0);
+        counterPoozesh = prefsPoozesh.getInt("COUNTER_KEY",0);
+        counterEhteram = prefsEhteram .getInt("COUNTER_KEY",0);
+        counterKhoshro = prefsKhoshro.getInt("COUNTER_KEY",0);
+        counterFrotan = prefsFrotan.getInt("COUNTER_KEY",0);
+        counterEsraf = prefsEsraf.getInt("COUNTER_KEY",0);
+        counterBesmeallah = prefsBesmeallah.getInt("COUNTER_KEY",0);
+        counterBakhshidn = prefsBakhshidn.getInt("COUNTER_KEY",0);
+        counterFaragiriElm = prefsFaragiriElm.getInt("COUNTER_KEY",0);
+        counterSokhanHaq = prefsSokhanHaq.getInt("COUNTER_KEY",0);
+        counterRAstGoii = prefsRAstGoii.getInt("COUNTER_KEY",0);
+        counterEfatKalam= prefsEfatKalam.getInt("COUNTER_KEY",0);
+        counterMashverat = prefsMashverat.getInt("COUNTER_KEY",0);
+        counterFroBrdnKhashm= prefsBrdnKhashm.getInt("COUNTER_KEY",0);
+        counterSalamAval = prefsSalamAval.getInt("COUNTER_KEY",0);
+        counterMesvak = prefsMesvak.getInt("COUNTER_KEY",0);
+        counterKomakBeDigaran = prefsKomakBeDigaran.getInt("COUNTER_KEY",0);
+        counterRaayatNazm = prefsRaayatNazm.getInt("COUNTER_KEY",0);
+        counterIsar = prefsIsar.getInt("COUNTER_KEY",0);
+        counterMotalee = prefsMotalee.getInt("COUNTER_KEY",0);
+        counterQeibatNakardn = prefsQeibatNakardn.getInt("COUNTER_KEY",0);
+        counterAmanat = prefsAmanat.getInt("COUNTER_KEY",0);
+        counterHamsardari = prefsHamsardari.getInt("COUNTER_KEY",0);
+        counterRezq = prefsRezq.getInt("COUNTER_KEY",0);
+        counterVarzesh = prefsVarzesh.getInt("COUNTER_KEY",0);
+        counterEib = prefsEib.getInt("COUNTER_KEY",0);
 
         tv_resultVafaBeAhd.setText(String.valueOf(counterVafaBeAhd));
         tv_resultBarnameRizi.setText(String.valueOf(counterBarnameRizi));
@@ -152,6 +182,39 @@ public class AmalNikActivity extends AppCompatActivity {
         tv_resultRezq.setText(String.valueOf(counterRezq));
         tv_resultVarzesh.setText(String.valueOf(counterVarzesh));
         tv_resultEib.setText(String.valueOf(counterEib));
+
+
+        Typeface type=Typeface.createFromAsset(getAssets(), "fonts/b_titr.TTF");
+        tv_resultVafaBeAhd.setTypeface(type);
+        tv_resultBarnameRizi.setTypeface(type);
+        tv_resultSaboor.setTypeface(type);
+        tv_resultMohebat.setTypeface(type);
+        tv_resultRaayatHijab.setTypeface(type);
+        tv_resultPoozesh.setTypeface(type);
+        tv_resultEhteram.setTypeface(type);
+        tv_resultKhoshro.setTypeface(type);
+        tv_resultFrotan.setTypeface(type);
+        tv_resultEsraf.setTypeface(type);
+        tv_resultBesmeallah.setTypeface(type);
+        tv_resultBakhshidn.setTypeface(type);
+        tv_resultFaragiriElm.setTypeface(type);
+        tv_resultSokhanHaq.setTypeface(type);
+        tv_resultRAstGoii.setTypeface(type);
+        tv_resultEfatKalam.setTypeface(type);
+        tv_resultMashverat.setTypeface(type);
+        tv_resultFroBrdnKhashm.setTypeface(type);
+        tv_resultSalamAval.setTypeface(type);
+        tv_resultMesvak.setTypeface(type);
+        tv_resultKomakBeDigaran.setTypeface(type);
+        tv_resultRaayatNazm.setTypeface(type);
+        tv_resultIsar.setTypeface(type);
+        tv_resultMotalee.setTypeface(type);
+        tv_resultQeibatNakardn.setTypeface(type);
+        tv_resultAmanat.setTypeface(type);
+        tv_resultHamsardari.setTypeface(type);
+        tv_resultRezq.setTypeface(type);
+        tv_resultVarzesh.setTypeface(type);
+        tv_resultEib.setTypeface(type);
 
 
 
@@ -456,5 +519,111 @@ public class AmalNikActivity extends AppCompatActivity {
     public void btn_removEib(View view) {
         counterEib = 0;
         tv_resultEib.setText(String.valueOf(counterEib));
+    }
+
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        SharedPreferences.Editor editorVafaBeAhd = getSharedPreferences("MY_PREFSVafaBeAhd" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorBarnameRizi = getSharedPreferences("MY_PREFSBarnameRizi" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorSaboor = getSharedPreferences("MY_PREFSSaboor" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorMohebat = getSharedPreferences("MY_PREFSMohebat" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorRaayatHijab = getSharedPreferences("MY_PREFSRaayatHijab" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorPoozesh = getSharedPreferences("MY_PREFSPoozesh" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorEhteram = getSharedPreferences("MY_PREFSEhteram" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorKhoshro = getSharedPreferences("MY_PREFSKhoshro" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorFrotan = getSharedPreferences("MY_PREFSFrotan" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorEsraf = getSharedPreferences("MY_PREFSEsraf" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorBesmeallah = getSharedPreferences("MY_PREFSBesmeallah" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorBakhshidn = getSharedPreferences("MY_PREFSBakhshidn" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorFaragiriElm = getSharedPreferences("MY_PREFSFaragiriElm" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorSokhanHaq = getSharedPreferences("MY_PREFSSokhanHaq" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorRAstGoii = getSharedPreferences("MY_PREFSRAstGoii" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorEfatKalam= getSharedPreferences("MY_PREFSEfatKalam" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorMashverat = getSharedPreferences("MY_PREFSMashverat" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorBrdnKhashm = getSharedPreferences("MY_PREFSBrdnKhashm" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorMesvak = getSharedPreferences("MY_PREFSMesvak" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorSalamAval = getSharedPreferences("MY_PREFSSalamAval" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorKomakBeDigaran = getSharedPreferences("MY_PREFSKomakBeDigaran" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorRaayatNazm = getSharedPreferences("MY_PREFSRaayatNazm" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorIsar = getSharedPreferences("MY_PREFSIsar" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorMotalee = getSharedPreferences("MY_PREFSMotalee" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorQeibatNakardn = getSharedPreferences("MY_PREFSQeibatNakardn" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorAmanat = getSharedPreferences("MY_PREFSAmanat" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorHamsardari = getSharedPreferences("MY_PREFSHamsardari" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorRezq = getSharedPreferences("MY_PREFSRezq" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorVarzesh = getSharedPreferences("MY_PREFSVarzesh" , MODE_PRIVATE).edit();
+        SharedPreferences.Editor editorEib = getSharedPreferences("MY_PREFSEib" , MODE_PRIVATE).edit();
+
+        editorVafaBeAhd.putInt("COUNTER_KEY",counterVafaBeAhd);
+        editorBarnameRizi.putInt("COUNTER_KEY",counterBarnameRizi);
+        editorSaboor.putInt("COUNTER_KEY",counterSaboor);
+        editorMohebat.putInt("COUNTER_KEY",counterMohebat);
+        editorRaayatHijab.putInt("COUNTER_KEY",counterRaayatHijab);
+        editorPoozesh.putInt("COUNTER_KEY",counterPoozesh);
+        editorEhteram.putInt("COUNTER_KEY",counterEhteram);
+        editorKhoshro.putInt("COUNTER_KEY",counterKhoshro);
+        editorFrotan.putInt("COUNTER_KEY",counterFrotan);
+        editorEsraf.putInt("COUNTER_KEY",counterEsraf);
+        editorBesmeallah.putInt("COUNTER_KEY",counterBesmeallah);
+        editorBakhshidn.putInt("COUNTER_KEY",counterBakhshidn);
+        editorFaragiriElm.putInt("COUNTER_KEY",counterFaragiriElm);
+        editorSokhanHaq.putInt("COUNTER_KEY",counterSokhanHaq);
+        editorRAstGoii.putInt("COUNTER_KEY",counterRAstGoii);
+        editorEfatKalam.putInt("COUNTER_KEY",counterEfatKalam);
+        editorMashverat.putInt("COUNTER_KEY",counterMashverat);
+        editorBrdnKhashm.putInt("COUNTER_KEY",counterFroBrdnKhashm);
+        editorMesvak.putInt("COUNTER_KEY",counterSalamAval);
+        editorSalamAval.putInt("COUNTER_KEY",counterMesvak);
+        editorKomakBeDigaran.putInt("COUNTER_KEY",counterKomakBeDigaran);
+        editorRaayatNazm.putInt("COUNTER_KEY",counterRaayatNazm);
+        editorIsar.putInt("COUNTER_KEY",counterIsar);
+        editorMotalee.putInt("COUNTER_KEY",counterMotalee);
+        editorQeibatNakardn.putInt("COUNTER_KEY",counterQeibatNakardn);
+        editorAmanat.putInt("COUNTER_KEY",counterAmanat);
+        editorHamsardari.putInt("COUNTER_KEY",counterHamsardari);
+        editorRezq.putInt("COUNTER_KEY",counterRezq);
+        editorVarzesh.putInt("COUNTER_KEY",counterVarzesh);
+        editorEib.putInt("COUNTER_KEY",counterEib);
+
+
+
+
+        editorVafaBeAhd.apply();
+        editorBarnameRizi.apply();
+        editorSaboor.apply();
+        editorMohebat.apply();
+        editorRaayatHijab.apply();
+        editorPoozesh.apply();
+        editorEhteram.apply();
+        editorKhoshro.apply();
+        editorFrotan.apply();
+        editorEsraf.apply();
+        editorBesmeallah.apply();
+        editorBakhshidn.apply();
+        editorFaragiriElm.apply();
+        editorSokhanHaq.apply();
+        editorRAstGoii.apply();
+        editorEfatKalam.apply();
+        editorMashverat.apply();
+        editorBrdnKhashm.apply();
+        editorMesvak.apply();
+        editorSalamAval.apply();
+        editorKomakBeDigaran.apply();
+        editorRaayatNazm.apply();
+        editorIsar.apply();
+        editorMotalee.apply();
+        editorQeibatNakardn.apply();
+        editorAmanat.apply();
+        editorHamsardari.apply();
+        editorRezq.apply();
+        editorVarzesh.apply();
+        editorEib.apply();
+
+
+
+
+
     }
 }
