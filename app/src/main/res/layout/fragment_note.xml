@@ -5,7 +5,8 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
     android:orientation="vertical"
 android:layout_height="match_parent"
-    android:paddingTop="20dp"
+    android:gravity="center"
+
 
 
 tools:context=".ayatnavigationbar.NoteFragment">
@@ -14,10 +15,10 @@ tools:context=".ayatnavigationbar.NoteFragment">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/scrol_back"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="100dp">
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/scrol_back">
 
 
         <LinearLayout
@@ -36,7 +37,7 @@ tools:context=".ayatnavigationbar.NoteFragment">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="55dp"
+                android:layout_marginTop="30dp"
                 android:text="اضافه کردن ایات مشکل"
                 android:textColor="#012C4E"
                 android:textSize="25dp"
@@ -45,8 +46,8 @@ tools:context=".ayatnavigationbar.NoteFragment">
 
             <Button
                 android:id="@+id/btn_addNewNote"
-                android:layout_width="100dp"
-                android:layout_height="70dp"
+                android:layout_width="250dp"
+                android:layout_height="120dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="5dp"
                 android:background="@drawable/bck_play"
@@ -61,7 +62,7 @@ tools:context=".ayatnavigationbar.NoteFragment">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="130dp"
+                android:layout_marginTop="80dp"
                 android:text="@string/list_problem_aye"
                 android:textColor="#012C4E"
                 android:textSize="25dp"
@@ -70,8 +71,8 @@ tools:context=".ayatnavigationbar.NoteFragment">
 
             <Button
                 android:id="@+id/btn_ShowNote"
-                android:layout_width="100dp"
-                android:layout_height="70dp"
+                android:layout_width="250dp"
+                android:layout_height="120dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="5dp"
                 android:background="@drawable/bck_play"

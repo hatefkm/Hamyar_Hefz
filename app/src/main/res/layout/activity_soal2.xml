@@ -5,37 +5,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
+    android:gravity="center"
     tools:context=".Soal2ActivityJ1">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
 
-    <Button
-        android:id="@+id/buttonEbteda"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/bck_play"
-        android:onClick="btnEbteda"
-        android:text="ابتدای مشابه"
-        android:textSize="32dp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="152dp" />
+        >
 
-    <Button
-        android:id="@+id/buttonEnteha"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:layout_below="@+id/buttonEbteda"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/bck_play"
-        android:onClick="btnEnteha"
-        android:text="انتهای مشابه"
-        android:textSize="32dp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="477dp" />
+        <Button
+            android:id="@+id/buttonEbteda"
+
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/bck_play"
+            android:onClick="btnEbteda"
+            android:text="ابتدای مشابه"
+            android:textColor="@color/white"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonEnteha"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/buttonEbteda"
+            android:layout_centerHorizontal="true"
+
+            android:background="@drawable/bck_play"
+
+            android:onClick="btnEnteha"
+
+            android:text="انتهای مشابه"
+            android:textColor="@color/white"
+            android:textFontWeight="1"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
 </RelativeLayout>
