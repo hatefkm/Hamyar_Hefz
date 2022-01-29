@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/list_joz"
+    android:background="@drawable/background"
     android:orientation="vertical"
     tools:context=".ShowNoteActivity">
 
@@ -37,6 +37,8 @@
         android:layout_height="match_parent"
         android:dividerHeight="2dp"
         android:textDirection="rtl"
+
+        android:background="@drawable/scrol_back"
         android:textColor="#012C4E"
         android:paddingBottom="50dp"/>
 

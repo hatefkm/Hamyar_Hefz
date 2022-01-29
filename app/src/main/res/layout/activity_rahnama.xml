@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/rahnama_background"
+    android:background="@drawable/background"
     tools:context=".RahnamaActivity">
 
     <TextView
@@ -33,6 +33,7 @@
         android:layout_below="@id/txtRahnamaTitle"
         android:layout_marginLeft="28dp"
         android:layout_marginRight="28dp"
+        android:background="@drawable/scrol_back"
         android:layout_marginBottom="30dp">
 
         <TextView

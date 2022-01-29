@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/rahnama_background"
+    android:background="@drawable/background"
     tools:context=".ManabeActivity">
 
 
@@ -24,33 +24,49 @@
         android:textSize="30dp">
 
     </TextView>
-
-    <TextView
-        android:id="@+id/textManabeQ"
+    <LinearLayout
+         android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtManabeTitle"
-        android:gravity="center_horizontal"
-        android:text="قران کریم"
-        android:textColor="#012C4E"
-        android:textSize="20dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
 
-        android:textStyle="bold">
+        android:layout_below="@id/txtManabeTitle"
+        android:orientation="vertical"
+        android:background="@drawable/bck_play">
 
-    </TextView>
 
-    <TextView
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textManabeQ"
-        android:gravity="center_horizontal"
-        android:text="صوت استاد پرهیزگار"
-        android:textColor="#012C4E"
-        android:textSize="20dp"
-        android:textStyle="bold">
+        <TextView
+            android:id="@+id/textManabeQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtManabeTitle"
+            android:gravity="center_horizontal"
 
-    </TextView>
+            android:text="قران کریم"
+            android:textColor="#012C4E"
+            android:textSize="20dp"
+
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_parhizgar"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textManabeQ"
+            android:gravity="center_horizontal"
+            android:text="صوت استاد پرهیزگار"
+            android:textColor="#012C4E"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
 
 
 </RelativeLayout>

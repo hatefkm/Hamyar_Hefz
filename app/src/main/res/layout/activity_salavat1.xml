@@ -38,14 +38,16 @@
 
         <TextView
             android:id="@+id/tv_result"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
             android:text="0"
             android:textColor="#012C4E"
             android:textSize="45dp"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="30dp"
             android:layout_above="@+id/btn_add"
+            android:background="@drawable/bck_play"
+            android:gravity="center"
 
             />
 
