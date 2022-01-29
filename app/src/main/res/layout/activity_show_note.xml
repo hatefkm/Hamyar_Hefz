@@ -1,45 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    android:orientation="vertical"
+
     tools:context=".ShowNoteActivity">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/linier_listayat"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bck_play"
+            android:paddingTop="5dp"
+            android:text="@string/list_problem_aye"
+            android:textAlignment="center"
+            android:textColor="#012C4E"
+            android:textSize="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="72dp"
+            android:background="@drawable/scrol_back">
+
+            <ListView
+                android:id="@+id/noteListView_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="2dp"
+                android:divider="#68002D50"
+                android:paddingBottom="50dp"
+                android:textColor="#012C4E"
+                android:textDirection="rtl" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:text="حذف همه"
+        android:textColor="@color/white"
+        android:layout_width="95dp"
+        android:layout_height="43dp"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="15dp"
         android:background="@drawable/bck_play"
-        android:paddingTop="5dp"
-        android:text="@string/list_problem_aye"
-        android:textColor="#012C4E"
-        android:textAlignment="center"
-        android:textSize="24dp" />
+        android:onClick="btn_hazf"
+        android:layout_alignParentBottom="true"
+        >
 
+    </Button>
 
-
-
-    <ListView
-
-
-
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="72dp"
-        android:id="@+id/noteListView_main"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:dividerHeight="2dp"
-        android:textDirection="rtl"
-
-        android:background="@drawable/scrol_back"
-        android:textColor="#012C4E"
-        android:paddingBottom="50dp"/>
-
-</LinearLayout>
+</RelativeLayout>

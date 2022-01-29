@@ -8,14 +8,23 @@ import android.os.Bundle;
 
 import android.content.Intent;
 
+import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class ShowNoteActivity extends AppCompatActivity {
 
     private ListView noteListView;
     NoteAdapter noteAdapter;
+
+    SharedPreferences prefNote;
+
+    public static final String NotePref="NotePref";
+    String ListIt;
+    String ListItem;
 
 
     @Override
@@ -23,8 +32,17 @@ public class ShowNoteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_note);
 
+
+
         initWidgets();
         setNoteAdapter();
+
+
+        if (Note.noteArrayList.isEmpty()){
+        }else {
+            Toast.makeText(this, "برای حذف،انگشت خود را روی گزینه نگهدارید", Toast.LENGTH_LONG).show();
+
+        }
 
 
         noteListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
@@ -38,6 +56,8 @@ public class ShowNoteActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+
 
 
 
@@ -79,6 +99,14 @@ public class ShowNoteActivity extends AppCompatActivity {
         super.onStop();
         initWidgets();
         setNoteAdapter();
+
+
+    }
+
+    public void btn_hazf(View view) {
+
+        noteAdapter.notifyDataSetChanged();
+        noteAdapter.clear();
 
     }
 }

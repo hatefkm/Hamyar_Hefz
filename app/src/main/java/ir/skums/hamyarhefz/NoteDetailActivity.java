@@ -13,6 +13,11 @@ public class NoteDetailActivity extends AppCompatActivity {
     private EditText edtNameSure, edtNumberAye, edtAye;
     int id;
 
+    SharedPreferences prefNote;
+
+    public static final String NotePref="NotePref";
+    String ListIt;
+    String ListItem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,11 +54,13 @@ public class NoteDetailActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         initWidgets();
+
     }
 
     @Override
     protected void onStop() {
         super.onStop();
         initWidgets();
+
     }
 }
