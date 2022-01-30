@@ -38,7 +38,7 @@
             android:layout_height="40dp"
             android:layout_below="@+id/btn_playDoshanbe"
             android:layout_marginStart="20dp"
-            android:layout_marginBottom="20dp"
+
             android:layout_marginTop="10dp"
             android:background="@drawable/ic_add" />
 
@@ -49,7 +49,7 @@
             android:layout_below="@+id/btn_resetDoshanbe"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"
+
             android:layout_toRightOf="@id/btn_addDoshanbe"
             android:background="@drawable/ic_baseline_remove_circle_outline_24" />
 

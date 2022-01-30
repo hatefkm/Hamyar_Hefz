@@ -10,7 +10,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/onvan_tsbih"
 
         android:textAlignment="center"
@@ -24,17 +24,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginTop="40dp">
+        android:layout_marginTop="30dp">
 
 
         <FrameLayout
             android:id="@+id/frameAllahAkbar"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="10dp"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="300dp"
             android:layout_weight="1">
 
         </FrameLayout>
@@ -46,7 +46,7 @@
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="10dp"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="300dp"
             android:layout_weight="1">
 
         </FrameLayout>
@@ -58,7 +58,7 @@
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="30dp"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="300dp"
             android:layout_weight="1">
 
         </FrameLayout>
