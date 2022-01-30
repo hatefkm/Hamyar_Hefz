@@ -15,6 +15,7 @@ public class Salavat1Activity extends AppCompatActivity {
 
     Button resetBtn;
     Button addBtn;
+    Button menhaBtn;
     TextView resultTv;
     int counter =0;
     private static final String MY_PREFS = "counterPref";
@@ -29,6 +30,7 @@ public class Salavat1Activity extends AppCompatActivity {
 
         resetBtn = findViewById(R.id.btn_reset);
         addBtn = findViewById(R.id.btn_add);
+        menhaBtn = findViewById(R.id.btn_menha);
         resultTv = findViewById(R.id.tv_result);
 
 
@@ -40,6 +42,11 @@ public class Salavat1Activity extends AppCompatActivity {
 
         addBtn.setOnClickListener(view -> {
             counter++;
+            resultTv.setText(String.valueOf(counter));
+        });
+
+        menhaBtn.setOnClickListener(view -> {
+            counter--;
             resultTv.setText(String.valueOf(counter));
         });
 

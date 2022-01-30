@@ -30,6 +30,7 @@ public class DoshanbeFragment extends Fragment {
     Button resetBtn,btnPlay;
     Button addBtn;
     TextView resultTv;
+    Button menhaBtn;
     int counter =0;
     private static final String MY_PREFS = "counterPref";
     private static final String COUNTER_KEY = "counterKey";
@@ -64,6 +65,7 @@ public class DoshanbeFragment extends Fragment {
 
         resetBtn = view.findViewById(R.id.btn_resetDoshanbe);
         addBtn = view.findViewById(R.id.btn_addDoshanbe);
+        menhaBtn = view.findViewById(R.id.btn_menhaDoshanbe);
         resultTv = view.findViewById(R.id.tv_resultDoshanbe);
 
 
@@ -82,6 +84,16 @@ public class DoshanbeFragment extends Fragment {
             public void onClick(View view)
             {
                 counter++;
+                resultTv.setText(String.valueOf(counter));
+            }
+        });
+
+
+        menhaBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                counter--;
                 resultTv.setText(String.valueOf(counter));
             }
         });

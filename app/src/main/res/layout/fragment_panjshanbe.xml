@@ -15,40 +15,51 @@
 
 
         <Button
-            android:id="@+id/btn_addPanjshanbe"
+            android:id="@+id/btn_playPanjshanbe"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentStart="true"
-            android:background="@drawable/ic_add"
             android:layout_marginStart="20dp"
-            />
+            android:background="@drawable/play_song_icon" />
 
 
         <Button
             android:id="@+id/btn_resetPanjshanbe"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginBottom="20dp"
-            android:layout_toRightOf="@+id/btn_addPanjshanbe"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/btn_playPanjshanbe"
             android:background="@drawable/refresh" />
 
         <Button
-            android:id="@+id/btn_playPanjshanbe"
+            android:id="@+id/btn_addPanjshanbe"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:background="@drawable/play_song_icon"
-            android:layout_marginStart="50dp"
+            android:layout_below="@+id/btn_playPanjshanbe"
+            android:layout_marginStart="20dp"
             android:layout_marginBottom="20dp"
-            android:layout_below="@+id/btn_addPanjshanbe" />
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_add" />
+
+        <Button
+            android:id="@+id/btn_menhaPanjshanbe"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/btn_resetPanjshanbe"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@id/btn_addPanjshanbe"
+            android:background="@drawable/ic_baseline_remove_circle_outline_24" />
+
+
 
 
         <TextView
             android:id="@+id/tv_resultPanjshanbe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:layout_toRightOf="@+id/btn_resetPanjshanbe"
             android:text="0"
@@ -58,10 +69,11 @@
 
         <ImageView
             android:layout_width="180dp"
-            android:layout_height="80dp"
+            android:layout_height="100dp"
             android:layout_alignParentRight="true"
             android:layout_marginEnd="5dp"
-            android:layout_toRightOf="@id/tv_resultPanjshanbe"
+            android:layout_marginStart="50dp"
+            android:layout_toRightOf="@id/btn_resetPanjshanbe"
             android:src="@drawable/panjshanbe" />
 
 

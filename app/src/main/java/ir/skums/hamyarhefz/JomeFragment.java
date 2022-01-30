@@ -25,6 +25,7 @@ public class JomeFragment extends Fragment {
     Button resetBtn,btnPlay;
     Button addBtn;
     TextView resultTv;
+    Button menhaBtn;
     int counter =0;
     private static final String MY_PREFS = "counterPref";
     private static final String COUNTER_KEY = "counterKey";
@@ -57,6 +58,7 @@ public class JomeFragment extends Fragment {
 
         resetBtn = view.findViewById(R.id.btn_resetJome);
         addBtn = view.findViewById(R.id.btn_addJome);
+        menhaBtn = view.findViewById(R.id.btn_menhaJome);
         resultTv = view.findViewById(R.id.tv_resultJome);
 
 
@@ -77,6 +79,16 @@ public class JomeFragment extends Fragment {
             public void onClick(View view)
             {
                 counter++;
+                resultTv.setText(String.valueOf(counter));
+            }
+        });
+
+
+        menhaBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                counter--;
                 resultTv.setText(String.valueOf(counter));
             }
         });

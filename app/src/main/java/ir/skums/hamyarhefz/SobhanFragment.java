@@ -22,6 +22,7 @@ public class SobhanFragment extends Fragment {
 
 
     Button resetBtn;
+    Button menhaBtn;
     Button addBtn;
     TextView resultTv;
     int counter =0;
@@ -54,6 +55,7 @@ public class SobhanFragment extends Fragment {
 
         resetBtn = view.findViewById(R.id.btn_resetSobhan);
         addBtn = view.findViewById(R.id.btn_addSobhan);
+        menhaBtn = view.findViewById(R.id.btn_menhaSobhan);
         resultTv = view.findViewById(R.id.tv_resultSobhan);
 
 
@@ -68,6 +70,15 @@ public class SobhanFragment extends Fragment {
             public void onClick(View view)
             {
                 counter++;
+                resultTv.setText(String.valueOf(counter));
+            }
+        });
+
+        menhaBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                counter--;
                 resultTv.setText(String.valueOf(counter));
             }
         });

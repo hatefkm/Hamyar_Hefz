@@ -25,6 +25,7 @@ public class AllahAkbarkFragment extends Fragment {
 
     Button resetBtn;
     Button addBtn;
+    Button menhaBtn;
     TextView resultTv;
     int counter =0;
     private static final String MY_PREFS = "counterPref";
@@ -57,6 +58,7 @@ public class AllahAkbarkFragment extends Fragment {
 
         resetBtn = view.findViewById(R.id.btn_resetAllah);
         addBtn = view.findViewById(R.id.btn_addAllah);
+        menhaBtn = view.findViewById(R.id.btn_menhaAllah);
         resultTv = view.findViewById(R.id.tv_resultAllah);
 
 
@@ -71,6 +73,14 @@ public class AllahAkbarkFragment extends Fragment {
             public void onClick(View view)
             {
                 counter++;
+                resultTv.setText(String.valueOf(counter));
+            }
+        });
+        menhaBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                counter--;
                 resultTv.setText(String.valueOf(counter));
             }
         });

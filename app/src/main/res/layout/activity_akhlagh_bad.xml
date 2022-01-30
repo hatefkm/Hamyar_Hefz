@@ -69,13 +69,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addEtlafVaqt"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addEtlafVaqt"/>
 
 
@@ -83,7 +83,7 @@
                             android:id="@+id/tv_resultEtlafVaqt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -93,7 +93,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removEtlafVaqt"/>
 
 
@@ -136,13 +136,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addQororBija"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addQororBija"/>
 
 
@@ -150,7 +150,7 @@
                             android:id="@+id/tv_resultQororBija"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -160,7 +160,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removQororBija"/>
 
 
@@ -203,13 +203,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addDoroq"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addDoroq"/>
 
 
@@ -217,7 +217,7 @@
                             android:id="@+id/tv_resultDoroq"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -227,7 +227,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removDoroq"/>
 
 
@@ -270,13 +270,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addLajbazi"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addLajbazi"/>
 
 
@@ -284,7 +284,7 @@
                             android:id="@+id/tv_resultLajbazi"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -294,7 +294,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removLajbazi"/>
 
 
@@ -338,13 +338,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addHesadat"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addHesadat"/>
 
 
@@ -352,7 +352,7 @@
                             android:id="@+id/tv_resultNHesadat"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -362,7 +362,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removHesadat"/>
 
 
@@ -405,13 +405,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addNaOmidi"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addNaOmidi"/>
 
 
@@ -419,7 +419,7 @@
                             android:id="@+id/tv_resultNaOmidi"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -429,7 +429,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removNaOmidi"/>
 
 
@@ -472,13 +472,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addBokhl"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addBokhl"/>
 
 
@@ -486,7 +486,7 @@
                             android:id="@+id/tv_resultBokhl"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -496,7 +496,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removBokhl"/>
 
 
@@ -539,13 +539,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addHavas"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addHavas"/>
 
 
@@ -553,7 +553,7 @@
                             android:id="@+id/tv_resultHavas"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -563,7 +563,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removHavas"/>
 
 
@@ -606,13 +606,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addTakabor"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addTakabor"/>
 
 
@@ -620,7 +620,7 @@
                             android:id="@+id/tv_resultTakabor"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -630,7 +630,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removTakabor"/>
 
 
@@ -673,13 +673,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addPorKhori"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addPorKhori"/>
 
 
@@ -687,7 +687,7 @@
                             android:id="@+id/tv_resultPorKhori"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -697,7 +697,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removPorKhori"/>
 
 
@@ -740,13 +740,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addSosti"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addSosti"/>
 
 
@@ -754,7 +754,7 @@
                             android:id="@+id/tv_resultSosti"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -764,7 +764,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removSosti"/>
 
 
@@ -807,13 +807,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addAdamRaz"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addAdamRaz"/>
 
 
@@ -821,7 +821,7 @@
                             android:id="@+id/tv_resultAdamRaz"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -831,7 +831,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removAdamRaz"/>
 
 
@@ -874,13 +874,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addRia"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addRia"/>
 
 
@@ -888,7 +888,7 @@
                             android:id="@+id/tv_resultRia"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -898,7 +898,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removRia"/>
 
 
@@ -941,13 +941,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addBadAkhlaqi"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addBadAkhlaqi"/>
 
 
@@ -955,7 +955,7 @@
                             android:id="@+id/tv_resultBadAkhlaqi"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -965,7 +965,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removBadAkhlaqi"/>
 
 
@@ -1009,13 +1009,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addFozoli"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addFozoli"/>
 
 
@@ -1023,7 +1023,7 @@
                             android:id="@+id/tv_resultFozoli"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -1033,7 +1033,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removFozoli"/>
 
 
@@ -1076,13 +1076,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addKhabarChini"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addKhabarChini"/>
 
 
@@ -1090,7 +1090,7 @@
                             android:id="@+id/tv_resultKhabarChini"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -1100,7 +1100,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removKhabarChini"/>
 
 

@@ -14,38 +14,51 @@
         >
 
 
+
         <Button
-            android:id="@+id/btn_addShanbe"
+            android:id="@+id/btn_playShanbe"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentStart="true"
             android:layout_marginStart="20dp"
-            android:background="@drawable/ic_add" />
+            android:background="@drawable/play_song_icon" />
 
 
         <Button
             android:id="@+id/btn_resetShanbe"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginStart="20dp"
-            android:layout_toRightOf="@+id/btn_addShanbe"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/btn_playShanbe"
             android:background="@drawable/refresh" />
 
         <Button
-            android:id="@+id/btn_playShanbe"
+            android:id="@+id/btn_addShanbe"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_below="@+id/btn_addShanbe"
-            android:layout_marginStart="50dp"
+            android:layout_below="@+id/btn_playShanbe"
+            android:layout_marginStart="20dp"
             android:layout_marginBottom="20dp"
-            android:background="@drawable/play_song_icon" />
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_add" />
+
+        <Button
+            android:id="@+id/btn_menhaShanbe"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/btn_resetShanbe"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@id/btn_addShanbe"
+            android:background="@drawable/ic_baseline_remove_circle_outline_24" />
 
 
         <TextView
             android:id="@+id/tv_resultShanbe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:layout_toRightOf="@+id/btn_resetShanbe"
             android:text="0"
@@ -55,10 +68,11 @@
 
         <ImageView
             android:layout_width="180dp"
-            android:layout_height="80dp"
+            android:layout_height="100dp"
             android:layout_alignParentRight="true"
             android:layout_marginEnd="5dp"
-            android:layout_toRightOf="@id/tv_resultShanbe"
+            android:layout_marginStart="50dp"
+            android:layout_toRightOf="@id/btn_resetShanbe"
             android:src="@drawable/shanbeh" />
 
 

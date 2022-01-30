@@ -24,6 +24,7 @@ public class PanjshanbeFragment extends Fragment {
 
     Button resetBtn,btnPlay;
     Button addBtn;
+    Button menhaBtn;
     TextView resultTv;
     int counter =0;
     private static final String MY_PREFS = "counterPref";
@@ -58,6 +59,7 @@ public class PanjshanbeFragment extends Fragment {
 
         resetBtn = view.findViewById(R.id.btn_resetPanjshanbe);
         addBtn = view.findViewById(R.id.btn_addPanjshanbe);
+        menhaBtn = view.findViewById(R.id.btn_menhaPanjshanbe);
         resultTv = view.findViewById(R.id.tv_resultPanjshanbe);
 
 
@@ -81,6 +83,15 @@ public class PanjshanbeFragment extends Fragment {
             }
         });
 
+
+        menhaBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                counter--;
+                resultTv.setText(String.valueOf(counter));
+            }
+        });
 
         resetBtn.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -23,31 +23,39 @@
 
         <Button
             android:id="@+id/btn_reset"
-            android:layout_width="80dp"
+            android:layout_width="70dp"
             android:layout_height="70dp"
 
 
-            android:background="@drawable/refresh"
-            android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="40dp"
             android:layout_marginBottom="50dp"
-            />
+            android:background="@drawable/refresh" />
 
+        <Button
+            android:id="@+id/btn_menha"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/ic_baseline_remove_circle_outline_24" />
 
 
         <TextView
             android:id="@+id/tv_result"
-            android:layout_width="130dp"
-            android:layout_height="70dp"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_above="@+id/btn_add"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/bck_play"
+            android:gravity="center"
+
             android:text="0"
             android:textColor="#012C4E"
             android:textSize="45dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="30dp"
-            android:layout_above="@+id/btn_add"
-            android:background="@drawable/bck_play"
-            android:gravity="center"
 
             />
 

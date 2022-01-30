@@ -26,15 +26,24 @@
 
             android:layout_marginStart="20dp"
 
-            android:layout_marginTop="30dp"/>
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:id="@+id/btn_menhaAllah"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/btn_addAllah"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_baseline_remove_circle_outline_24" />
 
 
         <Button
             android:id="@+id/btn_resetAllah"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="33dp"
 
             android:layout_toRightOf="@+id/btn_addAllah"
             android:background="@drawable/refresh" />
@@ -46,7 +55,7 @@
             android:layout_height="wrap_content"
 
 
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="20dp"
             android:layout_toRightOf="@+id/btn_resetAllah"
             android:layout_marginTop="30dp"
 
@@ -59,11 +68,10 @@
             android:layout_width="190dp"
             android:layout_height="100dp"
             android:layout_alignParentRight="true"
+            android:layout_marginStart="50dp"
             android:layout_marginEnd="5dp"
-            android:layout_toRightOf="@id/tv_resultAllah"
-            android:layout_marginStart="10dp"
-            android:src="@drawable/allahoakbar"
-            />
+            android:layout_toRightOf="@id/btn_resetAllah"
+            android:src="@drawable/allahoakbar" />
 
 
     </RelativeLayout>

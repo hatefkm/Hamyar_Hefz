@@ -24,6 +24,7 @@ public class AlhamdFragment extends Fragment {
 
 
     Button resetBtn;
+    Button menhaBtn;
     Button addBtn;
     TextView resultTv;
     int counter =0;
@@ -58,6 +59,7 @@ public class AlhamdFragment extends Fragment {
 
         resetBtn = view.findViewById(R.id.btn_resetAlhamd);
         addBtn = view.findViewById(R.id.btn_addAlhamd);
+        menhaBtn = view.findViewById(R.id.btn_menhaAlhamd);
         resultTv = view.findViewById(R.id.tv_resultAlhamd);
 
 
@@ -78,6 +80,14 @@ public class AlhamdFragment extends Fragment {
             }
         });
 
+        menhaBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                counter--;
+                resultTv.setText(String.valueOf(counter));
+            }
+        });
 
         resetBtn.setOnClickListener(new View.OnClickListener() {
             @Override

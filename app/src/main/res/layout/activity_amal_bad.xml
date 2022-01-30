@@ -62,20 +62,20 @@
                 <LinearLayout
 
                     android:orientation="vertical"
-                    android:padding="16dp"
+
                     android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addQeibatKardan"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addQeibatKardan"/>
 
 
@@ -83,7 +83,7 @@
                             android:id="@+id/tv_resultQeibatKardan"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -93,7 +93,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removQeibatKardan"/>
 
 
@@ -136,13 +136,14 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addTarkNAmaz"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
+
                             android:onClick="btn_addTarkNAmaz"/>
 
 
@@ -150,7 +151,7 @@
                             android:id="@+id/tv_resultTarkNAmaz"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -160,7 +161,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removTarkNAmaz"/>
 
 
@@ -203,13 +204,14 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addEsrafKrdn"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
+
                             android:onClick="btn_addEsrafKrdn"/>
 
 
@@ -217,7 +219,7 @@
                             android:id="@+id/tv_resultEsrafKrdn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -227,7 +229,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removEsrafKrdn"/>
 
 
@@ -270,13 +272,14 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addSoutHaram"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
+
                             android:onClick="btn_addSoutHaram"/>
 
 
@@ -284,7 +287,7 @@
                             android:id="@+id/tv_resultSoutHaram"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -294,7 +297,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removSoutHaram"/>
 
 
@@ -338,13 +341,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addAsabaniat"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addAsabaniat"/>
 
 
@@ -352,7 +355,7 @@
                             android:id="@+id/tv_resultAsabaniat"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -362,7 +365,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removAsabaniat"/>
 
 
@@ -405,13 +408,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addKhianat"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addKhianat"/>
 
 
@@ -419,7 +422,7 @@
                             android:id="@+id/tv_resultKhianat"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -429,7 +432,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removKhianat"/>
 
 
@@ -472,13 +475,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addTohmat"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addTohmat"/>
 
 
@@ -486,7 +489,7 @@
                             android:id="@+id/tv_resultTohmat"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -496,7 +499,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removTohmat"/>
 
 
@@ -539,13 +542,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addTafraqe"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addTafraqe"/>
 
 
@@ -553,7 +556,7 @@
                             android:id="@+id/tv_resultTafraqe"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -563,7 +566,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removTafraqe"/>
 
 
@@ -606,13 +609,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addNegahHaram"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addNegahHaram"/>
 
 
@@ -620,7 +623,7 @@
                             android:id="@+id/tv_resultNegahHaram"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -630,7 +633,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removNegahHaram"/>
 
 
@@ -673,13 +676,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addRezqHaram"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addRezqHaram"/>
 
 
@@ -687,7 +690,7 @@
                             android:id="@+id/tv_resultRezqHaram"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -697,7 +700,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removRezqHaram"/>
 
 
@@ -740,13 +743,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addAbroo"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addAbroo"/>
 
 
@@ -754,7 +757,7 @@
                             android:id="@+id/tv_resultAbroo"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -764,7 +767,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removAbroo"/>
 
 
@@ -807,13 +810,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addZakhmZaban"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addZakhmZaban"/>
 
 
@@ -821,7 +824,7 @@
                             android:id="@+id/tv_resultZakhmZaban"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -831,7 +834,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removZakhmZaban"/>
 
 
@@ -874,13 +877,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addPeyman"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addPeyman"/>
 
 
@@ -888,7 +891,7 @@
                             android:id="@+id/tv_resultPeyman"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -898,7 +901,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removPeyman"/>
 
 
@@ -941,13 +944,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addSokhanParidn"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addSokhanParidn"/>
 
 
@@ -955,7 +958,7 @@
                             android:id="@+id/tv_resultSokhanParidn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -965,7 +968,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removSokhanParidn"/>
 
 
@@ -1009,13 +1012,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addBeEhterami"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addBeEhterami"/>
 
 
@@ -1023,7 +1026,7 @@
                             android:id="@+id/tv_resultBeEhterami"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -1033,7 +1036,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removBeEhterami"/>
 
 
@@ -1076,13 +1079,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addTohin"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addTohin"/>
 
 
@@ -1090,7 +1093,7 @@
                             android:id="@+id/tv_resultTohin"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -1100,7 +1103,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removTohin"/>
 
 
@@ -1143,13 +1146,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addFekrHaram"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addFekrHaram"/>
 
 
@@ -1157,7 +1160,7 @@
                             android:id="@+id/tv_resultFekrHaram"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -1167,7 +1170,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removFekrHaram"/>
 
 
@@ -1210,13 +1213,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_height="wrap_content">
                         <Button
                             android:id="@+id/btn_addMasrafAlkol"
                             android:background="@drawable/ic_add"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="15dp"
                             android:onClick="btn_addMasrafAlkol"/>
 
 
@@ -1224,7 +1227,7 @@
                             android:id="@+id/tv_resultMasrafAlkol"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
+                            android:layout_marginStart="15dp"
                             android:text="0"
                             android:textColor="@color/light_blue_900"
                             android:textSize="25dp" />
@@ -1234,7 +1237,7 @@
                             android:background="@drawable/refresh"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="15dp"
                             android:onClick="btn_removMasrafAlkol"/>
 
 

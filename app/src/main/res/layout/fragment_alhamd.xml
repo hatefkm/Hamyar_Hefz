@@ -20,18 +20,28 @@
             android:layout_height="40dp"
             android:layout_alignParentStart="true"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
 
 
             android:background="@drawable/ic_add" />
+
+        <Button
+            android:id="@+id/btn_menhaAlhamd"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/btn_addAlhamd"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_baseline_remove_circle_outline_24" />
 
 
         <Button
             android:id="@+id/btn_resetAlhamd"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="33dp"
             android:layout_toRightOf="@+id/btn_addAlhamd"
             android:background="@drawable/refresh" />
 
@@ -40,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="30dp"
             android:layout_toRightOf="@+id/btn_resetAlhamd"
             android:text="0"
@@ -51,11 +61,11 @@
         <ImageView
             android:layout_width="190dp"
             android:layout_height="100dp"
-            android:src="@drawable/alhamdolellah"
-            android:layout_toRightOf="@+id/tv_resultAlhamd"
-            android:layout_marginStart="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="50dp"
             android:layout_marginEnd="5dp"
-            android:layout_alignParentRight="true" />
+            android:layout_toRightOf="@+id/btn_resetAlhamd"
+            android:src="@drawable/alhamdolellah" />
 
 
     </RelativeLayout>
