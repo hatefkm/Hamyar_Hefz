@@ -73,8 +73,10 @@
             android:layout_alignParentRight="true"
             android:layout_marginStart="50dp"
             android:layout_marginEnd="5dp"
+
+
             android:layout_toRightOf="@+id/btn_resetJome"
-            android:src="@drawable/jomeh" />
+            android:src="@drawable/salavat_new" />
 
 
     </RelativeLayout>

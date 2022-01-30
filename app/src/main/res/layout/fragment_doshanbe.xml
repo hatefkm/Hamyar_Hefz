@@ -71,8 +71,9 @@
             android:layout_alignParentRight="true"
             android:layout_marginEnd="5dp"
             android:layout_marginStart="50dp"
+
             android:layout_toRightOf="@id/btn_resetDoshanbe"
-            android:src="@drawable/doshanbe" />
+            android:src="@drawable/doshanbe_bl" />
 
 
     </RelativeLayout>

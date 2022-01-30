@@ -72,8 +72,10 @@
             android:layout_alignParentRight="true"
             android:layout_marginStart="50dp"
             android:layout_marginEnd="5dp"
+
+
             android:layout_toRightOf="@id/btn_resetSeshanbe"
-            android:src="@drawable/seshanbeh" />
+            android:src="@drawable/seshanbeh2_bl" />
 
 
 
