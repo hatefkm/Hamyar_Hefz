@@ -73,6 +73,13 @@ public class JomeFragment extends Fragment {
         counter = prefsJome.getInt("COUNTER_KEY",0);
         resultTv.setText(String.valueOf(counter));
 
+        if (counter<=0){
+            menhaBtn.setEnabled(false);
+        }else if (counter>=0){
+            menhaBtn.setEnabled(true);
+        }
+
+
 
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,9 +87,16 @@ public class JomeFragment extends Fragment {
             {
                 counter++;
                 resultTv.setText(String.valueOf(counter));
+                if (counter<=0){
+                    menhaBtn.setEnabled(false);
+                }else if (counter>=0){
+                    menhaBtn.setEnabled(true);
+                }
+
+
+
             }
         });
-
 
         menhaBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,6 +104,11 @@ public class JomeFragment extends Fragment {
             {
                 counter--;
                 resultTv.setText(String.valueOf(counter));
+                if (counter<=0){
+                    menhaBtn.setEnabled(false);
+                }else if (counter>=0){
+                    menhaBtn.setEnabled(true);
+                }
             }
         });
 
@@ -100,8 +119,15 @@ public class JomeFragment extends Fragment {
             {
                 counter = 0;
                 resultTv.setText(String.valueOf(counter));
+                if (counter<=0){
+                    menhaBtn.setEnabled(false);
+                }else if (counter>=0){
+                    menhaBtn.setEnabled(true);
+                }
             }
         });
+
+
 
 
         btnPlay.setOnClickListener(new View.OnClickListener() {

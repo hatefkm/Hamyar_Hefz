@@ -55,6 +55,7 @@ public class PlayPanleFragment extends Fragment {
 
     private Uri uri;
     private long downloadId;
+    private long id;
 
 
     @Override
@@ -180,6 +181,7 @@ public class PlayPanleFragment extends Fragment {
                 @Override
                 public void onClick(View view) {
 
+
                     //Checking playing any songs or not
                     if (mediaPlayer.isPlaying()) {
 
@@ -224,6 +226,7 @@ public class PlayPanleFragment extends Fragment {
             }
         });
 
+
         return view;
     }
 
@@ -267,11 +270,13 @@ public class PlayPanleFragment extends Fragment {
              request=new DownloadManager.Request(Uri.parse("https://uploadb.me/direct/305bk8iksiq4/PART-01.mp3.html"))
                     .setTitle("Joz1"+".mp3")
                     .setDescription("در حال دانلود")
+
                     .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
                     .setDestinationUri(Uri.fromFile(file))
                     .setRequiresCharging(false)
                     .setAllowedOverMetered(true)
                     .setAllowedOverRoaming(true);
+            Toast.makeText(getActivity(), "در حال دانلود صوت" ,Toast.LENGTH_SHORT).show();
         }
         else {
              request=new DownloadManager.Request(Uri.parse("https://uploadb.me/direct/305bk8iksiq4/PART-01.mp3.html"))
@@ -280,6 +285,8 @@ public class PlayPanleFragment extends Fragment {
                     .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
                     .setDestinationUri(Uri.fromFile(file))
                     .setAllowedOverRoaming(true);
+
+            Toast.makeText(getActivity(), "در حال دانلود صوت" ,Toast.LENGTH_SHORT).show();
 
 
 
@@ -295,10 +302,14 @@ public class PlayPanleFragment extends Fragment {
         @Override
         public void onReceive(Context context, Intent intent) {
 
-            long id=intent.getLongExtra(DownloadManager.EXTRA_DOWNLOAD_ID,-1);
+             id=intent.getLongExtra(DownloadManager.EXTRA_DOWNLOAD_ID,-1);
             if (downloadId==id){
 
-                Toast.makeText(getActivity(), "دانلود کامل شد" ,Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "دانلود صوت کامل شد" ,Toast.LENGTH_SHORT).show();
+            }else {
+
+                Toast.makeText(getActivity(), "دانلود ناموفق!!!" ,Toast.LENGTH_SHORT).show();
+
             }
 
         }

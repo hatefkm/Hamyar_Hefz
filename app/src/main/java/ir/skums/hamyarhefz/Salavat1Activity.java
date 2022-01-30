@@ -33,6 +33,12 @@ public class Salavat1Activity extends AppCompatActivity {
         menhaBtn = findViewById(R.id.btn_menha);
         resultTv = findViewById(R.id.tv_result);
 
+        if (counter<=0){
+            menhaBtn.setEnabled(false);
+        }else if (counter>=0){
+            menhaBtn.setEnabled(true);
+        }
+
 
 
 
@@ -43,21 +49,38 @@ public class Salavat1Activity extends AppCompatActivity {
         addBtn.setOnClickListener(view -> {
             counter++;
             resultTv.setText(String.valueOf(counter));
+            if (counter<=0){
+                menhaBtn.setEnabled(false);
+            }else if (counter>=0){
+                menhaBtn.setEnabled(true);
+            }
         });
 
         menhaBtn.setOnClickListener(view -> {
             counter--;
             resultTv.setText(String.valueOf(counter));
+            if (counter<=0){
+                menhaBtn.setEnabled(false);
+            }else if (counter>=0){
+                menhaBtn.setEnabled(true);
+            }
         });
 
         resetBtn.setOnClickListener(view -> {
             counter = 0;
             resultTv.setText(String.valueOf(counter));
+            if (counter<=0){
+                menhaBtn.setEnabled(false);
+            }else if (counter>=0){
+                menhaBtn.setEnabled(true);
+            }
 
         });
         Typeface type=Typeface.createFromAsset(getAssets(), "fonts/b_titr.TTF");
         resultTv.setTypeface(type);
     }
+
+
 
     @Override
     protected void onStop() {

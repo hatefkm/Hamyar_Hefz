@@ -269,6 +269,8 @@ public class PlayPanleFragment4 extends Fragment {
                     .setRequiresCharging(false)
                     .setAllowedOverMetered(true)
                     .setAllowedOverRoaming(true);
+            Toast.makeText(getActivity(), "در حال دانلود صوت" ,Toast.LENGTH_SHORT).show();
+
         }
         else {
              request=new DownloadManager.Request(Uri.parse("https://uploadb.me/direct/g8bkt6g6bxs2/PART-05.mp3.html"))
@@ -277,6 +279,8 @@ public class PlayPanleFragment4 extends Fragment {
                     .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
                     .setDestinationUri(Uri.fromFile(file))
                     .setAllowedOverRoaming(true);
+            Toast.makeText(getActivity(), "در حال دانلود صوت" ,Toast.LENGTH_SHORT).show();
+
 
 
 
@@ -295,7 +299,10 @@ public class PlayPanleFragment4 extends Fragment {
             long id=intent.getLongExtra(DownloadManager.EXTRA_DOWNLOAD_ID,-1);
             if (downloadId==id){
 
-                Toast.makeText(getActivity(), "دانلود کامل شد" ,Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "دانلود صوت کامل شد" ,Toast.LENGTH_SHORT).show();
+            }else {
+
+                Toast.makeText(getActivity(), "دانلود ناموفق!!!" ,Toast.LENGTH_SHORT).show();
             }
 
         }

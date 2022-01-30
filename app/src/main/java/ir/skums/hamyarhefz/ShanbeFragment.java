@@ -73,6 +73,12 @@ public class ShanbeFragment extends Fragment {
         counter = prefsShanbe.getInt("COUNTER_KEY",0);
         resultTv.setText(String.valueOf(counter));
 
+        if (counter<=0){
+            menhaBtn.setEnabled(false);
+        }else if (counter>=0){
+            menhaBtn.setEnabled(true);
+        }
+
 
 
         addBtn.setOnClickListener(new View.OnClickListener() {
@@ -81,6 +87,11 @@ public class ShanbeFragment extends Fragment {
             {
                 counter++;
                 resultTv.setText(String.valueOf(counter));
+                if (counter<=0){
+                    menhaBtn.setEnabled(false);
+                }else if (counter>=0){
+                    menhaBtn.setEnabled(true);
+                }
             }
         });
 
@@ -90,6 +101,11 @@ public class ShanbeFragment extends Fragment {
             {
                 counter--;
                 resultTv.setText(String.valueOf(counter));
+                if (counter<=0){
+                    menhaBtn.setEnabled(false);
+                }else if (counter>=0){
+                    menhaBtn.setEnabled(true);
+                }
             }
         });
 
@@ -99,6 +115,11 @@ public class ShanbeFragment extends Fragment {
             {
                 counter = 0;
                 resultTv.setText(String.valueOf(counter));
+                if (counter<=0){
+                    menhaBtn.setEnabled(false);
+                }else if (counter>=0){
+                    menhaBtn.setEnabled(true);
+                }
             }
         });
 
