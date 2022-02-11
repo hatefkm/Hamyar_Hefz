@@ -158,9 +158,9 @@ public class JomeFragment extends Fragment {
         });
 
         Typeface type=Typeface.createFromAsset(getActivity().getAssets(), "fonts/b_titr.TTF");
-        Typeface type2=Typeface.createFromAsset(getActivity().getAssets(), "fonts/b_nazanin.TTF");
+
         resultTv.setTypeface(type);
-        zekr_roz_jome.setTypeface(type2);
+
 
         return view;
     }
