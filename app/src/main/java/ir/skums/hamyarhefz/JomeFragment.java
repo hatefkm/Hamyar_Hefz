@@ -24,7 +24,7 @@ public class JomeFragment extends Fragment {
 
     Button resetBtn,btnPlay;
     Button addBtn;
-    TextView resultTv;
+    TextView resultTv,zekr_roz_jome;
     Button menhaBtn;
     int counter =0;
     private static final String MY_PREFS = "counterPref";
@@ -60,6 +60,7 @@ public class JomeFragment extends Fragment {
         addBtn = view.findViewById(R.id.btn_addJome);
         menhaBtn = view.findViewById(R.id.btn_menhaJome);
         resultTv = view.findViewById(R.id.tv_resultJome);
+        zekr_roz_jome = view.findViewById(R.id.zekr_roz_jome);
 
 
         btnPlay=view.findViewById(R.id.btn_playJome);
@@ -157,7 +158,9 @@ public class JomeFragment extends Fragment {
         });
 
         Typeface type=Typeface.createFromAsset(getActivity().getAssets(), "fonts/b_titr.TTF");
+        Typeface type2=Typeface.createFromAsset(getActivity().getAssets(), "fonts/b_nazanin.TTF");
         resultTv.setTypeface(type);
+        zekr_roz_jome.setTypeface(type2);
 
         return view;
     }

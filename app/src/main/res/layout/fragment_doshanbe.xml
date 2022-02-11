@@ -15,65 +15,100 @@
 
 
 
-        <Button
-            android:id="@+id/btn_playDoshanbe"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="20dp"
-            android:background="@drawable/play_song_icon" />
-
-
-        <Button
-            android:id="@+id/btn_resetDoshanbe"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="10dp"
-            android:layout_toRightOf="@+id/btn_playDoshanbe"
-            android:background="@drawable/refresh" />
-
-        <Button
-            android:id="@+id/btn_addDoshanbe"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_below="@+id/btn_playDoshanbe"
-            android:layout_marginStart="20dp"
-
-            android:layout_marginTop="10dp"
-            android:background="@drawable/ic_add" />
-
-        <Button
-            android:id="@+id/btn_menhaDoshanbe"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_below="@+id/btn_resetDoshanbe"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-
-            android:layout_toRightOf="@id/btn_addDoshanbe"
-            android:background="@drawable/ic_baseline_remove_circle_outline_24" />
-
-
-        <TextView
-            android:id="@+id/tv_resultDoshanbe"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_toRightOf="@+id/btn_resetDoshanbe"
-            android:text="0"
-            android:textColor="#012C4E"
-            android:textSize="30dp" />
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="180dp"
-            android:layout_height="100dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginEnd="5dp"
-            android:layout_marginStart="50dp"
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
 
-            android:layout_toRightOf="@id/btn_resetDoshanbe"
-            android:src="@drawable/doshanbe_bl" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_playDoshanbe"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/play_song_icon" />
+
+
+                    <Button
+                        android:id="@+id/btn_resetDoshanbe"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/refresh" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/btn_addDoshanbe"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+
+                        android:layout_marginStart="20dp"
+
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ic_add" />
+
+                    <Button
+                        android:id="@+id/btn_menhaDoshanbe"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+
+                        android:background="@drawable/ic_baseline_remove_circle_outline_24" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_resultDoshanbe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="22dp"
+                    android:text="0"
+                    android:textColor="#012C4E"
+                    android:textSize="30dp" />
+
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/doshanbe_bl" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
 
 
     </RelativeLayout>
