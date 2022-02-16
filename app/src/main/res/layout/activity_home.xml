@@ -16,7 +16,7 @@
 
         <ImageButton
             android:id="@+id/menu_btn"
-            android:layout_width="65dp"
+            android:layout_width="63dp"
             android:layout_height="70dp"
             android:layout_alignParentTop="true"
             android:layout_marginStart="5dp"
