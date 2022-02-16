@@ -9,8 +9,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 
-
-
+import android.app.ActionBar;
 import android.view.View;
 
 import androidx.core.view.GravityCompat;
@@ -51,8 +50,13 @@ import java.util.concurrent.TimeUnit;
 public class HomeActivity extends AppCompatActivity {
 
     private String TAG = "HomeActivity";
-    private DrawerLayout navDrawer;
-    private NavigationView navigationView;
+
+
+
+    DrawerLayout drawer;
+    NavigationView navigationView;
+    ActionBarDrawerToggle toggle;
+    DrawerLayout drawerLayout;
 
 
 
@@ -66,9 +70,9 @@ public class HomeActivity extends AppCompatActivity {
 
 
 
-        DrawerLayout drawer = findViewById(R.id.navDrawer);
-        NavigationView navigationView = findViewById(R.id.navigationView);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+        drawer = findViewById(R.id.navDrawer);
+        navigationView = findViewById(R.id.navigationView);
+        toggle = new ActionBarDrawerToggle(
                 this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
@@ -90,7 +94,7 @@ public class HomeActivity extends AppCompatActivity {
 
                 }
 
-                DrawerLayout drawerLayout = findViewById(R.id.navDrawer);
+                drawerLayout = findViewById(R.id.navDrawer);
                 drawerLayout.closeDrawer(GravityCompat.START);
 
 
@@ -143,6 +147,16 @@ public class HomeActivity extends AppCompatActivity {
 
         Intent intent = new Intent(HomeActivity.this,RahnamaActivity.class);
         startActivity(intent);
+
+
+    }
+
+    public void menu_btn(View view) {
+
+        toggle = new ActionBarDrawerToggle(
+                this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
 
 
     }
