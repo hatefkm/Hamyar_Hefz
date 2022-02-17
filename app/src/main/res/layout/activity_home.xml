@@ -212,7 +212,6 @@
         </RelativeLayout>
 
 
-
         <Button
             android:id="@+id/exitBtn"
             android:layout_width="match_parent"
