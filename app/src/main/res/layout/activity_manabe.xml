@@ -46,7 +46,7 @@
 
             android:text="قران کریم"
             android:textColor="#012C4E"
-            android:textSize="20dp"
+            android:textSize="24dp"
 
             android:textStyle="bold">
 
@@ -61,7 +61,7 @@
             android:gravity="center_horizontal"
             android:text="صوت استاد پرهیزگار"
             android:textColor="#012C4E"
-            android:textSize="20dp"
+            android:textSize="24dp"
             android:textStyle="bold">
 
         </TextView>

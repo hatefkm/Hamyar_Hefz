@@ -28,21 +28,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/txtUsTitle"
-        android:layout_marginLeft="28dp"
-        android:layout_marginRight="28dp"
         android:layout_marginStart="20dp"
+        android:layout_marginLeft="28dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/scrol_back"
-        android:layout_marginBottom="30dp">
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/scrol_back">
 
         <TextView
             android:id="@+id/us_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:textColor="#012C4E"
             android:text="@string/us_text"
-            android:textSize="20dp"
+            android:textColor="#012C4E"
+            android:padding="3dp"
+            android:textSize="24dp"
             android:textStyle="bold">
 
         </TextView>
