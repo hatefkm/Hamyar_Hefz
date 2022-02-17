@@ -3,6 +3,7 @@ package ir.skums.hamyarhefz;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.style.ClickableSpan;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -65,6 +66,8 @@ public class AyatActivity1 extends AppCompatActivity {
                 getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayoutPlay, new PlayPanleFragment1()).addToBackStack(null).commit();
 
             }
+
+
 
         });
 
