@@ -211,7 +211,14 @@ public class PlayPanleFragment17 extends Fragment {
         btnDownload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                beginDownload();
+
+                File Joz18 = new File("/storage/emulated/0/Android/data/ir.skums.hamyarhefz/files/Joz18.mp3");
+                if(Joz18.exists()){
+                    Toast.makeText(getActivity(), "صوت دانلود شده است" ,Toast.LENGTH_SHORT).show();
+
+                }else{
+                    beginDownload();
+                }
 
 
 
@@ -300,6 +307,8 @@ public class PlayPanleFragment17 extends Fragment {
             if (downloadId==id){
 
                 Toast.makeText(getActivity(), "دانلود صوت کامل شد" ,Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "پنل صوت را دوباره باز کنید" ,Toast.LENGTH_LONG).show();
+
             }else {
 
                 Toast.makeText(getActivity(), "دانلود ناموفق!!!" ,Toast.LENGTH_SHORT).show();
